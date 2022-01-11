@@ -1,0 +1,1 @@
+I am Taking care of attractions page ,And I will craete different style module for this page also. This is the base folder for attractions page and all attractions page related componennt and other content I will create in this folder.
