@@ -54,6 +54,14 @@ export default function CarRentals() {
     }
     // console.log(popularCity);
     return (
+        <>
+        <div className={style.covid}>
+            <h4>Clean cars. Flexible bookings. Socially distant rental counters.</h4>
+            <p>We’re working with our partners to keep you safe and in the driving seat.</p>
+            <div>
+                <Link className={style.covidLink}>Find out how</Link>
+            </div>
+        </div>
         <div className={style.carRentals}>
             <div className={style.box1}>
                 <div className={style.text}>
@@ -237,5 +245,6 @@ export default function CarRentals() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
