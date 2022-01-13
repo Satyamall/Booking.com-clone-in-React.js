@@ -1,0 +1,72 @@
+{
+    "popular_city_car_hire":[
+        {
+            "id": 1,
+            "city": "London",
+            "carDetail": "Car hire in 75 pick-up locations",
+            "fair": 3456.44,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/613095.webp?k=8caf960d96a59e284ac1518ac8777e89d17fda6572acd84dbec151f627c7bf07&o="
+        },
+        {
+            "id": 2,
+            "city": "Paris",
+            "carDetail": "Car hire in 90 pick-up locations",
+            "fair": 3712.55,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/613088.webp?k=a370ac3fb385fb211b35a79a42b0e968ddb458be37108af476c558bf4cedc1f3&o="
+        },
+        {
+            "id": 3,
+            "city": "Madrid",
+            "carDetail": "Car hire in 40 pick-up locations",
+            "fair": 1291.33,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&o="
+        },
+        {
+            "id": 4,
+            "city": "Dubai",
+            "carDetail": "Car hire in 91 pick-up locations",
+            "fair": 3038.58,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&o="
+        },
+        {
+            "id": 5,
+            "city": "Malaga",
+            "carDetail": "Car hire in 6 pick-up locations",
+            "fair": 1285.90,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/645577.webp?k=81d61cb4e120af4d4218386546a117b77ef18dfcf3727d186ec3a1aad60f38fe&o="
+        },
+        {
+            "id": 6,
+            "city": "Lisbon",
+            "carDetail": "Car hire in 18 pick-up locations",
+            "fair": 1490.27,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/619965.webp?k=8b2bc851e921e03c4565fe28e4f608c30223227743b3b2cc56c476a5ef04d3da&o="
+        }
+    ],
+    "top_worldwide_car_rental":[
+        {
+            "id": 1,
+            "city": "Milan",
+            "fair": 1313.59,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/619644.webp?k=5b21ac6d3d913a54274d6546e60adb2c3c138d661dd1a2bd7b3aed53e9df0b65&o="
+        },
+        {
+            "id": 2,
+            "city": "Rome",
+            "fair": 1251.28,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/613105.webp?k=1e85cf4dec7b0d5a6327be91c38cf9c1711f9da1a31c4cba736f9cb751443ff1&o="
+        },
+        {
+            "id": 3,
+            "city": "Barcelona",
+            "fair": 1452.29,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968315.webp?k=14d0bad185930ec2663562b999ecf498fb6fcf492c16a4c33228504a15e2d119&o="
+        },
+        {
+            "id": 4,
+            "city": "Madrid",
+            "fair": 1291.33,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&o="
+        }
+    ]
+}
