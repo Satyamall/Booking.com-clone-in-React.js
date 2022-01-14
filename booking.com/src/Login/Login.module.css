@@ -1,0 +1,100 @@
+.login{
+    text-align: center;
+    
+}
+.nav{
+    padding: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #003580;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.buiavatarimage {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+.form>form{
+    width: 400px;
+    text-align: left;
+    padding: 20px;
+    margin: auto;
+}
+.input{
+    width:100%;
+    margin-top: 2px;
+    height: 31px;
+    border: 0.5px solid black;
+    margin-bottom: 15px;
+}
+.button{
+    width:406px;
+    text-align: center;
+    color: white;
+    height: 42px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #006FBF;
+    background-color: #006FBF;
+}
+.input:focus {
+    box-shadow: 0 0 10px rgb(24, 150, 185);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgb(31, 139, 168);
+  }
+.formheading{
+    color: rgb(56,56,56);
+}
+.authlogin{
+    width: 400px ;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.googleimage{
+    border-radius: 50%;
+}
+.google{
+    cursor: pointer;
+    padding: 20px;
+    border:1px solid rgb(185, 182, 182);
+    background-color: white;
+}
+.google > img{
+    width: 30px;
+}
+.line{
+    width: 400px;
+    margin: auto;
+    display: flex;
+}
+.hr{
+    margin-top: 29px;
+    width: 75px;
+    border: 0.1 px solid gray;
+    height: 0;
+    background-color: gray;
+}
+.p{
+    width: 200px;
+}
+.line1{
+    width: 400px;
+    margin: auto;
+}
+.p1{
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+.logoutText{
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: capitalize;
+    /* padding-bottom: 10px; */
+}

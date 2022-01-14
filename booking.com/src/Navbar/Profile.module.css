@@ -1,0 +1,25 @@
+.profile{
+    display: flex;
+    margin-left: 5%;
+    cursor: pointer;
+
+}
+.profile img{
+   height: 48px;
+   width: 48px;
+   border-radius: 50%;
+   border: 2px solid rgb(254,187,2);
+   margin-left: 15px;
+   margin-right: 10px;
+   margin-top: -3px;
+}
+.profile h4{
+  text-transform: capitalize;
+  font-size: 0.92rem;
+}
+.logout{
+  position: absolute;
+  right: 140px;
+  top: 90px;
+  border: 1px solid rgb(254,187,2);
+}
