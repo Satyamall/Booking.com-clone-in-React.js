@@ -1,13 +1,12 @@
-
-import Index from "./components/Attractions/Index";
+import './App.css';
+import Navbar from './components/Header/Header';
 
 function App() {
-  return (
-    <div>
-
-    <Index/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Navbar/>
+        </div>
+    );
 }
 
 export default App;
