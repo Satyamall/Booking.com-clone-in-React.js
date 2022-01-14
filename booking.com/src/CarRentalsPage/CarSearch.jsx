@@ -11,19 +11,12 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormGroup from '@mui/material/FormGroup';
 import Checkbox from '@mui/material/Checkbox';
-import CityCard from './CityCard';
-import LanguageIcon from '@mui/icons-material/Language';
-import PublicIcon from '@mui/icons-material/Public';
-import CloudIcon from '@mui/icons-material/Cloud';
-import StarIcon from '@mui/icons-material/Star';
-import DropdownButton from "react-bootstrap/DropdownButton"
-import Dropdown from 'react-bootstrap/esm/Dropdown';
 import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 import SearchBar from './SearchBar';
 import countries from "./Countries";
 import { SearchBar2 } from './SearchBar';
 
-export default function CarRentals() {
+export default function CarSearch() {
 
     const [startDate, setStartDate] = useState(new Date());
     const [returnDate, setReturnDate] = useState(new Date());
@@ -93,13 +86,6 @@ export default function CarRentals() {
     // console.log(popularCity);
     return (
         <>
-            <div className={style.covid}>
-                <h4><ReportGmailerrorredIcon /> Clean cars. Flexible bookings. Socially distant rental counters.</h4>
-                <p>We’re working with our partners to keep you safe and in the driving seat.</p>
-                <div>
-                    <Link className={style.covidLink}>Find out how</Link>
-                </div>
-            </div>
             <div className={style.carRentals}>
                 <div className={style.box1}>
                     <div className={style.text}>
@@ -181,95 +167,6 @@ export default function CarRentals() {
                         <img src="https://cdn.rcstatic.com/images/supplier_logos/dollar_logo_lrg.gif" alt="" />
                         <img src="https://cdn.rcstatic.com/images/supplier_logos/thrifty_logo_lrg.gif" alt="" />
                         <img src="https://cdn.rcstatic.com/images/suppliers/flat/sicily_by_car_logo_lrg.gif" alt="" />
-                    </div>
-                </div>
-                <div className={style.box3}>
-                    <h1>Popular destinations for car hire</h1>
-                    <div className={style.box4}>
-                        {
-                            popularCity.map((item) => {
-                                return <CityCard
-                                    key={item.id}
-                                    id={item.id}
-                                    city={item.city}
-                                    carDetail={item.carDetail}
-                                    fair={item.fair}
-                                    image={item.image}
-                                />
-                            })
-                        }
-                    </div>
-                </div>
-                <div className={style.box5}>
-                    <div>
-                        <h1>World's biggest online car hire service</h1>
-                        <p>Why you can find the right car in the right place with us...</p>
-                    </div>
-                    <div className={style.iconBox}>
-                        <div className={style.icon}>
-                            <LanguageIcon className={style.iconLogo} sx={{ fontSize: 60 }} />
-                            <div className={style.text1}>
-                                <h4>60,000+</h4>
-                                <p>locations</p>
-                            </div>
-                        </div>
-                        <div className={style.icon}>
-                            <PublicIcon className={style.iconLogo} sx={{ fontSize: 60 }} />
-                            <div className={style.text1}>
-                                <h4>160</h4>
-                                <p>countries</p>
-                            </div>
-                        </div>
-                        <div className={style.icon}>
-                            <CloudIcon className={style.iconLogo} sx={{ fontSize: 60 }} />
-                            <div className={style.text1}>
-                                <h4>43</h4>
-                                <p>languages spoken</p>
-                            </div>
-                        </div>
-                        <div className={style.icon}>
-                            <StarIcon className={style.iconLogo} sx={{ fontSize: 60 }} />
-                            <div className={style.text1}>
-                                <h4>3500,000</h4>
-                                <p>customer reviews</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className={style.box6}>
-                    <div className={style.box7}>
-                        <h1>Frequently asked questions</h1>
-                    </div>
-                    <div className={style.box8}>
-                        <DropdownButton id="dropdown-item-button" variant="outlined" size="lg" title="What do I need to rent a car?" className={style.size} >
-                            <Dropdown.ItemText>When you’re booking the car, you just need a debit or credit card.
-                                At the rental counter, you’ll need:
-                                Your passport
-                                Your voucher
-                                Each driver’s driving licence
-                                The main driver’s credit card (some rental companies also accept debit cards, but most don’t).
-                                Important: Please make sure you check the car’s rental terms as well, as each rental company has its own rules. For example? They might need to see some extra ID. They might not accept certain types of credit card. Or they might not rent to any driver who hasn’t held their driving licence for 36 months or more.</Dropdown.ItemText>
-                        </DropdownButton>
-                        <DropdownButton id="dropdown-item-button" variant="outlined" size="lg" title="Am I old enough to rent a car" className={style.size}>
-                            <Dropdown.ItemText>Most companies will rent you a car if you’re at least 21 (and some will rent to younger drivers). But if you’re under 25, you might still have to pay a ‘young driver fee’.</Dropdown.ItemText>
-                        </DropdownButton>
-                        <DropdownButton id="dropdown-item-button" variant="outlined" size="lg" title="Can I book a car for my partner, friend, colleague, etc?" className={style.size}>
-                            <Dropdown.ItemText>Of course. Just put their details in the ‘Driver Details’ form when you’re booking the car.</Dropdown.ItemText>
-                        </DropdownButton>
-                        <DropdownButton id="dropdown-item-button" variant="outlined" size="lg" title="Any tips on choosing the right car?" className={style.size}>
-                            <Dropdown.ItemText>Think about where you’re going. An SUV might be great for cruising down a Texas freeway, but a smaller car’s probably much easier to drive in Rome.
-                                See what other people think. You’ll find lots of reviews and ratings on our site, so find out what other customers liked (and didn’t like) about each rental company.
-                                Don’t forget the gearbox. In some countries, nearly everyone drives a manual car. In others, automatics are the norm. Make sure you rent one you can drive!</Dropdown.ItemText>
-                        </DropdownButton>
-                        <DropdownButton id="dropdown-item-button" variant="outlined" size="lg" title="is the rental price all inclusive?" className={style.size}>
-                            <Dropdown.ItemText>The price you see includes the car, mandatory cover (e.g. Theft Protection and Collision Damage Waiver) and fees that, if they apply, are usually payable at pick-up (e.g. any one-way fees, airport surcharges or local taxes).
-
-                                It also includes any extras you’ve already added (e.g. GPS or baby seats).
-
-                                It doesn’t include any extra cover you buy when you get to the rental counter.
-
-                                Tip: There’s a full price breakdown on the Payment page.</Dropdown.ItemText>
-                        </DropdownButton>
                     </div>
                 </div>
                 <div className={style.box3}>

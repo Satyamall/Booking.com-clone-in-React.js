@@ -28,7 +28,7 @@ export default function CityCard({id,city,carDetail,fair,image}) {
             From ₹ {fair} per day
           </Typography>
           <div style={{ marginTop: 10}}>
-              <Link to={`/${city}`} style={{textDecoration: "none"}}>Search rental cars in {city}</Link>
+              <Link to={`/carrentals/${city}`} style={{textDecoration: "none"}}>Search rental cars in {city}</Link>
           </div>
         </CardContent>
       </CardActionArea>

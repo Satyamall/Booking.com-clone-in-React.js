@@ -68,5 +68,67 @@
             "fair": 1291.33,
             "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&o="
         }
+    ],
+    "london":[
+        {
+           "id": 1,
+           "city": "Southampton",
+           "fair": 2962.67,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967986.webp?k=41f5c2e33f7a64f821924ef9812a4be1e2edf4e7ac507c5190ff4709c9f6c081&o="
+        },
+        {
+           "id": 2,
+           "city": "Norwich",
+           "fair": 6377.63,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968056.webp?k=512962d90b277c9a01b75af9926ba217028d2dbd34a0d4f179848a7c9c7e4642&o="
+        },
+        {
+           "id": 3,
+           "city": "Southend on-Sea",
+           "fair": 8836.64,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/687448.webp?k=9826683a5c22a9ec9c401b9b606203df4ad55095b83ca0bb0d674f6d090716c9&o="
+        },
+        {
+           "id": 4,
+           "city": "Nottingham",
+           "fair": 3612.48,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967906.webp?k=12cf9003dbf4787849f1801c5310ea3baa7a775545de84dfa373a921c199344d&o="
+        },
+        {
+           "id": 5,
+           "city": "Oxford",
+           "fair": 2957.73,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967587.webp?k=e8628bb7bbb696b86fd9ed0dd6be4ac24d6647503220113ba60dbd0027ad788c&o="
+        },
+        {
+           "id": 6,
+           "city": "Portsmouth",
+           "fair": 2468.89,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968070.webp?k=b3fc4ffe692de2cc669d1f68dc0defb29dbc6958a38c2aee025b5d3f8e4b05f0&o="
+        },
+        {
+           "id": 7,
+           "city": "Penzance",
+           "fair": 9019.34,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968644.webp?k=6a48a64161c92e602c1ab63e2a945361556a54e7cca2d7afa83e2a63aa91d129&o="
+        },
+        {
+           "id": 8,
+           "city": "Romford",
+           "fair": 6159.38,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/810129.webp?k=fb0639ae40b5e4622b3edd5cc432d2e25975fcc3e06b17ed5afb21059a51126d&o="
+        },
+        {
+           "id": 9,
+           "city": "Sheffield",
+           "fair": 4444,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968084.webp?k=0acc0fcb575701b6ee1f352131e553c6d8702060c1484f1fd80a8c6098f795a9&o="
+        },
+        {
+           "id": 10,
+           "city": "Portadown",
+           "fair": 10470.06,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/734157.webp?k=0badc1af3b9f95874114e0ecabb55fa06c6177a46619dc914debe7053fb7c3c3&o="
+        }
     ]
 }

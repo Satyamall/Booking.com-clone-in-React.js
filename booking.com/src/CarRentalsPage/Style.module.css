@@ -43,6 +43,15 @@ h1{
 .drop{
     border-left: 2px solid black;
     margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pick{
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .searchDateBox{
@@ -68,6 +77,11 @@ h1{
     gap: 2rem;
     align-items: center;
     margin-top: 10px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
 }
 
 .box3{
