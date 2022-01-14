@@ -22,6 +22,8 @@ import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 import SearchBar from './SearchBar';
 import countries from "./Countries";
 import { SearchBar2 } from './SearchBar';
+import {useDispatch} from "react-redux";
+import { getCarSuccess } from '../Redux/car/action';
 
 export default function CarRentals() {
 
@@ -63,6 +65,12 @@ export default function CarRentals() {
         }
         setLoading(false);
     }, [returnLocation]);
+
+    // console.log(startLocation,returnLocation,startDate,returnDate)
+    const dispatch=useDispatch();
+    const handleClickSearch=()=>{
+        dispatch(getCarSuccess({startLocation,returnLocation,startDate,returnDate}))
+    }
 
     const getData = () => {
         return fetch(`http://localhost:3000/popular_city_car_hire`)
@@ -153,8 +161,8 @@ export default function CarRentals() {
                             value={returnDate}
                             className={style.searchDateBox}
                         />
-                        <button className={style.searchButton}>
-                            <Link to="" className={style.searchLink}>SEARCH</Link>
+                        <button className={style.searchButton} onClick={handleClickSearch}>
+                            <Link to="/car-available" className={style.searchLink}>SEARCH</Link>
                         </button>
                     </div>
                     <div className={style.driverBox}>

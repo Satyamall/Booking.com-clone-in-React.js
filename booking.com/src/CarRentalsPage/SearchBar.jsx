@@ -5,8 +5,6 @@ import { useThrottle } from "use-throttle";
 const SearchBarWrapper = styled.div`
   display: flex;
   position: relative;
-  border-bottom-right-radius: ${({ q }) => (q ? "0px" : "20px")};
-  border-bottom-left-radius: ${({ q }) => (q ? "0px" : "20px")};
 `;
 
 const Input = styled.input`
@@ -67,7 +65,7 @@ const SuggestionBox = styled.div`
   }
 `;
 
-export default function SearchBar({ loading, setLoading, suggestions, placeholder, onChange }) {
+export default function SearchBar({ loading, setLoading, suggestions, placeholder,value, onChange }) {
   const [q, setQ] = useState("");
   const [active, setActive] = useState(0);
   const scrollRef = useRef();
@@ -126,6 +124,11 @@ export default function SearchBar({ loading, setLoading, suggestions, placeholde
       }
     }
   };
+
+  const handleClick=(e)=>{
+    setQ(e.target.textContent)
+  }
+
   return (
     <div style={{display: "flex", flexDirection: "column"}}>
       <SearchBarWrapper q={q} onKeyUp={handleChangeActiveSuggestions}>
@@ -143,9 +146,9 @@ export default function SearchBar({ loading, setLoading, suggestions, placeholde
           active={active}
         >
           {suggestions.map((item, index) => (
-            <div key={item} onMouseOver={() => setActive(index + 1)}>
+            <button key={item} onMouseOver={() => setActive(index + 1)} onClick={(e)=>handleClick(e)}>
               {item}
-            </div>
+            </button>
           ))}
         </SuggestionBox>
       )}
@@ -211,6 +214,11 @@ export function SearchBar2({ loading, setLoading, suggestions, placeholder, onCh
       }
     }
   };
+
+  const handleClick=(e)=>{
+    setQ(e.target.textContent)
+  }
+  
   return (
     <div style={{display: "flex", flexDirection: "column"}}>
       <SearchBarWrapper q={q} onKeyUp={handleChangeActiveSuggestions}>
@@ -228,9 +236,9 @@ export function SearchBar2({ loading, setLoading, suggestions, placeholder, onCh
           active={active}
         >
           {suggestions.map((item, index) => (
-            <div key={item} onMouseOver={() => setActive(index + 1)}>
+            <button key={item} onMouseOver={() => setActive(index + 1)} onClick={(e)=>handleClick(e)}>
               {item}
-            </div>
+            </button>
           ))}
         </SuggestionBox>
       )}

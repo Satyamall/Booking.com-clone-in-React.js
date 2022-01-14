@@ -1,15 +1,13 @@
 
 import './App.css';
-import CarRentals from './CarRentalsPage/CarRentals';
 import Footer from './Footer/Footer';
-import { Navbar } from './Navbar/Navbar';
 import AllRoutes from './Routes/AllRoutes';
+import {Link} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      <CarRentals />
+      <Link to="/carrentals">Car Rental</Link>
       <AllRoutes/>
       <Footer />
     </div>

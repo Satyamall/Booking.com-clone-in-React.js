@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import DateTimePicker from 'react-datetime-picker';
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import style from "./Style.module.css";
 import IconButton from '@mui/material/IconButton';
 import DirectionsCarOutlinedIcon from '@mui/icons-material/DirectionsCarOutlined';
@@ -15,14 +15,15 @@ import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 import SearchBar from './SearchBar';
 import countries from "./Countries";
 import { SearchBar2 } from './SearchBar';
+import {useDispatch} from "react-redux";
+import { getCarSuccess } from '../Redux/car/action';
 
 export default function CarSearch() {
-
+    const {id}=useParams();
     const [startDate, setStartDate] = useState(new Date());
     const [returnDate, setReturnDate] = useState(new Date());
-    const [startLocation, setStartLocation] = useState("")
+    const [startLocation, setStartLocation] = useState(id)
     const [returnLocation, setReturnLocation] = useState("")
-    const [popularCity, setPopularCity] = useState([]);
     const [carRental, setCarRental] = useState([]);
     const [loading, setLoading] = useState(false);
     const [suggestions, setSuggestions] = useState([]);
@@ -57,24 +58,13 @@ export default function CarSearch() {
         setLoading(false);
     }, [returnLocation]);
 
-    const getData = () => {
-        return fetch(`http://localhost:3000/popular_city_car_hire`)
+    const dispatch=useDispatch();
+    const handleClickSearch=()=>{
+        dispatch(getCarSuccess({startLocation,returnLocation,startDate,returnDate}))
     }
-
-    useEffect(() => {
-        getData()
-            .then(res => res.json())
-            .then((res) => {
-                setPopularCity(res);
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-        getCarRental()
-    }, [])
-
+    
     const getCarRental = () => {
-        return fetch(`http://localhost:3000/top_worldwide_car_rental`)
+        return fetch(`http://localhost:3000/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 setCarRental(res);
@@ -83,7 +73,11 @@ export default function CarSearch() {
                 console.log(err)
             })
     }
-    // console.log(popularCity);
+
+    useEffect(() => {
+        getCarRental()
+    }, [])
+
     return (
         <>
             <div className={style.carRentals}>
@@ -139,7 +133,7 @@ export default function CarSearch() {
                             value={returnDate}
                             className={style.searchDateBox}
                         />
-                        <button className={style.searchButton}>
+                        <button className={style.searchButton} onClick={handleClickSearch}>
                             <Link to="" className={style.searchLink}>SEARCH</Link>
                         </button>
                     </div>
@@ -171,13 +165,13 @@ export default function CarSearch() {
                 </div>
                 <div className={style.box3}>
                     <div>
-                        <h1>Top worldwide locations for car rental</h1>
+                        <h1>Popular car rental destinations in the {id}</h1>
                     </div>
                     <div className={style.box4}>
                         {
                             carRental.map((item) => {
                                 return <div key={item.id} className={style.card}>
-                                    <Link to={`/${item.city}`} className={style.link}>
+                                    <Link to={`/carrentals/${item.city}`} className={style.link}>
                                         <img src={item.image} alt="" className={style.img} />
                                         <div className={style.text2}>
                                             <h3>{item.city}</h3>
