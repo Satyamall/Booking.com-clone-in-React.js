@@ -1,0 +1,121 @@
+.navbarContainer *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "BlinkMacSystemFont","-apple-system","Segoe UI",'Roboto','Helvetica','Arial','sans-serif'
+}
+
+.navbarContainer{
+background-color:rgb(0,53,128);
+color: white;
+padding-top: 2%;
+padding-left: 10%;
+padding-right: 5%;
+/* padding-bottom: 0.5%; */
+/* width: 100%; */
+/* border: 1px solid black; */
+
+}
+.navbarUpperSection{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+  
+}
+.navbarUpperSectionItems > ul{
+ display: flex;
+ list-style: none;
+ justify-content: space-between;
+}
+.inr{
+margin-top: 1.5%;
+font-weight: 500;
+font-size: 15px;
+
+}
+.indianFlag{
+   margin-left: 5%;  
+   margin-top: 1%;
+    
+}
+
+.indianFlag img{
+border-radius: 50%;
+width: 25px;
+}
+.questionIcon{
+    fill: white;
+   margin-left: 80%;  
+   margin-top:25%;
+   font-weight: 500;
+font-size: 15px;
+
+
+}
+.propertyList{
+   margin-left: 10%;  
+
+}
+.propertyList > button{
+    width: 150px;
+    border-radius: 2px;
+    color: white;
+    border: 1px solid white;
+    padding: 5%;
+    background-color: rgb(0,53,128);
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 15px;
+}
+.signButton{
+    margin-left: 2%;
+    
+}
+.signButton button{
+    width: 100px;
+    border-radius: 2px;
+    color: rgb(0,113,194);
+    border: 1px solid rgb(0,113,194);
+    padding: 8%;
+    background-color: white;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.navbarLowerSection{
+    margin-top: 2%;
+}
+.navbarLowerSection>ul{
+    display: flex;
+    list-style: none;
+}
+.navbarLowerSection>ul>li{
+margin-right: 3%;
+font-weight: 500;
+font-size: 15px;
+display: flex;
+}
+.navbarLowerSection>ul .text{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.svgIcons{
+    color: white;
+    fill: white;
+   margin-right: 5px;
+   margin-top: 10px;
+  
+}
+.Link{
+    text-decoration: none;
+    color: white;
+}
+.main{
+width: 98.7vw ;
+margin-left: -8px ;
+ margin-top: -8px ;
+ overflow-y: hidden;
+}
+
