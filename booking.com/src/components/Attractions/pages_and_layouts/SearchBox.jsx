@@ -3,14 +3,18 @@ import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import styles from '../style/style.module.css';
+import styles from './style/style.module.css';
 import SearchIcon from '@mui/icons-material/Search';
 
 
-export default function SearchBox() {
+export default function SearchBox( props ) {
+  const style = {
+    border: "3px solid #F9B82E"
+  }
   return (
     <Paper
-    className={styles.searchInputBox}
+      style={style}
+    className={props.widthStatus? styles.searchInputBox:""}
       component="form"
       sx={{  display: 'flex', alignItems: 'center', width: "70%" }}
     >

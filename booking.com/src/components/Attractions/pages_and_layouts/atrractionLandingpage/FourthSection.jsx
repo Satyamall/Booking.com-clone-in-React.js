@@ -1,6 +1,6 @@
 import React from 'react'
-import Svg from './Svg'
-import Paths from './SvgPaths'
+import Svg from '../Svg'
+import Paths from '../SvgPaths'
 import styles from '../style/style.module.css'
 const FourthSection = () => {
 
