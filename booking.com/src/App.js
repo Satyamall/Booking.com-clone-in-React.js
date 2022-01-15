@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Link to="/carrentals">Car Rental</Link>
       <AllRoutes/>
       <Footer />
     </div>
