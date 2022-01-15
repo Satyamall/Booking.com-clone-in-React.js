@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
-import CarRentals from "../CarRentalsPage/CarRentals";
-import CarSearch from "../CarRentalsPage/CarSearch";
-import Login from "../Login/Login";
+import CarRentals from "../components/CarRentalsPage/CarRentals";
+import CarSearch from "../components/CarRentalsPage/CarSearch";
+import Login from "../components/Login/Login";
 
 export default function AllRoutes(){
 
@@ -9,7 +9,7 @@ export default function AllRoutes(){
         <>
           <Switch>
           <Route exact path="/">
-               
+
             </Route>
             <Route exact path="/login">
                 <Login />

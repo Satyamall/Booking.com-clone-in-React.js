@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../SearchData/DataComponent.module.css";
+import styles from "./DataComponent.module.css";
 import {Link} from "react-router-dom";
 
 
