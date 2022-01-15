@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "width": "170px",
+      "height": "200px",
+      "image": "https://t-cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=",
+      "h3_val": "Hotels",
+      "para_val": "832,263 hotels"
+    },
+    {
+      "id": 2,
+      "width": "170px",
+      "height": "200px",
+      "image": "https://t-cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=",
+      "h3_val": "Apartments",
+      "para_val": "736,191 apartments"
+    },
+    {
+      "id": 3,
+      "width": "170px",
+      "height": "200px",
+      "image": "https://t-cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=",
+      "h3_val": "Resorts",
+      "para_val": "17,049 resorts"
+    },
+    {
+      "id": 4,
+      "width": "170px",
+      "height": "200px",
+      "image": "https://t-cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=",
+      "h3_val": "Villas",
+      "para_val": "377,938 villas"
+    },
+    {
+      "id": 5,
+      "width": "170px",
+      "height": "200px",
+      "image": "https://t-cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=",
+      "h3_val": "Cabins",
+      "para_val": "31,284 cabins"
+    },
+    {
+      "id": 6,
+      "width": "170px",
+      "height": "200px",
+      "image": "https://t-cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=",
+      "h3_val": "Cottages",
+      "para_val": "129,752 cottages"
+    }
+  ]
+}

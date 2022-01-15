@@ -8,8 +8,8 @@ export default function AllRoutes(){
     return(
         <>
           <Switch>
-          <Route exact path="/">
-               
+            <Route exact path="/">
+
             </Route>
             <Route exact path="/carrentals">
                 <CarRentals/>

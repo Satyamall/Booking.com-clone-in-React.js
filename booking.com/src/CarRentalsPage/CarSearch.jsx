@@ -16,7 +16,7 @@ import SearchBar from './SearchBar';
 import countries from "./Countries";
 import { SearchBar2 } from './SearchBar';
 import {useDispatch} from "react-redux";
-import { getCarSuccess } from '../Redux/car/action';
+import { getCarSuccess } from '../actions/caraction';
 
 export default function CarSearch() {
     const {id}=useParams();
