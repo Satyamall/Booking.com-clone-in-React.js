@@ -4,8 +4,10 @@ import SearchBox from '../SearchBox'
 import styles from '../style/style.module.css'
 import {useSelector} from "react-redux";
 import Filter from '../Filter';
+// import { useParams } from 'react-router-dom';
 const ListLanding = () => {
-    const countryList = useSelector( state => state.attractionPageNav )
+    const countryList = useSelector( state => state.attraction );
+
     // console.log(countryList)
     return (
         <div className={styles.ListLanding}>

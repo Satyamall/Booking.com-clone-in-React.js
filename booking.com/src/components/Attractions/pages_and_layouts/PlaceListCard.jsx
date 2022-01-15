@@ -2,21 +2,22 @@ import React from 'react'
 import styles from './style/style.module.css'
 const PlaceListCard = ( props ) => {
     const style = {
-        width: props.width,
+        width:"100%",
         border: "1px solid rgb(211, 211, 218)",
         display: "flex",
         marginTop: "10px",
-        // height: "180px",
+        // height: "200px",
         alignItems: "center",
         cursor: "pointer"
     }
     const childStyle = {
-        // width: "92%",
-        // height: "85%",
+        width: "100%",
+        height: "200px",
         padding:"10px",
-        margin: "auto",
+        // margin: "auto",
         // border: "1px solid red",
         display: "flex",
+        // alignItems:"center"
    }
     return (
         <div style={ style } className={ styles.PlaceListCard }>

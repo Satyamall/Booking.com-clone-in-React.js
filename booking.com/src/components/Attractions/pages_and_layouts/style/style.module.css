@@ -148,6 +148,11 @@
 }
 .ListLanding>div:nth-child(1){
     flex-basis: 40%;
+
+}
+.FilterHolder{
+    position: sticky;
+    top:0;
 }
 .ListLanding>div:nth-child(2){
     flex-basis: 60%;
@@ -155,7 +160,7 @@
 /* temp */
 .mostpopular{
     font-size:14px;
-    padding:10px;
+    padding:6px;
 border: 1px solid blue;
 width:100px;
 margin-left: auto;
@@ -176,18 +181,18 @@ margin-left: auto;
 
 }
 .PlaceList>div:nth-child(1) img{
-    width:100%;
+    width:95%;
     height: 100%;
     background-size: cover;
 }
 .PlaceList>div:nth-child(2){
     flex-basis:68%;
-    margin-left: 2%;
+    margin-left: 1%;
     /* border: 1px solid #0071C2; */
 }
 .viewBtn{
     border:1px solid #0071C2;
-    padding:8px;
+    padding:5px;
     color:#0071C2;
     width:70px;
     text-align:center;
@@ -209,19 +214,20 @@ margin-left: auto;
     padding: 1px;
 }
 .PlaceList>div:nth-child(2)>div:nth-child(3){
-    padding-top:7px;
+    padding-top:0px;
     font-size: 15px;
 }
 .PlaceList>div:nth-child(2)>div:nth-child(4){
    text-align: right;
    font-size: 13px;
    color: #56585a;
-   padding-top: 12px;
+   /* padding-top: 10px; */
+   padding-right: 4px;
 }
 .PlaceList>div:nth-child(2)>div:nth-child(5){
  text-align:right;
  font-weight: bold;
- padding-top: 6px
+ padding-top: 1px
 }
 .Filter>div{
  display: flex;
@@ -230,6 +236,8 @@ margin-left: auto;
 }
 .Filter{
     margin-top: 20px;
+    /* position:sticky;
+    top:0 */
 }
 .Filter>div:nth-child(1){
     font-size:15px;

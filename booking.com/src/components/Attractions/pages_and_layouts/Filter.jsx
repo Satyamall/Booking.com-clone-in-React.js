@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import { filterFetch, priceFilterFetch } from '../api/request';
 import styles from './style/style.module.css'
 import { useDispatch } from 'react-redux';
+import { useParams } from 'react-router-dom';
 const Filter = () => {
+    const { country } = useParams();
+    console.log(country);
     const dispach = useDispatch()
     let [ filterState, setFilterState ] = useState( {
         Tours: false,
@@ -29,15 +32,15 @@ console.log(priceState)
         }
 
         setFilterState( ( obj ) => obj = tempObj );
-        dispach( filterFetch( filterState,priceState) );
+        dispach( filterFetch( filterState,priceState,country) );
 
     }
     let handlePriceFilter = ( less, greater ) => {
         setPriceState({...priceState,less:less,greater:greater})
-        dispach(priceFilterFetch(less, greater,filterState))
+        dispach(priceFilterFetch(less, greater,filterState,country))
     }
     return (
-        <>
+        <div className={styles.FilterHolder}>
         <div className={styles.Filter}>
                 <div>category</div>
 
@@ -103,7 +106,7 @@ console.log(priceState)
             </div>
             </div>
 
-        </>
+        </div>
 
     )
 }

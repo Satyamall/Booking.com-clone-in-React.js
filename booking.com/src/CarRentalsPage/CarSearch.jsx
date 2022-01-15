@@ -66,16 +66,15 @@ export default function CarSearch() {
     const handleClickSearch=()=>{
         dispatch(getCarSuccess({startLocation,returnLocation,startDate,returnDate}))
     }
-    
-    const getCarRental = () => {
-        return fetch(`http://localhost:3000/${id}`)
-            .then((res) => res.json())
-            .then((res) => {
-                setCarRental(res);
-            })
-            .catch((err) => {
-                console.log(err)
-            })
+
+    const getCarRental = async () => {
+        try {
+            const res = await fetch( `http://localhost:3000/${id}` );
+            const res_1 = await res.json();
+            setCarRental( res_1 );
+        } catch ( err ) {
+            console.log( err );
+        }
     }
 
     useEffect(() => {
@@ -204,7 +203,7 @@ export default function CarSearch() {
                     <div className={style.box4}>
                         {
                             carRental?.map((item) => {
-                                return <button key={item.id} className={style.card}> 
+                                return <button key={item.id} className={style.card}>
                                     <Link to={`/carrentals/${item.city}`} className={style.link}>
                                         <img src={item.image} alt="" className={style.img} />
                                         <div className={style.text2}>
