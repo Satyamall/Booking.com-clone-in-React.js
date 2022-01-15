@@ -41,61 +41,60 @@ const Item = styled(Paper)(({theme}) => ({
 
 export default function SearchBox() {
 
-    function handleSearchAction() {
-
-    }
-
     return (
         <Paper
             className="searchInputBox"
             component="form"
-            sx={{display: 'flex', alignItems: 'center'}}
+            sx={{
+                display: 'flex',
+                alignItems: 'center',
+                width: '80%',
+                height: '5vh',
+                marginLeft: '13vw',
+                backgroundColor: 'red'
+            }}
         >
-            <Grid container>
+            <Grid container style={{backgroundColor: 'yellow'}}>
                 <Grid item xs={4}>
                     <Item>
                         <IconButton sx={{p: '10px'}} aria-label="menu">
                             <SearchIcon/>
                         </IconButton>
                         <InputBase
-                            sx={{ml: 1, flex: 1}}
-                            placeholder="Destinations, museums, tours..."
-                            inputProps={{'aria-label': 'Destinations, museums, tours...'}}
-                        />
-                    </Item>
-                </Grid>
-                <Grid item xs={3}>
-                    <Item>
-                        <IconButton sx={{p: '10px'}} aria-label="menu">
-                            <SearchIcon/>
-                        </IconButton>
-                        <InputBase
-                            sx={{ml: 1, flex: 1}}
-                            placeholder="Destinations, museums, tours..."
-                            inputProps={{'aria-label': 'Destinations, museums, tours...'}}
-                        />
-                    </Item>
-                </Grid>
-                <Grid item xs={3}>
-                    <Item>
-                        <IconButton sx={{p: '10px'}} aria-label="menu">
-                            <SearchIcon/>
-                        </IconButton>
-                        <InputBase
-                            sx={{ml: 1, flex: 1}}
-                            placeholder="Destinations, museums, tours..."
+                            placeholder="Where are you going"
                             inputProps={{'aria-label': 'Destinations, museums, tours...'}}
                         />
                     </Item>
                 </Grid>
                 <Grid item xs={2}>
                     <Item>
-                        <Button variant="contained" className="searchButton"
-                                onClick={handleSearchAction}>Search</Button>
+                        <IconButton sx={{p: '10px'}} aria-label="menu">
+                            <SearchIcon/>
+                        </IconButton>
+                        <InputBase
+                            placeholder="Check-in - Check-out"
+                            inputProps={{'aria-label': 'Destinations, museums, tours...'}}
+                        />
+                    </Item>
+                </Grid>
+                <Grid item xs={3}>
+                    <Item>
+                        <IconButton sx={{p: '10px'}} aria-label="menu">
+                            <SearchIcon/>
+                        </IconButton>
+                        <InputBase
+                            sx={{ml: 1, flex: 1}}
+                            placeholder="2 adults 0children 1room"
+                            inputProps={{'aria-label': 'Destinations, museums, tours...'}}
+                        />
+                    </Item>
+                </Grid>
+                <Grid item xs={1.5}>
+                    <Item>
+                        <Button variant="contained" className="searchButton">Search</Button>
                     </Item>
                 </Grid>
             </Grid>
-
         </Paper>
     );
 }

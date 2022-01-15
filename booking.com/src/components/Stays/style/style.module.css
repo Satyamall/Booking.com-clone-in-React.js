@@ -201,3 +201,27 @@
     color: #6b6b6b;
     text-align: left;
 }
+
+.First_secth1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+    font-family: Avenir Next, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: left;
+    padding-top: 3%;
+    margin-left: 190px;
+
+}
+
+.First_secpara {
+    color: white;
+    text-align: left;
+    margin-left: 190px;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: Avenir Next, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+
+}

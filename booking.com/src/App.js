@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './components/Header/Header';
+import Stays from "./components/Stays/Stays";
 
 function App() {
     return (
         <div className="App">
-            <Navbar/>
+            <Stays/>
         </div>
     );
 }

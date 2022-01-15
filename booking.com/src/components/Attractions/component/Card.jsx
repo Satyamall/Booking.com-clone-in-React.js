@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../style/style.module.css'
+
 const Card = (props) => {
     const style = {
         backgroundImage: `url(${props.backgroundImage})`,
