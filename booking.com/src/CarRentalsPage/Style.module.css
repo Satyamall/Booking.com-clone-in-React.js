@@ -155,6 +155,7 @@ h1{
     width: 250px;
     height: 300px;
     color: white;
+    border: none;
 }
 
 .link{
@@ -178,4 +179,8 @@ h1{
         display: flex;
         flex-direction: column;
     }
+}
+
+.pageLink{
+    margin-left: 5%;
 }

@@ -17,6 +17,7 @@ const RightSide = styled.div`
   display: flex;
   flex: 0 0 auto;
   padding-right: 10px;
+  cursor: pointer;
 `;
 
 const Spinner = styled.div`
@@ -65,8 +66,8 @@ const SuggestionBox = styled.div`
   }
 `;
 
-export default function SearchBar({ loading, setLoading, suggestions, placeholder,value, onChange }) {
-  const [q, setQ] = useState("");
+export default function SearchBar({ loading, setLoading, suggestions, placeholder,val, onChange }) {
+  const [q, setQ] = useState(val!==""? val : "");
   const [active, setActive] = useState(0);
   const scrollRef = useRef();
 
