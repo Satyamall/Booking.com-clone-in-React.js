@@ -10,12 +10,12 @@ import Paper from '@mui/material/Paper';
 import styles from "./Header.module.css";
 import HeaderSvg from "./HeaderSvg";
 import Paths from "./SvgPaths";
+import {Link} from "react-router-dom";
 
 const StyledToolbar = styled(Toolbar)(({theme}) => ({
     alignItems: 'flex-start',
     paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(2),
-    // Override media queries injected by theme.mixins.toolbar
+    paddingBottom: theme.spacing(2), // Override media queries injected by theme.mixins.toolbar
     '@media all': {
         minHeight: 128,
     },
@@ -24,12 +24,8 @@ const StyledToolbar = styled(Toolbar)(({theme}) => ({
 
 const StyledButton = styled(Button)(({theme, color = 'primary'}) => ({
     ':hover': {
-        color: theme.palette[color].main,
-        backgroundColor: '#0071c2',
-    },
-    paddingLeft: 15,
-    paddingRight: 15,
-    textTransform: 'none'
+        color: theme.palette[color].main, backgroundColor: '#0071c2',
+    }, paddingLeft: 15, paddingRight: 15, textTransform: 'none'
 }));
 
 const Item = styled(Paper)(({theme}) => ({
@@ -43,48 +39,43 @@ const Item = styled(Paper)(({theme}) => ({
 
 
 export default function Navbar() {
-    return (
-        <Box sx={{flexGrow: 1}}>
+    return (<Box sx={{flexGrow: 1}}>
             <AppBar position="static" style={{background: '#003580'}}>
                 <Box sx={{
-                    ml: 20,
-                    mr: 20,
-                    width: '105vw'
+                    ml: 20, mr: 20, width: '105vw'
                 }}>
                     <StyledToolbar>
                         <Grid container spacing={-47}>
                             <Grid item xs={6}>
-                                <Item>
-                                    <Typography
-                                        variant="h5"
-                                        noWrap
-                                        component="div"
-                                        align="left"
-                                        fontWeight='bold'
-                                        sx={{flexGrow: 1, marginBottom: 3, color: "white"}}
-                                    >
-                                        Booking.com
-                                    </Typography>
+                                <Item>'
+                                    <Link to="/" style={{textDecoration: 'none'}}>
+                                        <Typography
+                                            variant="h5"
+                                            noWrap
+                                            component="div"
+                                            align="left"
+                                            fontWeight='bold'
+                                            sx={{flexGrow: 1, marginBottom: 3, color: "white"}}
+                                        >
+                                            Booking.com
+                                        </Typography>
+                                    </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={6}>
-                                <Item style={{marginLeft: '-100px'}}>
+                                <Item style={{marginLeft: '-100px', marginTop: '15px'}}>
                                     <div className={styles.navbarUpperSectionItems}>
                                         <ul>
                                             <li className={styles.inr}>
                                                 <StyledButton variant="text" style={{
-                                                    color: 'white',
-                                                    alignSelf: "left",
-                                                    marginTop: '-8px'
+                                                    color: 'white', alignSelf: "left", marginTop: '-8px'
                                                 }}>
                                                     INR
                                                 </StyledButton>
                                             </li>
                                             <li className={styles.indianFlag}>
                                                 <StyledButton variant="text" style={{
-                                                    color: 'white',
-                                                    alignSelf: "left",
-                                                    marginTop: '-5px'
+                                                    color: 'white', alignSelf: "left", marginTop: '-5px'
                                                 }}>
                                                     <img
                                                         src="https://cf.bstatic.com/static/img/flags/new/48-squared/in/20aa535a5d3c505dd02fea275ed1a36c0fb1fe08.png"
@@ -99,15 +90,12 @@ export default function Navbar() {
                                                               style={{color: 'white', alignSelf: "left", height: 35}}>
                                                     List your property</StyledButton>
                                             </li>
-                                            {
-                                                <li className={styles.signButton}>
-                                                    <button>Register</button>
-                                                </li>}
-                                            {
-                                                <li className={styles.signButton}>
-                                                    <button>Sign in</button>
-                                                </li>
-                                            }
+                                            {<li className={styles.signButton}>
+                                                <button>Register</button>
+                                            </li>}
+                                            {<li className={styles.signButton}>
+                                                <button>Sign in</button>
+                                            </li>}
                                         </ul>
 
                                     </div>
@@ -115,102 +103,91 @@ export default function Navbar() {
                             </Grid>
                             <Grid item xs={1.5} style={{marginTop: -10, marginLeft: -15}}>
                                 <Item>
-                                    <StyledButton variant="outlined" style={{
-                                        color: 'white',
-                                        alignSelf: "left",
-                                        borderRadius: 20,
-                                        height: 35
-                                    }}>
-                                        <HeaderSvg path={Paths.staysIcon} styles={styles.svgIcons}/>
-                                        <p className={styles.text}>
-                                            Stays
-                                        </p>
-                                    </StyledButton>
+                                    <Link to="/" style={{textDecoration: 'none'}}>
+                                        <StyledButton variant="outlined" style={{
+                                            color: 'white', alignSelf: "left", borderRadius: 20, height: 35
+                                        }}>
+                                            <HeaderSvg path={Paths.staysIcon} styles={styles.svgIcons}/>
+                                            <p className={styles.text}>
+                                                Stays
+                                            </p>
+                                        </StyledButton>
+                                    </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={1.5} style={{marginTop: -10, marginLeft: -15}}>
                                 <Item>
-                                    <StyledButton variant="text" style={{
-                                        color: 'white',
-                                        alignSelf: "left",
-                                        borderRadius: 20,
-                                        height: 35
-                                    }}>
-                                        <HeaderSvg path={Paths.flightIcon} styles={styles.svgIcons}/>
-                                        <p className={styles.text}>
-                                            Flights
-                                        </p>
-
-                                    </StyledButton>
+                                    <Link to="/flights" style={{textDecoration: 'none'}}>
+                                        <StyledButton variant="text" style={{
+                                            color: 'white', alignSelf: "left", borderRadius: 20, height: 35
+                                        }}>
+                                            <HeaderSvg path={Paths.flightIcon} styles={styles.svgIcons}/>
+                                            <p className={styles.text}>
+                                                Flights
+                                            </p>
+                                        </StyledButton>
+                                    </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={1.5} style={{marginTop: -10, marginLeft: -15}}>
                                 <Item>
-                                    <StyledButton variant="text" style={{
-                                        color: 'white',
-                                        alignSelf: "left",
-                                        borderRadius: 20,
-                                        height: 35
-                                    }}>
-                                        <HeaderSvg path={Paths.rentalIcon} styles={styles.svgIcons}/>
-                                        <p className={styles.text}>
-                                            Rentals
-                                        </p>
-
-                                    </StyledButton>
+                                    <Link to="/rentals" style={{textDecoration: 'none'}}>
+                                        <StyledButton variant="text" style={{
+                                            color: 'white', alignSelf: "left", borderRadius: 20, height: 35
+                                        }}>
+                                            <HeaderSvg path={Paths.rentalIcon} styles={styles.svgIcons}/>
+                                            <p className={styles.text}>
+                                                Rentals
+                                            </p>
+                                        </StyledButton>
+                                    </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={1.5} style={{marginTop: -10, marginLeft: -10}}>
                                 <Item>
-                                    <StyledButton variant="text" style={{
-                                        color: 'white',
-                                        alignSelf: "left",
-                                        borderRadius: 20,
-                                        height: 35
-                                    }}>
-                                        <HeaderSvg path={Paths.attractionIcon} styles={styles.svgIcons}/>
-                                        <p className={styles.text}>
-                                            Attractions
-                                        </p>
-
-                                    </StyledButton>
+                                    <Link to="/attractions" style={{textDecoration: 'none'}}>
+                                        <StyledButton variant="text" style={{
+                                            color: 'white', alignSelf: "left", borderRadius: 20, height: 35
+                                        }}>
+                                            <HeaderSvg path={Paths.attractionIcon} styles={styles.svgIcons}/>
+                                            <p className={styles.text}>
+                                                Attractions
+                                            </p>
+                                        </StyledButton>
+                                    </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={1.5} style={{marginTop: -10, marginLeft: -5}}>
                                 <Item>
-                                    <StyledButton variant="text" style={{
-                                        color: 'white',
-                                        alignSelf: "left",
-                                        borderRadius: 20,
-                                        height: 35
-                                    }}>
-                                        <HeaderSvg path={Paths.flightHotelIcon} styles={styles.svgIcons}/>
-                                        <p className={styles.text}>
-                                            Flight+Hotel
-                                        </p>
-
-                                    </StyledButton>
+                                    <Link to="/" style={{textDecoration: 'none'}}>
+                                        <StyledButton variant="text" style={{
+                                            color: 'white', alignSelf: "left", borderRadius: 20, height: 35
+                                        }}>
+                                            <HeaderSvg path={Paths.flightHotelIcon} styles={styles.svgIcons}/>
+                                            <p className={styles.text}>
+                                                Flight+Hotel
+                                            </p>
+                                        </StyledButton>
+                                    </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={1.5} style={{marginTop: -10, marginLeft: -10}}>
                                 <Item>
-                                    <StyledButton variant="text" style={{
-                                        color: 'white',
-                                        alignSelf: "left",
-                                        borderRadius: 20,
-                                        height: 35
-                                    }}>
-                                        <HeaderSvg path={Paths.taxiIcon} styles={styles.svgIcons}/>
-                                        <p className={styles.text}>
-                                            Taxis
-                                        </p>
-                                    </StyledButton>
+                                    <Link to="/" style={{textDecoration: 'none'}}>
+                                        <StyledButton variant="text" style={{
+                                            color: 'white', alignSelf: "left", borderRadius: 20, height: 35
+                                        }}>
+                                            <HeaderSvg path={Paths.taxiIcon} styles={styles.svgIcons}/>
+                                            <p className={styles.text}>
+                                                Taxis
+                                            </p>
+                                        </StyledButton>
+                                    </Link>
                                 </Item>
                             </Grid>
                         </Grid>
                     </StyledToolbar>
                 </Box>
             </AppBar>
-        </Box>
-    );
+        </Box>);
 }
