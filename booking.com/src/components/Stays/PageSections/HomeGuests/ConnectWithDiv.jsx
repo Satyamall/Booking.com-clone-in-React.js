@@ -24,8 +24,7 @@ const Div = styled.div`
 
 export const ConnetWithDiv = () => {
 
-    return (
-        <Div>
+    return (<Div>
             <h2>Connect with other travelers</h2>
 
             <FlexDiv>
@@ -63,7 +62,6 @@ export const ConnetWithDiv = () => {
 
 
             </FlexDiv>
-        </Div>
-    )
+        </Div>)
 
 }

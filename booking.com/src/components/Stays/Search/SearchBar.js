@@ -180,9 +180,7 @@ export function Searchbar({setLoading, loading, suggestions, onChange}) {
                         {item}
 
 
-                    </div>
-                ))}
-            </SuggestionBox>
-        )}
+                    </div>))}
+            </SuggestionBox>)}
     </>
 }

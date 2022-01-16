@@ -32,19 +32,23 @@ button{
 }
 
 `
-const breakPoints = [
-    {width: 1, itemsToShow: 1},
-    {width: 550, itemsToShow: 2, itemsToScroll: 1, pagination: false},
-    {width: 768, itemsToShow: 3, itemsToScroll: 1, pagination: false},
-    {width: 800, itemsToShow: 4, itemsToScroll: 1, pagination: false}
-];
+const breakPoints = [{width: 1, itemsToShow: 1}, {
+    width: 550,
+    itemsToShow: 2,
+    itemsToScroll: 1,
+    pagination: false
+}, {width: 768, itemsToShow: 3, itemsToScroll: 1, pagination: false}, {
+    width: 800,
+    itemsToShow: 4,
+    itemsToScroll: 1,
+    pagination: false
+}];
 
 
 export const CarouselDiv = (props) => {
 
 
-    return (
-        <Div>
+    return (<Div>
 
             <Carousel breakPoints={breakPoints}>
 
@@ -53,6 +57,5 @@ export const CarouselDiv = (props) => {
             </Carousel>
 
 
-        </Div>
-    )
+        </Div>)
 }

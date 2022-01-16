@@ -8,8 +8,7 @@ import birmingam from './image/birmingam.png';
 
 const FourthSection = () => {
 
-    return (
-        <div className="FourthSection-div">
+    return (<div className="FourthSection-div">
             <div className="Cities">
 
                 <div className="manchester">
@@ -43,8 +42,7 @@ const FourthSection = () => {
                 </div>
             </div>
 
-        </div>
-    )
+        </div>)
 }
 
 export default FourthSection

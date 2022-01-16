@@ -68,8 +68,7 @@ align-items:center;
 export const BoxDiv = (props) => {
 
 
-    return (
-        <Div>
+    return (<Div>
             <img src={props.img} alt="hotelimage"/>
 
             <Title>{props.title}</Title>
@@ -82,6 +81,5 @@ export const BoxDiv = (props) => {
                 <Reviews>.&nbsp;&nbsp; {props.reviews} reviews</Reviews>
             </FlexDiv>
 
-        </Div>
-    )
+        </Div>)
 }

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import styles from "./Login.module.css";
-import GoogleLogin from "react-google-login";
-import { GoogleLogout } from "react-google-login";
-import { Link } from "react-router-dom";
+import GoogleLogin, {GoogleLogout} from "react-google-login";
+import {Link} from "react-router-dom";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);

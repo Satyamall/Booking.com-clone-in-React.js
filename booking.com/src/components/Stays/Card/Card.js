@@ -10,14 +10,12 @@ const Card = (props) => {
         cursor: "pointer"
     }
 
-    return (
-        <div style={style}>
+    return (<div style={style}>
             <div className={styles.card_background_fog_layout}>
             </div>
             <h3 className={styles.h3_card}>{props.h3_val}</h3>
             <p className={styles.para_card}>{props.para_val}</p>
-        </div>
-    )
+        </div>)
 }
 
 export default Card
