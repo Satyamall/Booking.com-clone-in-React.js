@@ -82,7 +82,12 @@ export const SearchPage = () => {
             setShowData(hotelData)
         }
         if (hotelData.length === 0) {
-            dispatch(getHotels(prefilledData.query));
+            if(prefilledData !== undefined){
+                dispatch(getHotels(prefilledData.query));
+            }
+            else{
+                dispatch(getHotels());
+            }
         }
     }, [hotelData])
 

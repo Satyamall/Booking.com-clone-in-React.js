@@ -4,18 +4,35 @@ import Calendar from "react-calendar"
 
 
 export const SearchBox = ({filterSearch, data}) => {
-    console.log("DD", data)
-    const [destination, setDestination] = useState(data.query)
+    let dest = "";
+    let startDates = [];
+    let endDates = [];
+    let adultsT = 2;
+    let childrenT = 0;
+    let roomsT = 2;
     const [startValue, onStartValueChange] = useState(new Date());
     const [endValue, onEndChange] = useState(new Date());
     const [startDate, setStartDate] = useState(false)
     const [endDate, setEndDate] = useState(false)
-    const [currentMonth, currentDay, currentDayNum] = [data.currentMonth, data.currentDay, data.currentDayNum]
-    const [endMonth, endDay, endDayNum] = [data.endMonth, data.endDay, data.endDayNum]
+    if(data === undefined){
+        dest = ""
+        startDates = [startValue.getDay(), startValue.getMonth(), startValue.getDate()]
+        endDates = [endValue.getDay(), endValue.getMonth(), endValue.getDate()]
+    }else{
+        dest = data.query
+        startDates = [data.currentMonth, data.currentDay, data.currentDayNum]
+        endDates = [data.endMonth, data.endDay, data.endDayNum]
+        adultsT = data.adults;
+        childrenT = data.children;
+        roomsT = data.rooms;
+    }
+    const [destination, setDestination] = useState(dest)
+    const [currentMonth, currentDay, currentDayNum] = endDatePicker(...startDates)
+    const [endMonth, endDay, endDayNum] = endDatePicker(...endDates)
 
-    const [adults, setAdults] = useState(data.adults)
-    const [children, setChildren] = useState(data.children)
-    const [rooms, setRooms] = useState(data.rooms)
+    const [adults, setAdults] = useState(adultsT)
+    const [children, setChildren] = useState(childrenT)
+    const [rooms, setRooms] = useState(roomsT)
 
     const [adult, setAdult] = useState(false)
     const [child, setChild] = useState(false)
