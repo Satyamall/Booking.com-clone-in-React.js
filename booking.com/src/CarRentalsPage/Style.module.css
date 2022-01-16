@@ -175,9 +175,13 @@ h1{
 }
 
 @media screen and (max-width: 800px){
+    .box1{
+        height: auto;
+    }
     .box2{
         display: flex;
         flex-direction: column;
+        gap: 0.5rem;
     }
 }
 
