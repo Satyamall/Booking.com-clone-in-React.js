@@ -3,8 +3,7 @@ import styles from '../style/style.module.css'
 import Section1Card from "../Card/Section1Card";
 
 const ThirdSection = () => {
-    return (
-        <>
+    return (<>
             <h3 className={styles.sectionTheeHeading}>Browse by property type</h3>
             <br/>
             <div className={styles.thirdSection}>

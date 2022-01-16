@@ -33,9 +33,7 @@ p{
 export const InfoDiv = (props) => {
 
 
-    return (
-        <Div>
+    return (<Div>
             {props.children}
-        </Div>
-    )
+        </Div>)
 }

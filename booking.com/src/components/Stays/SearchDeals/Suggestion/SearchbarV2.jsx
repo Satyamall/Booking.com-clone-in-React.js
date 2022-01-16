@@ -4,22 +4,16 @@ import {useThrottle} from "use-throttle"
 
 const SearchBarWrapper = styled.div`
   position: relative;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: "BlinkMacSystemFont", "-apple-system", "Segoe UI", 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-
   display: flex;
   align-items: center;
-  position: relative;
   width: 280px;
   font-weight: 100;
   color: gray;
 `
-// const IconImage = styled.img`
-/* height:20px;
-padding-right: 20px; */
-// `
 const Input = styled.input`
   border: none;
   outline: none;
@@ -91,17 +85,15 @@ const SuggestionBox = styled.div`
   & > div {
     height: 30px;
   }
-
-    /* &>div:nth-child(n+${({limit}) => limit + 1}){
-    display: none;
-} */
 `
 
-export function Searchbar({setLoading, loading, suggestions, onChange}) {
+export function SearchbarV2({setLoading, loading, suggestions, onChange}) {
     const [q, setQ] = React.useState("");
     const [active, setActive] = React.useState(0);
     const scrollRef = React.useRef();
     const throttleText = useThrottle(q, 1000);
+
+
     React.useEffect(() => {
         onChange(throttleText);
     }, [throttleText, onChange])
@@ -119,7 +111,6 @@ export function Searchbar({setLoading, loading, suggestions, onChange}) {
         //setLoading(false);
     }
     const handleChangeActiveSuggestions = (e) => {
-
         switch (e.keyCode) {
             case 38: {
                 if (active > 4) {
@@ -129,11 +120,9 @@ export function Searchbar({setLoading, loading, suggestions, onChange}) {
                     setActive(0);
                 } else if (active <= 0) {
                     setActive(suggestions.length);
-
                 } else {
                     setActive((prev) => prev - 1);
                 }
-
                 break;
             }
             case 40: {
@@ -144,7 +133,6 @@ export function Searchbar({setLoading, loading, suggestions, onChange}) {
                 }
                 if (active > 4) {
                     scrollRef.current.scrollTop += 30;
-
                 }
                 break;
             }
@@ -152,15 +140,14 @@ export function Searchbar({setLoading, loading, suggestions, onChange}) {
                 setQ(suggestions[active - 1])
                 break;
             }
-
             default: {
                 return;
             }
-
         }
     }
     return <>
         <SearchBarWrapper onKeyUp={handleChangeActiveSuggestions}>
+            {/* <IconImage src="https://image.flaticon.com/icons/png/512/49/49116.png" alt="icon" /> */}
             <Input onChange={handleInputChange} value={q} placeholder="Where are you going?"/>
             <RightSide>
                 {q && <div onClick={handleClear}>
@@ -172,14 +159,9 @@ export function Searchbar({setLoading, loading, suggestions, onChange}) {
             </RightSide>
 
         </SearchBarWrapper>
-        {!loading && (<SuggestionBox ref={scrollRef} active={active} limit={5} len={5}>
-                {suggestions.map((item, index) => (
-
-                    <div key={index} onMouseOver={() => setActive(index + 1)}>
-
+        {!loading && (<SuggestionBox ref={scrollRef} active={active} limit={5} len={suggestions.length}>
+                {suggestions.map((item, index) => (<div key={index} onMouseOver={() => setActive(index + 1)}>
                         {item}
-
-
                     </div>))}
             </SuggestionBox>)}
     </>

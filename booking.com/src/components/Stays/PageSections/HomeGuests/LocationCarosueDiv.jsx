@@ -213,7 +213,6 @@ export const LocationCarosueDiv = () => {
             </Box>
 
 
-        </CarouselDiv>
-    )
+        </CarouselDiv>)
 
 }

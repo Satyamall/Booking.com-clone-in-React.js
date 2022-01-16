@@ -12,8 +12,7 @@ import Toolbar from "@mui/material/Toolbar";
 const StyledToolbar = styled(Toolbar)(({theme}) => ({
     alignItems: 'flex-start',
     paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(2),
-    // Override media queries injected by theme.mixins.toolbar
+    paddingBottom: theme.spacing(2), // Override media queries injected by theme.mixins.toolbar
     '@media all': {
         minHeight: 128,
     },
@@ -22,12 +21,8 @@ const StyledToolbar = styled(Toolbar)(({theme}) => ({
 
 const StyledButton = styled(Button)(({theme, color = 'primary'}) => ({
     ':hover': {
-        color: theme.palette[color].main,
-        backgroundColor: '#0071c2',
-    },
-    paddingLeft: 15,
-    paddingRight: 15,
-    textTransform: 'none'
+        color: theme.palette[color].main, backgroundColor: '#0071c2',
+    }, paddingLeft: 15, paddingRight: 15, textTransform: 'none'
 }));
 
 const Item = styled(Paper)(({theme}) => ({
@@ -41,8 +36,7 @@ const Item = styled(Paper)(({theme}) => ({
 
 export default function SearchBox() {
 
-    return (
-        <Paper
+    return (<Paper
             className="searchInputBox"
             component="form"
             sx={{
@@ -95,6 +89,5 @@ export default function SearchBox() {
                     </Item>
                 </Grid>
             </Grid>
-        </Paper>
-    );
+        </Paper>);
 }

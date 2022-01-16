@@ -1,6 +1,6 @@
 import Card from "./Card";
 import {useEffect} from "react";
-import {getPlaces} from "../../../actions/places";
+import {getPlaces} from "../../../actions/placesAction";
 import {useDispatch, useSelector} from "react-redux";
 
 export default function Section1Card() {
@@ -28,9 +28,7 @@ export default function Section1Card() {
     }
 
 
-    return (
-        <>
+    return (<>
             {displayCards()}
-        </>
-    )
+        </>)
 }
