@@ -99,7 +99,7 @@ export default function CarAvailable() {
                             </LocalizationProvider>
                         </div>
                         <p>Drop-off</p>
-                        <h4>{returnLocation.toUpperCase()}</h4>
+                        <h4>{startLocation.toUpperCase()}</h4>
                         <div>
                             <LocalizationProvider dateAdapter={AdapterDateFns}>
                                 <DateTimePicker

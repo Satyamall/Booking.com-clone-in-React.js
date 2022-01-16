@@ -101,7 +101,7 @@ export default function CarSearch() {
             <div className={style.carRentals}>
                 <div className={style.box1}>
                     <div className={style.text}>
-                        <h1>Car hire in {id}</h1>
+                        <h1>Car hire in {id.toUpperCase()}</h1>
                         <p>Find great car deals for your trip in {id}</p>
                     </div>
                     <div>
@@ -199,7 +199,7 @@ export default function CarSearch() {
                 </div>
                 <div className={style.box3}>
                     <div>
-                        <h1>Popular car rental destinations in the {id}</h1>
+                        <h1>Popular car rental destinations in the {id.toUpperCase()}</h1>
                     </div>
                     <div className={style.box4}>
                         {
