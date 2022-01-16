@@ -151,7 +151,7 @@ h1{
     padding-right: 100px;
 }
 
-.card{
+.card1{
     width: 250px;
     height: 300px;
     color: white;
@@ -183,4 +183,110 @@ h1{
 
 .pageLink{
     margin-left: 5%;
+}
+
+
+/* Car Available Page CSS ------------------------- */
+
+.carAvailable{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    width: 280px;
+    margin-left: 20px;
+}
+
+.searchBox{
+    width: 100%;
+    background-color: rgb(254,187,2);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.textField{
+    background: white;
+}
+
+.searchBtn{
+    margin-left: 150px;
+    margin-top: 10px;
+    background: blue;
+    color: white;
+    padding: 5px 30px;
+}
+
+.map{
+    width: 300px;
+}
+.map img{
+    width: 100%;
+}
+
+.carCards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card{
+    width: 600px;
+    border: 1px solid rgb(179, 171, 171);
+    margin-left: 20px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    height: 500px;
+}
+
+.h{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.supply{
+    margin-left: 50px;
+    margin-top: 30px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.rental{
+    font-weight: 600;
+    color: cornflowerblue;
+    margin-left: 50px;
+}
+
+.cardValue{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cardPart{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.details{
+    color: green;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    background-color: rgb(0, 0, 255);
+    padding: 5px 20px;
 }

@@ -309,7 +309,7 @@ export default function CarRentals() {
                     <div className={style.box4}>
                         {
                             carRental.map((item) => {
-                                return <div key={item.id} className={style.card}>
+                                return <div key={item.id} className={style.card1}>
                                     <Link to={`/${item.city}`} className={style.link}>
                                         <img src={item.image} alt="" className={style.img} />
                                         <div className={style.text2}>

@@ -9,7 +9,6 @@ export const getCarRequest = () => {
   };
   
   export const getCarSuccess = ({startLocation,returnLocation,startDate,returnDate}) => {
-    console.log(startLocation,returnLocation,startDate,returnDate)
     return {
       type: "GET_CAR_SUCCESS",
       payload: {

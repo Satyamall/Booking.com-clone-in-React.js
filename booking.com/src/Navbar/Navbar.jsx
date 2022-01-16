@@ -90,8 +90,6 @@ export const Navbar = () => {
 
                             </p>
                         </Link>
-
-
                     </Tabs>
 
                     <Tabs onClick={() => setTabs(2)} t={2} tab={tab}>

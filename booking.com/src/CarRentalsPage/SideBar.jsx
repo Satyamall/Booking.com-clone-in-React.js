@@ -5,13 +5,13 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
-export default function SideBar() {
+export default function SideBar({handleSupplier,handleFair,handleMilage}) {
   const drawer = (
     <div>
       <List>
         <h3>Supplier</h3>
         {['Alamo', 'Avis', 'Budget', 'Citi Rental', 'Currie Motors Car & Van Rental','Easirent','Enterprise','All'].map((text) => (
-          <ListItem button key={text} sx={{display: "flex", gap: "1rem",m: 0,p:0}}>
+          <ListItem button key={text} sx={{display: "flex", gap: "1rem",m: 0,p:0}} onClick={()=>handleSupplier(text)}>
             <input type="checkbox" />
             <ListItemText primary={text} />
           </ListItem>
@@ -20,8 +20,8 @@ export default function SideBar() {
       <Divider />
       <List>
         <h3>Fair Less Than</h3>
-        {[ 1000,2000, 3000,5000,7000,"7000 above","All"].map((text) => (
-          <ListItem button key={text} sx={{display: "flex", gap: "1rem",m: 0,p:0}}>
+        {[ 1000,2000, 3000,5000,7000,10000,"All"].map((text) => (
+          <ListItem button key={text} sx={{display: "flex", gap: "1rem",m: 0,p:0}} onClick={()=>handleFair(text)}>
             <input type="checkbox" />
             <ListItemText primary={text} />
           </ListItem>
@@ -31,7 +31,7 @@ export default function SideBar() {
       <List>
           <h3>Milage Less or Equal</h3>
           {[200,250,300,350,400,"All"].map((text) => (
-          <ListItem button key={text} sx={{display: "flex", gap: "1rem",m: 0,p:0}}>
+          <ListItem button key={text} sx={{display: "flex", gap: "1rem",m: 0,p:0}} onClick={()=>handleMilage(text)}>
             <input type="checkbox" />
             <ListItemText primary={text} />
           </ListItem>
@@ -41,7 +41,7 @@ export default function SideBar() {
   );
 
   return (
-      <Box sx={{width: 280,ml: 3, borderRight: "1px solid black"}}>
+      <Box sx={{width: 280, borderRight: "1px solid black"}}>
           {drawer}
       </Box>
   );

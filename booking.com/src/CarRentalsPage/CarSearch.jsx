@@ -18,12 +18,12 @@ import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 import SearchBar from './SearchBar';
 import countries from "./Countries";
 import { SearchBar2 } from './SearchBar';
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { getCarSuccess } from '../actions/caraction';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function CarSearch() {
-    const {id}=useParams();
+    const { id } = useParams();
     const [startDate, setStartDate] = useState(new Date());
     const [returnDate, setReturnDate] = useState(new Date());
     const [startLocation, setStartLocation] = useState("")
@@ -32,10 +32,10 @@ export default function CarSearch() {
     const [loading, setLoading] = useState(false);
     const [suggestions, setSuggestions] = useState([]);
     const [suggestions2, setSuggestions2] = useState([]);
-    const [show,setShow]=useState("true");
+    const [show, setShow] = useState("true");
 
     useEffect(() => {
-        if (startLocation==="") {
+        if (startLocation === "") {
             setSuggestions([]);
         } else {
             let out = countries
@@ -49,7 +49,7 @@ export default function CarSearch() {
     }, [startLocation]);
 
     useEffect(() => {
-        if (returnLocation==="") {
+        if (returnLocation === "") {
             setSuggestions2([]);
         } else {
             let out = countries
@@ -62,11 +62,11 @@ export default function CarSearch() {
         setLoading(false);
     }, [returnLocation]);
 
-    const dispatch=useDispatch();
-    const handleClickSearch=()=>{
-        dispatch(getCarSuccess({startLocation,returnLocation,startDate,returnDate}))
+    const dispatch = useDispatch();
+    const handleClickSearch = () => {
+        dispatch(getCarSuccess({ startLocation, returnLocation, startDate, returnDate }))
     }
-    
+
     const getCarRental = () => {
         return fetch(`http://localhost:3000/${id}`)
             .then((res) => res.json())
@@ -82,16 +82,16 @@ export default function CarSearch() {
         getCarRental()
     }, [])
 
-    const handleChange=(e)=>{
-       setShow(e.target.value)
+    const handleChange = (e) => {
+        setShow(e.target.value)
     }
     return (
         <>
-           <div className={style.pageLink}>
-               <Link to="/carrentals">Home</Link>
-               <Link to={`/carrentals/${id}`}><ArrowForwardIosIcon sx={{fontSize: 12,m:.5}} />{id}</Link>
-           </div>
-           <div className={style.covid}>
+            <div className={style.pageLink}>
+                <Link to="/carrentals">Home</Link>
+                <Link to={`/carrentals/${id}`}><ArrowForwardIosIcon sx={{ fontSize: 12, m: .5 }} />{id}</Link>
+            </div>
+            <div className={style.covid}>
                 <h4><ReportGmailerrorredIcon /> Clean cars. Flexible bookings. Socially distant rental counters.</h4>
                 <p>We’re working with our partners to keep you safe and in the driving seat.</p>
                 <div>
@@ -108,27 +108,27 @@ export default function CarSearch() {
                         <FormControl component="fieldset">
                             <RadioGroup row defaultValue="true" name="row-radio-buttons-group" onChange={handleChange}>
                                 <FormControlLabel value="true" control={<Radio />} label="Return to same location" />
-                                <FormControlLabel value="false" control={<Radio />} label="Return to different location"/>
+                                <FormControlLabel value="false" control={<Radio />} label="Return to different location" />
                             </RadioGroup>
                         </FormControl>
                     </div>
                     <div className={style.box2}>
                         <div className={style.searchInputBox}>
                             <div className={style.pick}>
-                            <IconButton sx={{ p: '10px' }} aria-label="menu">
-                                <DirectionsCarOutlinedIcon />
-                            </IconButton>
-                            <SearchBar
-                                loading={loading}
-                                setLoading={setLoading}
-                                value={startLocation}
-                                onChange={(val) => setStartLocation(val)}
-                                suggestions={suggestions}
-                                placeholder="Pick-up location"
-                                val={id}
-                            />
+                                <IconButton sx={{ p: '10px' }} aria-label="menu">
+                                    <DirectionsCarOutlinedIcon />
+                                </IconButton>
+                                <SearchBar
+                                    loading={loading}
+                                    setLoading={setLoading}
+                                    value={startLocation}
+                                    onChange={(val) => setStartLocation(val)}
+                                    suggestions={suggestions}
+                                    placeholder="Pick-up location"
+                                    val={id}
+                                />
                             </div>
-                           { show==="true" ? null:  <div className={style.drop}>
+                            {show === "true" ? null : <div className={style.drop}>
                                 <IconButton sx={{ p: '10px' }} aria-label="menu">
                                     <DirectionsCarOutlinedIcon />
                                 </IconButton>
@@ -141,32 +141,32 @@ export default function CarSearch() {
                                     placeholder="Drop-off location"
                                 />
                             </div>
-                        }
+                            }
                         </div>
                         <div className={style.searchDateBox}>
 
-<LocalizationProvider dateAdapter={AdapterDateFns}>
-    <DateTimePicker
-        renderInput={(props) => <TextField {...props} />}
-        value={startDate}
-        onChange={(newValue) => {
-            setStartDate(newValue);
-        }}
-    />
-</LocalizationProvider>
-</div>
-<div className={style.searchDateBox}>
-<LocalizationProvider dateAdapter={AdapterDateFns}>
-    <DateTimePicker
-        renderInput={(props) => <TextField {...props} />}
-        value={returnDate}
-        onChange={(newValue) => {
-            setReturnDate(newValue);
-        }}
-        className={style.searchDateBox}
-    />
-</LocalizationProvider>
-</div>
+                            <LocalizationProvider dateAdapter={AdapterDateFns}>
+                                <DateTimePicker
+                                    renderInput={(props) => <TextField {...props} />}
+                                    value={startDate}
+                                    onChange={(newValue) => {
+                                        setStartDate(newValue);
+                                    }}
+                                />
+                            </LocalizationProvider>
+                        </div>
+                        <div className={style.searchDateBox}>
+                            <LocalizationProvider dateAdapter={AdapterDateFns}>
+                                <DateTimePicker
+                                    renderInput={(props) => <TextField {...props} />}
+                                    value={returnDate}
+                                    onChange={(newValue) => {
+                                        setReturnDate(newValue);
+                                    }}
+                                    className={style.searchDateBox}
+                                />
+                            </LocalizationProvider>
+                        </div>
                         <button className={style.searchButton} onClick={handleClickSearch}>
                             <Link to="" className={style.searchLink}>SEARCH</Link>
                         </button>
@@ -204,7 +204,7 @@ export default function CarSearch() {
                     <div className={style.box4}>
                         {
                             carRental?.map((item) => {
-                                return <button key={item.id} className={style.card}> 
+                                return <button key={item.id} className={style.card1}>
                                     <Link to={`/carrentals/${item.city}`} className={style.link}>
                                         <img src={item.image} alt="" className={style.img} />
                                         <div className={style.text2}>
