@@ -168,7 +168,7 @@ export default function CarSearch() {
                             </LocalizationProvider>
                         </div>
                         <button className={style.searchButton} onClick={handleClickSearch}>
-                            <Link to="" className={style.searchLink}>SEARCH</Link>
+                            <Link to="/car-available" className={style.searchLink}>SEARCH</Link>
                         </button>
                     </div>
                     <div className={style.driverBox}>

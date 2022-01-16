@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { shallowEqual, useSelector } from "react-redux"
+import { shallowEqual, useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom";
 import style from "./Style.module.css";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -10,6 +10,7 @@ import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import DateTimePicker from '@mui/lab/DateTimePicker';
 import { useState,useEffect} from 'react';
+import { getCarSuccess,getDay } from '../actions/caraction';
 
 export default function CarAvailable() {
 
@@ -18,6 +19,11 @@ export default function CarAvailable() {
     const [dropDate, setDropDate] = useState(returnDate);
     
     var day=Math.ceil(Math.abs(dropDate.getTime()-pickDate.getTime())/(24*60*60*1000))
+
+    const dispatch = useDispatch();
+    const handleClickSearch = () => {
+        dispatch(getCarSuccess({ startLocation, returnLocation, pickDate, dropDate }))
+    }
     
     const [carData,setCarData]=useState([]);
     const [supplier,setSupplier]=useState({
@@ -56,6 +62,10 @@ export default function CarAvailable() {
 
     const handleMilage=(title)=>{
         setMilage({carMilage: title})
+    }
+
+    const handleChoose=()=>{
+        dispatch(getDay({day}))
     }
 
     return (
@@ -102,7 +112,7 @@ export default function CarAvailable() {
                                 />
                             </LocalizationProvider>
                         </div>
-                        <button className={style.searchBtn}>Search</button>
+                        <button className={style.searchBtn} onClick={handleClickSearch}>Search</button>
                     </div>
                    <SideBar handleSupplier={handleSupplier}
                        handleFair={handleFair}
@@ -183,9 +193,9 @@ export default function CarAvailable() {
                                       </div>
                                       <div>
                                           <p>Price for {day} days:</p>
-                                          <h1>INR ₹ {item.fair*day}</h1>
-                                          <button className={style.btn}>
-                                              <Link to={`/carrentals/${startLocation}/${item.id}`} className={style.link}>Choose this car</Link>
+                                          <h1>INR ₹ {item.fair*day.toFixed(2)}</h1>
+                                          <button className={style.btn} onClick={handleChoose}>
+                                              <Link to={`/car-available/${item.id}`} className={style.link}>Choose this car</Link>
                                           </button>
                                       </div>
                                   </div>

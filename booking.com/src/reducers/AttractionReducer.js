@@ -18,7 +18,6 @@ function attractionReducer(state = initialState, {
     payload,
     error
 }) {
-    console.log(payload)
     switch (type) {
         case FETCHING: {
             return {

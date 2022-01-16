@@ -28,3 +28,12 @@ export const getCarRequest = () => {
       }
     };
   };
+
+  export const getDay=(day)=>{
+      return {
+        type: "GET_DAY",
+        payload : {
+          day: day
+        }
+      }
+  }

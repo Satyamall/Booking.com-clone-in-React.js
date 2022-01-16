@@ -290,3 +290,41 @@ h1{
     background-color: rgb(0, 0, 255);
     padding: 5px 20px;
 }
+
+/* Payment Page CSS ------------------- */
+
+.paymentCard{
+    margin-top: 20px;
+    display: flex;
+    gap: 2rem;
+}
+
+.payCard{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 1rem;
+}
+
+.btnCard{
+    display: flex;
+    gap: 1rem;
+}
+
+.inputBox{
+    border: 2px solid blue;
+}
+
+.input{
+    border: none;
+}
+
+.payBtn{
+    background-color: blue;
+}
+
+.hTag{
+    color: gray;
+    text-align: center;
+}

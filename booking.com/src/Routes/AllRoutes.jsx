@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import CarAvailable from "../CarRentalsPage/CarAvailable";
+import CarPayment from "../CarRentalsPage/carPayment";
 import CarRentals from "../CarRentalsPage/CarRentals";
 import CarSearch from "../CarRentalsPage/CarSearch";
 import AttractionIndex from '../components/Attractions/AttractionIndex'
@@ -17,6 +18,9 @@ export default function AllRoutes(){
             </Route>
             <Route exact path="/car-available">
                 <CarAvailable/>
+            </Route>
+            <Route exact path="/car-available/:id">
+                <CarPayment/>
             </Route>
             <Route exact path="/carrentals/:id">
               <CarSearch/>

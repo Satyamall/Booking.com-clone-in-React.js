@@ -48,7 +48,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch cardata.json --port 8001",
+    "server": "json-server --watch cardata.json",
     "attractionsDB": "json-server attractionsDB.json --port 8000"
   },
   "eslintConfig": {

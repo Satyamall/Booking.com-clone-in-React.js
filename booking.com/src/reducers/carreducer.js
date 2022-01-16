@@ -3,6 +3,7 @@ const initState = {
     returnLocation:"",
     startDate: "",
     returnDate: "",
+    day: 0,
     isLoading: true,
     isError: false
   };
@@ -32,6 +33,12 @@ const initState = {
           isLoading: false,
           isError: true
         };
+      }
+      case "GET_DAY":{
+        return {
+          ...state,
+          day: action.payload.day
+        }
       }
       default:
         return state;
