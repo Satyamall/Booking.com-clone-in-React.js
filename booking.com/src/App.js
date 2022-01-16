@@ -1,12 +1,8 @@
 import './App.css';
-import Stays from "./components/Stays/Stays";
+import Routes from './Routes/AllRoutes'
 
 function App() {
-    return (
-        <div className="App">
-            <Stays/>
-        </div>
-    );
+    return (<Routes/>);
 }
 
 export default App;

@@ -1,15 +1,15 @@
-import {GET_PLACES} from '../types'
+import {GET_SUGGESTION} from '../types'
 
 const initialState = {
-    places: [], loading: true,
+    suggestions: [], loading: true,
 }
 
 export default function (state = initialState, action) {
 
     switch (action.type) {
-        case GET_PLACES:
+        case GET_SUGGESTION:
             return {
-                ...state, places: action.payload, loading: false
+                ...state, suggestions: action.payload, loading: false
             }
         default:
             return state
