@@ -1,5 +1,5 @@
 
-import style from "./Style.module.css";
+import style from "../components/CarRentalsPage/Style.module.css";
 import PayButton from "./PayButton";
 import { useState } from "react";
 

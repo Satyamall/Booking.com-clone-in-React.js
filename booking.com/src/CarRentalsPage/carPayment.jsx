@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
-import style from "./Style.module.css";
+import style from "../components/CarRentalsPage/Style.module.css";
 import { shallowEqual, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import PayButton from "./PayButton";

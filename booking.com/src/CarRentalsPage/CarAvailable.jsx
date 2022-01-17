@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { shallowEqual, useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom";
-import style from "./Style.module.css";
+import style from "../components/CarRentalsPage/Style.module.css";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 import SideBar from "./SideBar";

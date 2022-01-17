@@ -27,7 +27,7 @@ import SearchBar from './SearchBar';
 import countries from "./Countries";
 import { SearchBar2 } from './SearchBar';
 import { useDispatch } from "react-redux";
-import { getCarSuccess } from '../actions/caraction';
+import { getCarSuccess } from '../../actions/caraction';
 
 export default function CarRentals() {
 

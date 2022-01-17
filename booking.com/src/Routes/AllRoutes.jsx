@@ -1,15 +1,15 @@
 import { Route, Switch } from "react-router-dom";
 import CarAvailable from "../CarRentalsPage/CarAvailable";
 import CarPayment from "../CarRentalsPage/carPayment";
-import CarRentals from "../CarRentalsPage/CarRentals";
-import CarSearch from "../CarRentalsPage/CarSearch";
+import CarRentals from "../components/CarRentalsPage/CarRentals";
+import CarSearch from "../components/CarRentalsPage/CarSearch";
 import AttractionIndex from '../components/Attractions/AttractionIndex'
 import ListLanding from "../components/Attractions/pages_and_layouts/attractionPlaceListpage/ListLanding";
 
 import ViewPlaceLanding from "../components/Attractions/pages_and_layouts/viewPlace/ViewPlaceLanding";
 import Flights from "../FlightsPage/Flights";
 import FlightsDetailsPage from "../FlightsPage/FlightsDetailsPage";
-import Login from "../Login/Login";
+import Login from "../components/Login/Login";
 
 export default function AllRoutes(){
 
