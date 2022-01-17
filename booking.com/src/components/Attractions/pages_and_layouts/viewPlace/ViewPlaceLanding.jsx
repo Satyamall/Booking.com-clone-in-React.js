@@ -36,7 +36,7 @@ const ViewPlaceLanding = () => {
     useEffect( () => {
         dispatch( idFetch( id ) )
     }, [] );
-    const place = useSelector( ( state ) => state.attraction );
+    const place = useSelector( ( state ) => state.singleCountry );
     console.log(place)
     const container = {
         width: '90%',

@@ -1,5 +1,6 @@
 import axios from "axios"
 import { Fetching,FetchSuccess, FetchFaliure} from "../../../actions/attractionAction";
+import { singleCountryFetchFaliure, singleCountryFetching, singleCountryFetchSuccess } from "../../../actions/singleCountryFetchAction";
 // import { Fetching ,FetchSuccess,FetchFaliure} from "../../../redux-all/attractons_page_nav/actions/action";
 
 export  const  FetchApi=(query)=>{
@@ -77,16 +78,16 @@ export const idFetch = (id) => {
 
      return async (dispach)=>{
 
-          dispach(Fetching()); //loading..
+          dispach(singleCountryFetching()); //loading..
           try{
 
                const responce= await axios.get(url);
                console.log(responce.data);
 
-          dispach(FetchSuccess(responce.data))//success
+          dispach(singleCountryFetchSuccess(responce.data))//success
 
           }catch(error){
-               dispach(FetchFaliure(error))//error
+               dispach(singleCountryFetchFaliure(error))//error
           }
 
 
