@@ -86,7 +86,7 @@ export default function CarAvailable() {
                     <div className={style.searchBox}>
                         <h3 className={style.h3}>Let's find your ideal car</h3>
                         <p>Pick-up</p>
-                        <Link className={style.covidLink}>{startLocation.toUpperCase()}</Link>
+                        <Link className={style.covidLink}>{startLocation?.toUpperCase()}</Link>
                         <div>
                             <LocalizationProvider dateAdapter={AdapterDateFns}>
                                 <DateTimePicker
@@ -99,7 +99,7 @@ export default function CarAvailable() {
                             </LocalizationProvider>
                         </div>
                         <p>Drop-off</p>
-                        <h4>{startLocation.toUpperCase()}</h4>
+                        <h4>{startLocation?.toUpperCase()}</h4>
                         <div>
                             <LocalizationProvider dateAdapter={AdapterDateFns}>
                                 <DateTimePicker
@@ -159,7 +159,7 @@ export default function CarAvailable() {
                                   <div>
                                       <div className={style.cardValue}>
                                       <h3>Location: </h3>
-                                      <Link className={style.covidLink}> <h3>{startLocation.toUpperCase()}</h3></Link>
+                                      <Link className={style.covidLink}> <h5>{startLocation?.toUpperCase()}</h5></Link>
                                       </div>
                                       <div className={style.cardValue}>
                                       <h5>Supplier : </h5>
@@ -193,7 +193,7 @@ export default function CarAvailable() {
                                       </div>
                                       <div>
                                           <p>Price for {day} days:</p>
-                                          <h1>INR ₹ {item.fair*day.toFixed(2)}</h1>
+                                          <h1>INR ₹ {item.fair*day?.toFixed(2)}</h1>
                                           <button className={style.btn} onClick={handleChoose}>
                                               <Link to={`/car-available/${item.id}`} className={style.link}>Choose this car</Link>
                                           </button>

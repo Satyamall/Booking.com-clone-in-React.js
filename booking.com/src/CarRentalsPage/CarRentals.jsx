@@ -62,9 +62,9 @@ export default function CarRentals() {
         } else {
             let out = countries
                 .filter((item) =>
-                    item.country.toLowerCase().indexOf(returnLocation) !== -1 ? true : false
+                    item.city.toLowerCase().indexOf(returnLocation) !== -1 ? true : false
                 )
-                .map((item) => item.country);
+                .map((item) => item.city);
             setSuggestions2(out);
         }
         setLoading(false);
@@ -217,7 +217,7 @@ export default function CarRentals() {
                     <h1>Popular destinations for car hire</h1>
                     <div className={style.box4}>
                         {
-                            popularCity.map((item) => {
+                            popularCity?.map((item) => {
                                 return <CityCard
                                     key={item.id}
                                     id={item.id}
@@ -308,7 +308,7 @@ export default function CarRentals() {
                     </div>
                     <div className={style.box4}>
                         {
-                            carRental.map((item) => {
+                            carRental?.map((item) => {
                                 return <div key={item.id} className={style.card1}>
                                     <Link to={`/${item.city}`} className={style.link}>
                                         <img src={item.image} alt="" className={style.img} />

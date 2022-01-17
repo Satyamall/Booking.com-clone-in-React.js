@@ -1,0 +1,425 @@
+{
+    "popular-flight":[
+        {
+          "id": 1,
+          "origin": "Lucknow",
+          "destination": "Jaipur",
+          "startTime": "10:00 AM",
+          "endTime": "3:00 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684655.jpg?k=2afb45c7a46dedbc5b5b360599dbbb7a7165ac823b22dd66d7602ea4c49de1c4&o="
+        },
+        {
+          "id": 2,
+          "origin": "Lucknow",
+          "destination": "Kolkata",
+          "startTime": "10:30 AM",
+          "endTime": "2:00 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684568.jpg?k=2e0d30ebcaf31e7469617ea53a01cdaf68d14c506d1167af9b9b38e53832f156&o="
+        },
+        {
+          "id": 3,
+          "origin": "Lucknow",
+          "destination": "Srinagar",
+          "startTime": "11:00 AM",
+          "endTime": "4:00 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684877.jpg?k=4695a1cdaa3a3a11381d172f284215174d6e057ed4722aaa902e859cd5c7dc4d&o="
+        },
+        {
+          "id": 4,
+          "origin": "Lucknow",
+          "destination": "Hyderabad",
+          "startTime": "11:30 AM",
+          "endTime": "2:30 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684652.jpg?k=5055a718205497d78d7d80b05c6cfbd59b79af5998231e50c23832e103087691&o="
+        },
+        {
+          "id": 5,
+          "origin": "Lucknow",
+          "destination": "Pune",
+          "startTime": "12:00 AM",
+          "endTime": "3:30 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684820.jpg?k=29ee5cee377c4e6cfba7a474d02914660d3311f0b75d1b9cf3bdefef0eabffdd&o="
+        },
+        {
+          "id": 6,
+          "origin": "Lucknow",
+          "destination": "Chennai",
+          "startTime": "12:30 AM",
+          "endTime": "5:30 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684727.jpg?k=a6fd59b0c31df52ae2a907dcf2441c7842bb56e2e68d89bffd2398024c0812d3&o="
+        },
+        {
+          "id": 7,
+          "origin": "Lucknow",
+          "destination": "Bangalore",
+          "startTime": "1:00 AM",
+          "endTime": "6:30 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684533.jpg?k=efaef4796fa555481ddabf686c3fc66433b50ba69c936d6f702b1125b1d06748&o="
+        }
+    ],
+    "trending-cities": [
+      {
+        "id": 1,
+        "city": "New Delhi, India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684764.jpg?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&o="
+      },
+      {
+        "id": 2,
+        "city": "Dubai, United Arab Emirates",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/619923.jpg?k=4fb13225390240a51ee5aa1d76318d03dc0de8a046ddc06e4598f17b287bdcc9&o="
+      },
+      {
+        "id": 3,
+        "city": "Panaji,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684757.jpg?k=5cd52ccbba6806c371689dab0da9678a5c1f4dcef697ea976a000f5e53ac4f18&o="
+      },
+      {
+        "id": 4,
+        "city": "Mumbai,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/971345.jpg?k=9bf85dfa10a224e2855ca2f8ca3fcd96916a962d87cdfcc48d6d57c09bef3c65&o="
+      },
+      {
+        "id": 5,
+        "city": "Bangalore,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684533.jpg?k=efaef4796fa555481ddabf686c3fc66433b50ba69c936d6f702b1125b1d06748&o="
+      },
+      {
+        "id": 6,
+        "city": "Riyadh,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/691303.jpg?k=0d2a322e851307411abf8c501d3248e6304dbf0e698043394fdad4db6397bd77&o="
+      },
+      {
+        "id": 7,
+        "city": "Jammu,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/957457.jpg?k=e9468332b4da020c518ed3dc36a8c3ebea6c2ca25cae6b71cfc9e71dab2b8a23&o="
+      },
+      {
+        "id": 8,
+        "city": "Pune,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684820.jpg?k=29ee5cee377c4e6cfba7a474d02914660d3311f0b75d1b9cf3bdefef0eabffdd&o="
+      },
+      {
+        "id": 9,
+        "city": "Jeddah,Saudi Arabia",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/688579.jpg?k=b84787741347c10b81e0899afdf406ab8025d8008a74af4f15460545eea5bd13&o="
+      },
+      {
+        "id": 10,
+        "city": "Kolkata, India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684568.jpg?k=2e0d30ebcaf31e7469617ea53a01cdaf68d14c506d1167af9b9b38e53832f156&o="
+      }
+    ],
+    "flights" : [
+    {
+      "arrivalTime": "6:00",
+      "date": "2020/11/01",
+      "departureTime": "5:00",
+      "destination": "Mumbai (BOM)",
+      "flightNo": "AI-101",
+      "name": "Air India",
+      "origin": "Pune (PNQ)",
+      "price": 3525
+    },
+    {
+      "arrivalTime": "9:50",
+      "date": "2020/11/01",
+      "departureTime": "7:20",
+      "destination": "Delhi (DEL)",
+      "flightNo": "AI-102",
+      "name": "Air India",
+      "origin": "Mumbai (BOM)",
+      "price": 5635
+    },
+    {
+      "arrivalTime": "7:10",
+      "date": "2020/11/01",
+      "departureTime": "6:10",
+      "destination": "Mumbai (BOM)",
+      "flightNo": "AI-103",
+      "name": "Air India",
+      "origin": "Pune (PNQ)",
+      "price": 2537
+    },
+    {
+      "arrivalTime": "10:20",
+      "date": "2020/11/01",
+      "departureTime": "8:10",
+      "destination": "Delhi (DEL)",
+      "flightNo": "AI-104",
+      "name": "Air India",
+      "origin": "Pune (PNQ)",
+      "price": 4681
+    },
+    {
+      "arrivalTime": "9:15",
+      "date": "2020/11/01",
+      "departureTime": "8:15",
+      "destination": "Bengaluru (BLR)",
+      "flightNo": "SJ-105",
+      "name": "SpiceJet",
+      "origin": "Pune (PNQ)",
+      "price": 3549
+    },
+    {
+      "arrivalTime": "13:00",
+      "date": "2020/11/01",
+      "departureTime": "11:00",
+      "destination": "Delhi (DEL)",
+      "flightNo": "SJ-106",
+      "name": "SpiceJet",
+      "origin": "Bengaluru (BLR)",
+      "price": 5645
+    },
+    {
+      "arrivalTime": "10:00",
+      "date": "2020/11/01",
+      "departureTime": "8:00",
+      "destination": "Delhi (DEL)",
+      "flightNo": "SJ-107",
+      "name": "SpiceJet",
+      "origin": "Bengaluru (BLR)",
+      "price": 5000
+    },
+    {
+      "arrivalTime": "10:30",
+      "date": "2020/11/01",
+      "departureTime": "8:00",
+      "destination": "Bengaluru (BLR)",
+      "flightNo": "TW-108",
+      "name": "Air Taiwan",
+      "origin": "Mumbai (BOM)",
+      "price": 4004
+    },
+    {
+      "arrivalTime": "15:30",
+      "date": "2020/11/01",
+      "departureTime": "12:00",
+      "destination": "Delhi (DEL)",
+      "flightNo": "TW-109",
+      "name": "Air Taiwan",
+      "origin": "Bengaluru (BLR)",
+      "price": 3495
+    },
+    {
+      "arrivalTime": "11:30",
+      "date": "2020/11/01",
+      "departureTime": "9:00",
+      "destination": "Delhi (DEL)",
+      "flightNo": "AI-110",
+      "name": "Air India",
+      "origin": "Mumbai (BOM)",
+      "price": 4137
+    },
+    {
+      "arrivalTime": "16:30",
+      "date": "2020/11/01",
+      "departureTime": "14:00",
+      "destination": "Bengaluru (BLR)",
+      "flightNo": "AI-111",
+      "name": "Air India",
+      "origin": "Delhi (DEL)",
+      "price": 5217
+    },
+    {
+      "arrivalTime": "16:30",
+      "date": "2020/11/01",
+      "departureTime": "14:30",
+      "destination": "Mumbai (BOM)",
+      "flightNo": "AI-112",
+      "name": "Air India",
+      "origin": "Delhi (DEL)",
+      "price": 4170
+    },
+    {
+      "arrivalTime": "22:30",
+      "date": "2020/11/01",
+      "departureTime": "20:00",
+      "destination": "Mumbai (BOM)",
+      "flightNo": "AI-113",
+      "name": "Air India",
+      "origin": "Bengaluru (BLR)",
+      "price": 5132
+    },
+    {
+      "arrivalTime": "22:45",
+      "date": "2020/11/01",
+      "departureTime": "21:30",
+      "destination": "Mumbai (BOM)",
+      "flightNo": "AI-114",
+      "name": "Air India",
+      "origin": "Pune (PNQ)",
+      "price": 2001
+    },
+    {
+      "arrivalTime": "22:10",
+      "date": "2020/11/01",
+      "departureTime": "20:00",
+      "destination": "Pune (PNQ)",
+      "flightNo": "AI-115",
+      "name": "Air India",
+      "origin": "Delhi (DEL)",
+      "price": 5233
+    },
+    {
+      "arrivalTime": "19:30",
+      "date": "2020/11/01",
+      "departureTime": "17:20",
+      "destination": "Bengaluru (BLR)",
+      "flightNo": "AI-116",
+      "name": "Air India",
+      "origin": "Pune (PNQ)",
+      "price": 6348
+    },
+    {
+      "arrivalTime": "14:15",
+      "date": "2020/11/01",
+      "departureTime": "13:15",
+      "destination": "Pune (PNQ)",
+      "flightNo": "AI-117",
+      "name": "Air India",
+      "origin": "Mumbai (BOM)",
+      "price": 5117
+    },
+    {
+      "arrivalTime": "6:00",
+      "date": "2020/11/02",
+      "departureTime": "5:00",
+      "destination": "Mumbai (BOM)",
+      "flightNo": "AI-119",
+      "name": "Air India",
+      "origin": "Delhi (DEL)",
+      "price": 3525
+    },
+    {
+      "arrivalTime": "9:50",
+      "date": "2020/11/02",
+      "departureTime": "7:20",
+      "destination": "Pune (PNQ)",
+      "flightNo": "AI-120",
+      "name": "Air India",
+      "origin": "Mumbai (BOM)",
+      "price": 5635
+    },
+    {
+      "arrivalTime": "6:58",
+      "date": "2020/11/02",
+      "departureTime": "6:10",
+      "destination": "Pune (PNQ)",
+      "flightNo": "AI-121",
+      "name": "Air India",
+      "origin": "Mumbai (BOM)",
+      "price": 2537
+    },
+    {
+      "arrivalTime": "10:20",
+      "date": "2020/11/02",
+      "departureTime": "8:10",
+      "destination": "Pune (PNQ)",
+      "flightNo": "AI-131",
+      "name": "Air India",
+      "origin": "Delhi (DEL)",
+      "price": 4681
+    },
+    {
+      "arrivalTime": "9:15",
+      "date": "2020/11/02",
+      "departureTime": "8:15",
+      "destination": "Bengaluru (BLR)",
+      "flightNo": "SJ-115",
+      "name": "SpiceJet",
+      "origin": "Delhi (DEL)",
+      "price": 3549
+    },
+    {
+      "arrivalTime": "13:00",
+      "date": "2020/11/02",
+      "departureTime": "11:00",
+      "destination": "Pune (PNQ)",
+      "flightNo": "SJ-116",
+      "name": "SpiceJet",
+      "origin": "Bengaluru (BLR)",
+      "price": 5645
+    },
+    {
+      "arrivalTime": "10:00",
+      "date": "2020/11/02",
+      "departureTime": "8:00",
+      "destination": "Bengaluru (BLR)",
+      "flightNo": "SJ-117",
+      "name": "SpiceJet",
+      "origin": "Delhi (DEL)",
+      "price": 5000
+    },
+    {
+      "arrivalTime": "10:30",
+      "date": "2020/11/02",
+      "departureTime": "8:00",
+      "destination": "Bengaluru (BLR)",
+      "flightNo": "TW-118",
+      "name": "Air Taiwan",
+      "origin": "Delhi (DEL)",
+      "price": 4004
+    },
+    {
+      "arrivalTime": "15:30",
+      "date": "2020/11/02",
+      "departureTime": "12:00",
+      "destination": "Mumbai (BOM)",
+      "flightNo": "TW-119",
+      "name": "Air Taiwan",
+      "origin": "Bengaluru (BLR)",
+      "price": 3495
+    },
+    {
+      "arrivalTime": "11:30",
+      "date": "2020/11/02",
+      "departureTime": "9:00",
+      "destination": "Mumbai (BOM)",
+      "flightNo": "AI-130",
+      "name": "Air India",
+      "origin": "Delhi (DEL)",
+      "price": 4137
+    },
+    {
+      "arrivalTime": "16:30",
+      "date": "2020/11/02",
+      "departureTime": "14:00",
+      "destination": "Delhi (DEL)",
+      "flightNo": "AI-131",
+      "name": "Air India",
+      "origin": "Bengaluru (BLR)",
+      "price": 5217
+    },
+    {
+      "arrivalTime": "16:30",
+      "date": "2020/11/02",
+      "departureTime": "14:30",
+      "destination": "Delhi (DEL)",
+      "flightNo": "AI-132",
+      "name": "Air India",
+      "origin": "Mumbai (BOM)",
+      "price": 4170
+    },
+    {
+      "arrivalTime": "22:45",
+      "date": "2020/11/02",
+      "departureTime": "21:30",
+      "destination": "Pune (PNQ)",
+      "flightNo": "AI-134",
+      "name": "Air India",
+      "origin": "Mumbai (BOM)",
+      "price": 2001
+    }
+    
+  ]
+  }  

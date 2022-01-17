@@ -5,6 +5,9 @@ import CarRentals from "../CarRentalsPage/CarRentals";
 import CarSearch from "../CarRentalsPage/CarSearch";
 import AttractionIndex from '../components/Attractions/AttractionIndex'
 import ListLanding from "../components/Attractions/pages_and_layouts/attractionPlaceListpage/ListLanding";
+import Flights from "../FlightsPage/Flights";
+import Login from "../Login/Login";
+
 export default function AllRoutes(){
 
     return(
@@ -12,6 +15,12 @@ export default function AllRoutes(){
           <Switch>
             <Route exact path="/">
 
+            </Route>
+            <Route exact path="/flights">
+              <Flights/>
+            </Route>
+            <Route exact path="/login">
+              <Login />
             </Route>
             <Route exact path="/carrentals">
                 <CarRentals/>
