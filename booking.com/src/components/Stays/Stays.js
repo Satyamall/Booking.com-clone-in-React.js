@@ -1,4 +1,4 @@
-import Navbar from '../Header/Header';
+// import Navbar from '../Header/Header';
 import FirstSection from "./PageSections/FirstSection";
 import SecondSection from "./PageSections/SecondSection";
 import {useDispatch, useSelector} from "react-redux";
@@ -17,7 +17,7 @@ function Stays() {
 
 
     return (<>
-            <Navbar/>
+            {/* <Navbar/> */}
             <FirstSection suggestions={suggestions}/>
             <SecondSection/>
         </>);
