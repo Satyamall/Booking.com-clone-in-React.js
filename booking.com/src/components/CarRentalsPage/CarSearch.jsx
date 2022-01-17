@@ -1,7 +1,10 @@
-
+import * as React from 'react';
 import { useEffect, useState } from 'react';
-import DateTimePicker from 'react-datetime-picker';
-import { Link } from "react-router-dom";
+import TextField from '@mui/material/TextField';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import LocalizationProvider from '@mui/lab/LocalizationProvider';
+import DateTimePicker from '@mui/lab/DateTimePicker';
+import { Link, useParams } from "react-router-dom";
 import style from "./Style.module.css";
 import IconButton from '@mui/material/IconButton';
 import DirectionsCarOutlinedIcon from '@mui/icons-material/DirectionsCarOutlined';
@@ -15,22 +18,24 @@ import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 import SearchBar from './SearchBar';
 import countries from "./Countries";
 import { SearchBar2 } from './SearchBar';
+import { useDispatch } from "react-redux";
+import { getCarSuccess } from '../../actions/caraction';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function CarSearch() {
-
+    const { id } = useParams();
     const [startDate, setStartDate] = useState(new Date());
     const [returnDate, setReturnDate] = useState(new Date());
     const [startLocation, setStartLocation] = useState("")
     const [returnLocation, setReturnLocation] = useState("")
-    const [popularCity, setPopularCity] = useState([]);
     const [carRental, setCarRental] = useState([]);
     const [loading, setLoading] = useState(false);
     const [suggestions, setSuggestions] = useState([]);
     const [suggestions2, setSuggestions2] = useState([]);
-    // const [show,setShow]=useState(false);
+    const [show, setShow] = useState("true");
 
     useEffect(() => {
-        if (startLocation==="") {
+        if (startLocation === "") {
             setSuggestions([]);
         } else {
             let out = countries
@@ -44,7 +49,7 @@ export default function CarSearch() {
     }, [startLocation]);
 
     useEffect(() => {
-        if (returnLocation==="") {
+        if (returnLocation === "") {
             setSuggestions2([]);
         } else {
             let out = countries
@@ -57,24 +62,13 @@ export default function CarSearch() {
         setLoading(false);
     }, [returnLocation]);
 
-    const getData = () => {
-        return fetch(`http://localhost:3000/popular_city_car_hire`)
+    const dispatch = useDispatch();
+    const handleClickSearch = () => {
+        dispatch(getCarSuccess({ startLocation, returnLocation, startDate, returnDate }))
     }
 
-    useEffect(() => {
-        getData()
-            .then(res => res.json())
-            .then((res) => {
-                setPopularCity(res);
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-        getCarRental()
-    }, [])
-
     const getCarRental = () => {
-        return fetch(`http://localhost:3000/top_worldwide_car_rental`)
+        return fetch(`http://localhost:3000/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 setCarRental(res);
@@ -83,39 +77,58 @@ export default function CarSearch() {
                 console.log(err)
             })
     }
-    // console.log(popularCity);
+
+    useEffect(() => {
+        getCarRental()
+    }, [])
+
+    const handleChange = (e) => {
+        setShow(e.target.value)
+    }
     return (
         <>
+            <div className={style.pageLink}>
+                <Link to="/carrentals">Home</Link>
+                <Link to={`/carrentals/${id}`}><ArrowForwardIosIcon sx={{ fontSize: 12, m: .5 }} />{id}</Link>
+            </div>
+            <div className={style.covid}>
+                <h4><ReportGmailerrorredIcon /> Clean cars. Flexible bookings. Socially distant rental counters.</h4>
+                <p>We’re working with our partners to keep you safe and in the driving seat.</p>
+                <div>
+                    <Link className={style.covidLink}>Find out how</Link>
+                </div>
+            </div>
             <div className={style.carRentals}>
                 <div className={style.box1}>
                     <div className={style.text}>
-                        <h1>Car hire for any kind of trip</h1>
-                        <p>Compare deals from the biggest car hire companies</p>
+                        <h1>Car hire in {id.toUpperCase()}</h1>
+                        <p>Find great car deals for your trip in {id}</p>
                     </div>
                     <div>
                         <FormControl component="fieldset">
-                            <RadioGroup row defaultValue="same" name="row-radio-buttons-group">
-                                <FormControlLabel value="same" control={<Radio />} label="Return to same location"/>
-                                <FormControlLabel value="different" control={<Radio />} label="Return to different location"/>
+                            <RadioGroup row defaultValue="true" name="row-radio-buttons-group" onChange={handleChange}>
+                                <FormControlLabel value="true" control={<Radio />} label="Return to same location" />
+                                <FormControlLabel value="false" control={<Radio />} label="Return to different location" />
                             </RadioGroup>
                         </FormControl>
                     </div>
                     <div className={style.box2}>
                         <div className={style.searchInputBox}>
                             <div className={style.pick}>
-                            <IconButton sx={{ p: '10px' }} aria-label="menu">
-                                <DirectionsCarOutlinedIcon />
-                            </IconButton>
-                            <SearchBar
-                                loading={loading}
-                                setLoading={setLoading}
-                                value={startLocation}
-                                onChange={(val) => setStartLocation(val)}
-                                suggestions={suggestions}
-                                placeholder="Pick-up location"
-                            />
+                                <IconButton sx={{ p: '10px' }} aria-label="menu">
+                                    <DirectionsCarOutlinedIcon />
+                                </IconButton>
+                                <SearchBar
+                                    loading={loading}
+                                    setLoading={setLoading}
+                                    value={startLocation}
+                                    onChange={(val) => setStartLocation(val)}
+                                    suggestions={suggestions}
+                                    placeholder="Pick-up location"
+                                    val={id}
+                                />
                             </div>
-                            <div className={style.drop}>
+                            {show === "true" ? null : <div className={style.drop}>
                                 <IconButton sx={{ p: '10px' }} aria-label="menu">
                                     <DirectionsCarOutlinedIcon />
                                 </IconButton>
@@ -128,19 +141,34 @@ export default function CarSearch() {
                                     placeholder="Drop-off location"
                                 />
                             </div>
+                            }
                         </div>
-                        <DateTimePicker
-                            onChange={(e) => setStartDate(e.target.value)}
-                            value={startDate}
-                            className={style.searchDateBox}
-                        />
-                        <DateTimePicker
-                            onChange={(e) => setReturnDate(e.target.value)}
-                            value={returnDate}
-                            className={style.searchDateBox}
-                        />
-                        <button className={style.searchButton}>
-                            <Link to="" className={style.searchLink}>SEARCH</Link>
+                        <div className={style.searchDateBox}>
+
+                            <LocalizationProvider dateAdapter={AdapterDateFns}>
+                                <DateTimePicker
+                                    renderInput={(props) => <TextField {...props} />}
+                                    value={startDate}
+                                    onChange={(newValue) => {
+                                        setStartDate(newValue);
+                                    }}
+                                />
+                            </LocalizationProvider>
+                        </div>
+                        <div className={style.searchDateBox}>
+                            <LocalizationProvider dateAdapter={AdapterDateFns}>
+                                <DateTimePicker
+                                    renderInput={(props) => <TextField {...props} />}
+                                    value={returnDate}
+                                    onChange={(newValue) => {
+                                        setReturnDate(newValue);
+                                    }}
+                                    className={style.searchDateBox}
+                                />
+                            </LocalizationProvider>
+                        </div>
+                        <button className={style.searchButton} onClick={handleClickSearch}>
+                            <Link to="/car-available" className={style.searchLink}>SEARCH</Link>
                         </button>
                     </div>
                     <div className={style.driverBox}>
@@ -171,20 +199,20 @@ export default function CarSearch() {
                 </div>
                 <div className={style.box3}>
                     <div>
-                        <h1>Top worldwide locations for car rental</h1>
+                        <h1>Popular car rental destinations in the {id.toUpperCase()}</h1>
                     </div>
                     <div className={style.box4}>
                         {
-                            carRental.map((item) => {
-                                return <div key={item.id} className={style.card}>
-                                    <Link to={`/${item.city}`} className={style.link}>
+                            carRental?.map((item) => {
+                                return <button key={item.id} className={style.card1}>
+                                    <Link to={`/carrentals/${item.city}`} className={style.link}>
                                         <img src={item.image} alt="" className={style.img} />
                                         <div className={style.text2}>
                                             <h3>{item.city}</h3>
                                             <p>Car hire from ₹ {item.fair} per day</p>
                                         </div>
                                     </Link>
-                                </div>
+                                </button>
                             })
                         }
                     </div>
