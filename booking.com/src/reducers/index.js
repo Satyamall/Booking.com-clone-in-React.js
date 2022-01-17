@@ -5,6 +5,7 @@ import hotelReducer from "./hotelReducer";
 import carreducer from './carreducer';
 import attractionReducer from './AttractionReducer';
 import singleCountryReducer from './singleCountryReducer';
+import debounceReducer from './debounceReducer';
 
 export default combineReducers({
     placesData: placesReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
     hotelsData: hotelReducer,
     car: carreducer,
     attraction: attractionReducer,
-    singleCountry: singleCountryReducer
+    singleCountry: singleCountryReducer,
+    debounce:debounceReducer
 })
