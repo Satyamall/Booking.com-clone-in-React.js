@@ -6,6 +6,7 @@ import CarSearch from "../CarRentalsPage/CarSearch";
 import AttractionIndex from '../components/Attractions/AttractionIndex'
 import ListLanding from "../components/Attractions/pages_and_layouts/attractionPlaceListpage/ListLanding";
 import Flights from "../FlightsPage/Flights";
+import FlightsDetailsPage from "../FlightsPage/FlightsDetailsPage";
 import Login from "../Login/Login";
 
 export default function AllRoutes(){
@@ -18,6 +19,9 @@ export default function AllRoutes(){
             </Route>
             <Route exact path="/flights">
               <Flights/>
+            </Route>
+            <Route exact path="/flightsDetails">
+              <FlightsDetailsPage/>
             </Route>
             <Route exact path="/login">
               <Login />

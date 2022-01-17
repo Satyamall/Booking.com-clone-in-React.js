@@ -4,12 +4,12 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
 import NativeSelect from "@mui/material/NativeSelect";
 import FormGroup from "@mui/material/FormGroup";
 import Checkbox from "@mui/material/Checkbox";
 import style from "./flights.module.css";
 import "react-datepicker/dist/react-datepicker.css";
+import { Link } from "@mui/material";
 
 function SearchForm() {
   const [startDate, setStartDate] = useState(null);
@@ -180,9 +180,8 @@ function SearchForm() {
                     </div>
                     <button
                       className={style.search}
-                      data-testid="searchbox_submit"
                     >
-                      Search
+                     <Link className={style.btnlink} to={`/flightsDetails`}>Search</Link>
                     </button>
                   </div>
                 </div>

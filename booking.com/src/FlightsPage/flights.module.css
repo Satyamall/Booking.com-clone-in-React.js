@@ -297,28 +297,16 @@
       padding: 20px;
   }
   .search {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    flex: 0.4 1 0%;
     height: 56px;
-    border-radius: 2px;
-    white-space: nowrap;
     background-color: rgb(0, 113, 194);
     padding-left: 24px;
     padding-right: 24px;
-    margin-right: 0 !important;
-    margin-left: unset;
-    margin-bottom: 0;
-    cursor: pointer;
-    color: #ffffff;
     padding: 16px;
-    text-align: center;
-    transition: backgroundColor 0.2s ease-in-out, width 0.2s ease-in-out;
-    appearance: none;
-    border: 0;
-    display: block;
-    width: 100%;
+  }
+
+  .btnlink{
+      text-decoration: none;
+      color: white;
   }
   .directFlightsDiv {
     margin-right: 0;
@@ -380,3 +368,53 @@
       display: flex;
       width: 350px;
   }
+
+  .questionCard{
+      width: 350px;
+      border: 1px solid whitesmoke;
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 14px;
+  }
+
+  .questionBox{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+  }
+
+  .btnBox{
+      display: flex;
+      gap: 2rem;
+  }
+
+  .btn{
+      border: none;
+  }
+
+  .btn:hover{
+      color: blue;
+      border-bottom: 2px solid blue;
+  }
+
+  .continentCard{
+    width: 300px;
+}
+
+.continentCardlink{
+    text-decoration: none;
+    width: 400px;
+    display: flex;
+    gap: 2rem;
+    height: 100px;
+}
+
+.box3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.img1{
+    width: 60px;
+}

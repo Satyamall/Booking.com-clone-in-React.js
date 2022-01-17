@@ -14,6 +14,8 @@ export default function Flights() {
   const [date,setDate]=useState(new Date().getDate());
   const nextDate= 7+date
 
+  const [worldWideFlight,setWorldWideFlight]=useState([])
+
   const getPopularFlights=()=>{
     return fetch(`http://localhost:3000/popular-flight`)
   }
@@ -23,6 +25,17 @@ export default function Flights() {
     .then((res)=>res.json())
     .then((res)=>{
         setTrendingCity(res);
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+  }
+
+  const getWorldWideFlight=(text)=>{
+    return fetch(`http://localhost:3000/${text}`)
+    .then((res)=>res.json())
+    .then((res)=>{
+        setWorldWideFlight(res)
     })
     .catch((err)=>{
       console.log(err)
@@ -54,7 +67,7 @@ export default function Flights() {
         {
           popularFlight?.map((item)=>{
             return <div key={item.id} className={style.card}>
-               <Link to={`/flights/${item.origin}`} className={style.cardlink}>
+               <Link to="/flightsDetails" className={style.cardlink}>
                   <div>
                     <img src={item.image} alt="" className={style.img} />
                   </div>
@@ -73,7 +86,7 @@ export default function Flights() {
         {
             trendingCity?.map((item)=>{
             return <div key={item.id} className={style.card}>
-               <Link to={`/flights/${item.city}`} className={style.cardlink}>
+               <Link to="/flightsDetails" className={style.cardlink}>
                   <div>
                     <img src={item.image} alt="" className={style.img} />
                   </div>
@@ -114,15 +127,61 @@ export default function Flights() {
        <h1>Fly worldwide with Booking.com</h1>
        <p>Flights from wherever you are to wherever you want to go</p>
        <div>
-
+          <div className={style.btnBox}>
+            {
+              ["Asia","Europe","North-America","Oceania"].map((text)=>{
+                return <button key={text} onClick={()=>getWorldWideFlight(text)} className={style.btn}>
+                      {text}
+                </button>
+              })
+            }
+          </div>
+          <hr />
+          <div className={style.box3}>
+            {
+               worldWideFlight?.map((item)=>{
+                  return <div key={item.id} className={style.continentCard}>
+                  <Link to="/flightsDetails" className={style.continentCardlink}>
+                     <div>
+                       <img src={item.image} alt="" className={style.img1} />
+                     </div>
+                     <div>
+                     <h5 className={style.text}>{item.origin} to {item.destination}</h5>
+                     <p className={style.text}>{item.description}</p>
+                     </div>
+                  </Link>
+               </div>
+               })
+            }
+          </div>
        </div>
      </div>
      <div className={style.popularFlight}>
        <h1>Frequently asked questions</h1>
-       <div>
-       <div>
-         <h5></h5>
-         <p></p>
+       <div className={style.questionBox}>
+       <div className={style.questionCard}>
+         <h5>How do I find the cheapest flights on Booking.com?</h5>
+         <p>You can sort flights by price to see them from cheapest to most expensive. To find the cheapest flights, you also need to consider factors like when you're booking and want to travel.</p>
+       </div>
+       <div className={style.questionCard}>
+         <h5>Can I book one-way flights on Booking.com?</h5>
+         <p>Yes, you can book one-way, round-trip, and multi-city flights on our site.</p>
+       </div>
+       <div className={style.questionCard}>
+         <h5>How far in advance can I book a flight?</h5>
+         <p>You can book a flight up to one year before your departure date.</p>
+       </div>
+       <div className={style.questionCard}>
+         <h5>Do flights get cheaper closer to departure?</h5>
+         <p>Generally, flight prices are more likely to increase the closer you get to your flight date.</p>
+       </div>
+       <div className={style.questionCard}>
+         <h5>What is a flexible ticket?</h5>
+         <p>A flexible ticket allows you to change your flight with the same airline by only paying the fare and tax difference. It can only be used for one confirmed change. You can add the flexible ticket when booking your flight.</p>
+       </div>
+       <div className={style.questionCard}>
+         <h5>Does Booking.com charge credit card fees?</h5>
+         <p>No, we don't charge any credit card fees. You can always see exactly what you’re paying for in the price breakdown when reviewing your booking.</p>
        </div>
        </div>
      </div>
