@@ -9,7 +9,7 @@ export  const  FetchApi=(query)=>{
           dispach(Fetching()); //loading..
           try{
 
-               const responce= await axios.get(`http://localhost:8000/attractionsData?country=${query}`);
+               const responce= await axios.get(`http://localhost:8000/attractionsData?q=${query}`);
                console.log(responce.data);
 
           dispach(FetchSuccess(responce.data))//success
