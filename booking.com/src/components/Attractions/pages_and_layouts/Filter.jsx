@@ -3,6 +3,7 @@ import { filterFetch, priceFilterFetch } from '../api/request';
 import styles from './style/style.module.css'
 import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import MapImage from './MapImage';
 const Filter = () => {
     const { country } = useParams();
     console.log(country);
@@ -102,7 +103,7 @@ console.log(priceState)
                 <span>Rs. 10,585+</span>
             </div>
                 <div>
-                <img src="https://source.unsplash.com/random/800x800/?map" alt="" />
+                    <MapImage width="100%" height="350px" location={ country}/>
             </div>
             </div>
 

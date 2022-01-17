@@ -10,7 +10,7 @@ const FourthSection = () => {
             <div className={styles.outterFlex}>
                 <div className={styles.innerFlex}>
                     <div>
-                        <Svg path={ Paths.one } />
+                        <Svg path={ Paths.one } color="green" size="30px"/>
                     </div>
                     <div>
                         <h5>Explore top attractions</h5>
@@ -20,7 +20,7 @@ const FourthSection = () => {
 
                 <div className={styles.innerFlex}>
                     <div>
-                        <Svg path={ Paths.two } />
+                    <Svg path={ Paths.two } color="green" size="30px"/>
                     </div>
                     <div>
                         <h5>Fast and flexible</h5>
@@ -30,7 +30,7 @@ const FourthSection = () => {
 
                 <div className={styles.innerFlex}>
                     <div>
-                        <Svg path={ Paths.three } />
+                    <Svg path={ Paths.three } color="green" size="30px"/>
                     </div>
                     <div>
                         <h5>Support when you need it</h5>

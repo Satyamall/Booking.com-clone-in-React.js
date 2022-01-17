@@ -71,3 +71,25 @@ export const priceFilterFetch = ( less, greater, { Tours, Landmarks, Activities,
 
      }
 }
+export const idFetch = (id) => {
+
+     let url=`http://localhost:8000/attractionsData/${id}`
+
+     return async (dispach)=>{
+
+          dispach(Fetching()); //loading..
+          try{
+
+               const responce= await axios.get(url);
+               console.log(responce.data);
+
+          dispach(FetchSuccess(responce.data))//success
+
+          }catch(error){
+               dispach(FetchFaliure(error))//error
+          }
+
+
+
+     }
+}
