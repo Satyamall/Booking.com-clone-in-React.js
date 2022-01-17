@@ -12,6 +12,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { idFetch } from '../../api/request';
 import CloseIcon from '@mui/icons-material/Close';
+import PaymentCard from '../../../../CarRentalsPage/PaymentCard';
 
 // "id": 3,
 // "country": "Bangladesh",
@@ -123,6 +124,9 @@ const ViewPlaceLanding = () => {
                         <TicketSection price={place.item.price }/>
                     </div>
                 </div>
+
+
+                {/* <PaymentCard/> */}
 
             </div>
         </div>
