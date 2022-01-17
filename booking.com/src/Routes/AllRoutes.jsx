@@ -10,14 +10,17 @@ import ViewPlaceLanding from "../components/Attractions/pages_and_layouts/viewPl
 import Flights from "../FlightsPage/Flights";
 import FlightsDetailsPage from "../FlightsPage/FlightsDetailsPage";
 import Login from "../components/Login/Login";
+import Home from "../components/Home";
+import {SearchPage} from "../components/Stays/SearchPage/SearchPage";
+import {HotelDetails} from "../components/Stays/HotelDetails/HotelDetails";
+
 
 export default function AllRoutes(){
-
     return(
         <>
           <Switch>
             <Route exact path="/">
-
+            <Home/>
             </Route>
             <Route exact path="/flights">
               <Flights/>
@@ -49,6 +52,13 @@ export default function AllRoutes(){
           <Route exact path="/attractions">
              <AttractionIndex/>
             </Route>
+              <Route exact path="/search">
+                  <SearchPage/>
+              </Route>
+
+              <Route path="/search/:id">
+                  <HotelDetails/>
+              </Route>
           </Switch>
         </>
     )
