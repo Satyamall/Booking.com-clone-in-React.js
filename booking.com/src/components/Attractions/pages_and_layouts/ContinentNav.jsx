@@ -23,7 +23,7 @@ const ContinentNav = () => {
     let handleNav = ( value,apiQuery ) => {
         let tempObj={}
         for ( let i in activeNav ) {
-            if ( i == value )
+            if ( i === value )
                 tempObj[ i ] = true;
             else
                 tempObj[ i ] = false;

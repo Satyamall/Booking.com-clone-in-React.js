@@ -147,9 +147,6 @@ const Login = () => {
         <p className={styles.p1}>All rights reserved.</p>
         <p className={styles.p1}>Copyright (2006-2021) – Booking.com™</p>
       </div>
-
-
-
     </div>
   );
 };
