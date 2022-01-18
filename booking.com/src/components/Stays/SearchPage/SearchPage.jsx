@@ -92,9 +92,6 @@ export const SearchPage = () => {
     }, [hotelData])
 
     return <>
-        <div>
-            <Navbar/>
-        </div>
         <div className={styles.searchPageContainer}>
             <div className={styles.left}>
                 <SearchBox filterSearch={filterSearch} data={prefilledData}/>

@@ -13,7 +13,7 @@ export default function FlightsDetailsPage(){
     const [date,setDate]=useState(new Date().getDate());
 
     const getFlightData=()=>{
-        return fetch(`http://localhost:3000/flights`)
+        return fetch(`https://booking-flights-api.herokuapp.com/flights`)
         .then((res)=>res.json())
         .then((res)=>{
             setFlightData(res);

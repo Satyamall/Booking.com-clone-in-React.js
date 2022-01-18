@@ -46,10 +46,10 @@ const ImgText = styled.div`
 const A = styled.div`
   a {
     text-overflow: ellipsis;
-
+    text-decoration: none;
     margin-right: 10px;
     font-size: 14px;
-    color: #0071c2;
+    color: black;
 
 
   }
