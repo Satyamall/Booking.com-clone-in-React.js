@@ -2,7 +2,7 @@ import Covid from "./Covid";
 import SearchForm from "./SearchForm";
 import style from "./flights.module.css";
 import { useEffect, useState } from "react";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 import FindReplaceIcon from '@mui/icons-material/FindReplace';
 import WrapTextIcon from '@mui/icons-material/WrapText';
 import AirplaneTicketIcon from '@mui/icons-material/AirplaneTicket';
@@ -58,6 +58,10 @@ export default function Flights() {
     <>
      <div className={style.box1}>
       <Covid />
+      <div>
+        <h1>Compare and book flights with ease</h1>
+        <p>Discover your next dream destination</p>
+      </div>
       <SearchForm />
      </div>
      <div className={style.popularFlight}>
@@ -67,7 +71,7 @@ export default function Flights() {
         {
           popularFlight?.map((item)=>{
             return <div key={item.id} className={style.card}>
-               <Link to="/flightsDetails" className={style.cardlink}>
+               <Link to={`/flights/${item.origin}`} className={style.cardlink}>
                   <div>
                     <img src={item.image} alt="" className={style.img} />
                   </div>
@@ -86,7 +90,7 @@ export default function Flights() {
         {
             trendingCity?.map((item)=>{
             return <div key={item.id} className={style.card}>
-               <Link to="/flightsDetails" className={style.cardlink}>
+               <Link to={`/flights/${item.city}`} className={style.cardlink}>
                   <div>
                     <img src={item.image} alt="" className={style.img} />
                   </div>
@@ -141,7 +145,7 @@ export default function Flights() {
             {
                worldWideFlight?.map((item)=>{
                   return <div key={item.id} className={style.continentCard}>
-                  <Link to="/flightsDetails" className={style.continentCardlink}>
+                  <Link to={`/flights/${item.origin}`} className={style.continentCardlink}>
                      <div>
                        <img src={item.image} alt="" className={style.img1} />
                      </div>
