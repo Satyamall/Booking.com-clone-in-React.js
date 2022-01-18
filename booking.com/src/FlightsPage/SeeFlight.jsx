@@ -6,6 +6,7 @@ import Modal from '@mui/material/Modal';
 import { Link } from 'react-router-dom';
 import style from "./flights.module.css";
 import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
+import PaymentCard from "../CarRentalsPage/PaymentCard";
 
 const styles = {
   position: 'absolute',
@@ -23,6 +24,11 @@ export default function SeeFlight({id,origin,destination,arrival,departure,date,
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [show, setShow]=React.useState(false);
+
+  const handleShow=()=>{
+    setShow(true);
+  }
 
   return (
     <div>
@@ -36,7 +42,11 @@ export default function SeeFlight({id,origin,destination,arrival,departure,date,
         <Box sx={styles}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Your Flight Booking Detail
-            <div className={style.flightCard}>
+            {
+              show ? (<div className={style.pay}>
+                        <PaymentCard  fair={price}/>
+                      </div>):
+                    (<div className={style.flightCard}>
                         <div>
                         <div className={style.dataflight}>
                             <div>
@@ -70,14 +80,14 @@ export default function SeeFlight({id,origin,destination,arrival,departure,date,
                                 <p>Total price for all travelers</p>
                             </div>
                             <div>    
-                                <button className={style.seeflight}>
+                                <button className={style.seeflight} style={{background: "blue",color: "white"}} onClick={handleShow}>
                                   Pay Now
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div>)
+                  }
           </Typography>
-          <Link to="/carrentals">Back To Home</Link>
         </Box>
       </Modal>
     </div>
