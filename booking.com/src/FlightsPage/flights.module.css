@@ -472,3 +472,9 @@
     border: 1px solid blue;
     width: 90%;
 }
+
+.pay{
+  width: 400px;
+  display: flex;
+  font-size: 10px;
+}
