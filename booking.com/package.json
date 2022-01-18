@@ -51,6 +51,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server --watch cardata.json",
+    "stay": "json-server --watch db.json --port 3003",
     "attractionsDB": "json-server attractionsDB.json --port 8000",
     "flightsDB": "json-server --watch flightsData.json"
   },

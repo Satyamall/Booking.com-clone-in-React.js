@@ -19,7 +19,7 @@ export const Profile = () => {
     const handleLogout = () => {
         localStorage.removeItem("login")
         alert("Successfully Logged Out")
-        document.location.href = "http://localhost:3001/"
+        document.location.href = "http://localhost:3000/"
     }
 
     return <>
