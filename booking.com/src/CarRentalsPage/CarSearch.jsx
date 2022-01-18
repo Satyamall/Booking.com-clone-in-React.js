@@ -68,7 +68,7 @@ export default function CarSearch() {
     }
 
     const getCarRental = () => {
-        return fetch(`http://localhost:3000/${id}`)
+        return fetch(`https://booking-com-cardata-api.herokuapp.com/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 setCarRental(res);

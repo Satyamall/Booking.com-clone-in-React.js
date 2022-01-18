@@ -20,7 +20,7 @@ export default function AllRoutes(){
             <Route exact path="/flights">
               <Flights/>
             </Route>
-            <Route exact path="/flightsDetails">
+            <Route exact path="/flights/:id">
               <FlightsDetailsPage/>
             </Route>
             <Route exact path="/login">

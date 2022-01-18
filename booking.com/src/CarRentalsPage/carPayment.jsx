@@ -3,7 +3,6 @@ import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 import style from "./Style.module.css";
 import { shallowEqual, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import PayButton from "./PayButton";
 import PaymentCard from "./PaymentCard";
 
 export default function CarPayment() {
@@ -15,7 +14,7 @@ export default function CarPayment() {
     const [carData, setCarData] = useState([]);
 
     const getCarData = () => {
-        return fetch(`http://localhost:3000/car-availables/${id}`)
+        return fetch(`https://booking-com-cardata-api.herokuapp.com/car-availables/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 setCarData(res);

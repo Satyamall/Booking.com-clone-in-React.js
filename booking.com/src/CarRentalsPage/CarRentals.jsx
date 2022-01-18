@@ -77,7 +77,7 @@ export default function CarRentals() {
     }
 
     const getData = () => {
-        return fetch(`http://localhost:3000/popular_city_car_hire`)
+        return fetch(`https://booking-com-cardata-api.herokuapp.com/popular_city_car_hire`)
     }
 
     useEffect(() => {
@@ -93,7 +93,7 @@ export default function CarRentals() {
     }, [])
 
     const getCarRental = () => {
-        return fetch(`http://localhost:3000/top_worldwide_car_rental`)
+        return fetch(`https://booking-com-cardata-api.herokuapp.com/top_worldwide_car_rental`)
             .then((res) => res.json())
             .then((res) => {
                 setCarRental(res);
