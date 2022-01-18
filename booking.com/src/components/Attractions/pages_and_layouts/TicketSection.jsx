@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Svg from './Svg'
 import Paths from './SvgPaths'
 import styles from './style/style.module.css'
+import { Link } from 'react-router-dom'
 const TicketSection = (props) => {
     const [ isTicketselect, setTicketSelect ] = useState( false );
     const [ adultTicket, setadultTicket ] = useState( 0 );
@@ -89,9 +90,11 @@ const TicketSection = (props) => {
                     }}>+</span>
                     </div>
                 </div>
+                <Link to={`/varifyPurchase/${props.id}`} style={{textDecoration:"none"}}>
                 <div className={styles.NextBtn}>
                     <div>Next</div>
-                </div>
+                    </div>
+             </Link>
         </div>
 
 

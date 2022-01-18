@@ -1,4 +1,3 @@
-
 import FirstSection from "./PageSections/FirstSection";
 import SecondSection from "./PageSections/SecondSection";
 import {useDispatch, useSelector} from "react-redux";

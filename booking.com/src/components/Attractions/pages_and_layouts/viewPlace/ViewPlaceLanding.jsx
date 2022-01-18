@@ -120,7 +120,7 @@ const ViewPlaceLanding = () => {
                     <Datepicker/>
                     </div>
                     <div style={{marginTop:"20px"}}>
-                        <TicketSection price={place.item.price }/>
+                        <TicketSection price={place.item.price} id={place.item.id}/>
                     </div>
                 </div>
 
