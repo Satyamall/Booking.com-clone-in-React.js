@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-import Navbar from "../../Header/Header";
 import {HotelDataComponent} from "./HotelDataComponent";
 import {FilteringBox} from "./FilteringBox";
 import {SearchBox} from "./SearchBox";
@@ -92,9 +91,6 @@ export const SearchPage = () => {
     }, [hotelData])
 
     return <>
-        <div>
-            <Navbar/>
-        </div>
         <div className={styles.searchPageContainer}>
             <div className={styles.left}>
                 <SearchBox filterSearch={filterSearch} data={prefilledData}/>

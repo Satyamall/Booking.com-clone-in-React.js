@@ -91,9 +91,9 @@ export const HomeGuestsDiv = () => {
 
 
     return (<Cont>
-            <h3> Explore Places</h3>
+            <h3 style={{marginLeft: 120,marginTop: 20}}> Explore Places</h3>
             <LocationCarosueDiv/>
-            <h2> Homes guests love</h2>
+            <h2 style={{marginLeft: 120,marginTop: 20}}> Homes guests love</h2>
 
             <CarouselDiv>
 

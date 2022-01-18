@@ -297,14 +297,11 @@
       padding: 20px;
   }
   .search {
-    height: 56px;
     background-color: rgb(0, 113, 194);
-    padding-left: 24px;
-    padding-right: 24px;
     padding: 16px;
   }
 
-  .btnlink{
+  .btnLink{
       text-decoration: none;
       color: white;
   }
@@ -417,4 +414,61 @@
 
 .img1{
     width: 60px;
+}
+
+
+/* FlightDetails Page CSS--------------- */
+
+.searchBox{
+    width: 100%;
+    padding-left: 8%;
+    height: 230px;
+    background-color: whitesmoke;
+    padding-top: 20px;
+}
+
+.sideBarBtn{
+    border: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.SideBar{
+    display: flex;
+    gap: 3rem;
+}
+
+.flightCard{
+    width: 800px;
+    border: 1px solid gray;
+    display: flex;
+    padding: 20px;
+    gap: 2rem;
+}
+
+.flight{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dataflight{
+    margin-top: 30px;
+    display: flex;
+    gap: 1rem;
+}
+
+.bagBox{
+    margin-left: 50px;
+    width: 300px;
+    text-align: end;
+    border-left: 1px solid gray;
+}
+
+.seeflight{
+    border: 1px solid blue;
+    width: 90%;
 }

@@ -9,7 +9,7 @@ import FormGroup from "@mui/material/FormGroup";
 import Checkbox from "@mui/material/Checkbox";
 import style from "./flights.module.css";
 import "react-datepicker/dist/react-datepicker.css";
-import { Link } from "@mui/material";
+import {Link} from "react-router-dom"
 
 function SearchForm() {
   const [startDate, setStartDate] = useState(null);
@@ -22,14 +22,6 @@ function SearchForm() {
     <>
       <div className={style.head}>
         <div className={style.flightformcont}>
-          <div className={style.flightheader}>
-            <div className={style.headerbold}>
-              Compare and book flights with ease
-            </div>
-            <div className={style.headerbottom}>
-              Discover your next dream destination
-            </div>
-          </div>
           <div className={style.flightformoutmost}>
             <div className={style.flightformbox}>
               <div className={style.flightform}>
@@ -99,7 +91,7 @@ function SearchForm() {
                                 readOnly=""
                                 type="text"
                                 placeholder="Where from?"
-                                value=""
+                                value="LKO"
                               />
                             </div>
                           </div>
@@ -132,7 +124,7 @@ function SearchForm() {
                                 readOnly=""
                                 type="text"
                                 placeholder="Where to?"
-                                value=""
+                                value="JAI"
                               />
                             </div>
                           </div>
@@ -181,7 +173,7 @@ function SearchForm() {
                     <button
                       className={style.search}
                     >
-                     <Link className={style.btnlink} to={`/flightsDetails`}>Search</Link>
+                     <Link className={style.btnLink} to={`/flights/${startDate}`}>Search</Link>
                     </button>
                   </div>
                 </div>

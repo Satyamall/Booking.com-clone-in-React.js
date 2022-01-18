@@ -25,7 +25,7 @@ const Div = styled.div`
 export const ConnetWithDiv = () => {
 
     return (<Div>
-            <h2>Connect with other travelers</h2>
+            <h2 style={{marginTop: 40}}>Connect with other travelers</h2>
 
             <FlexDiv>
                 <InfoDiv>

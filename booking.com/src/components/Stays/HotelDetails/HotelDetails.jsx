@@ -3,7 +3,6 @@ import {TopSection} from './TopSection/TopSection'
 import {TitleInfo} from './TopSection/TittleInfo'
 import {HotelDetailsIcons} from './TopSection/HotelDetailsIcons'
 import {HotelAvailability} from './TopSection/HotelAvailability'
-import Navbar from "../../Header/Header";
 import {SearchBox} from "../SearchPage/SearchBox";
 import {useParams} from 'react-router';
 import {useState} from 'react'
@@ -45,7 +44,6 @@ export const HotelDetails = () => {
         setShowData(filteredData)
     }
     return (<>
-            <Navbar/>
             <Container>
                 <SearchBox filterSearch={filterSearch}/>
                 <Div>
