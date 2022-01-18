@@ -2,16 +2,16 @@
     box-shadow: rgba(170, 160, 160, 0.24) 0px 3px 8px;
     padding: 11px;
     border-radius: 4px;
-    display: grid;
-    grid-template-columns: 26% 50% 22%;
-    grid-gap: 1%;
+    display: flex;
+    gap: 2rem;
+    grid-gap: 2rem;
     margin-bottom: 20px;
 
 }
 
 @media only screen and (max-width: 1300px) {
     .maindiv {
-        width: 60%;
+        width: 100%;
     }
 }
 

@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-import Navbar from "../../Header/Header";
 import {HotelDataComponent} from "./HotelDataComponent";
 import {FilteringBox} from "./FilteringBox";
 import {SearchBox} from "./SearchBox";
