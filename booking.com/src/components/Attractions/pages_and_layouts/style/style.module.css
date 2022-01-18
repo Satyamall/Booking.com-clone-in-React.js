@@ -261,3 +261,166 @@ margin-left: auto;
 width: 80%;
 height: 180px;
 }
+/* design start of attraction view landing page */
+.attractionsViewDiverder{
+    width:98%;
+    margin:auto;
+    display: flex;
+}
+.infoIco{
+    display: flex;
+    align-items: center;
+}
+.infoIco>div{
+    margin: 5px;
+}
+.description{
+    margin-top: 20px;
+}
+.attractionsViewLeft{
+    flex-basis: 57%;
+    /* border: 1px solid #0071C2; */
+}
+.attractionsViewRight{
+    flex-basis: 39%;
+  margin-left: 1%;
+  /* border: 1px solid #0071C2; */
+
+}
+.meetingPointholder{
+    display: flex;
+    margin-top: 20px;
+}
+.meetingPointholder>div{
+    margin: 4px;
+}
+.meetingPointholder>div>div:nth-child(1){
+    font-weight: bold;
+}
+.meetingPointholder>div>div:nth-child(3){
+    font-weight: bold;
+    color:#0071C2;
+    margin-top: 10px;
+    width:150px;
+    padding:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
+    cursor: pointer;
+}
+.meetingPointholder>div>div:nth-child(3):hover{
+    background: #c7e0f1;
+}
+.AttractionPlaceSpac{
+    margin-top: 10px;
+}
+.AttractionPlaceSpac>div{
+    display: flex;
+    font-size:18px;
+    margin: 1.5%;
+}
+.AttractionPlaceSpac>div>div{
+    margin: 3px;
+}
+.attractionsViewName{
+    font-size:30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.attractionsViewName+div{
+font-size: 17px;
+color:#2f3031
+}
+/* Ticket section design */
+.ticketFirstView{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.ticketFirstView>div:nth-child(2),.ticketAfterselect>div:nth-child(2){
+    display: flex;
+}
+.ticketFirstView>div:nth-child(2) span,.ticketAfterselect>div:nth-child(2) span{
+  font-weight:bold;
+  color:#0071C2;
+  cursor: pointer;
+}
+.ticketFirstView>div:nth-child(2)>div,.ticketAfterselect>div:nth-child(2)>div{
+    margin: 4px;
+}
+.ticketSelect{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.ticketSelect>div>div:nth-child(1){
+    font-size: 13px;
+    color: rgb(63, 62, 62);
+}
+.ticketSelect>div>div:nth-child(2){
+    font-weight: bold;
+}
+.selectbtn{
+    border: 1px solid  #0071C2;
+    font-weight: bold;
+    padding:5px;
+    color:#0071C2;
+    cursor: pointer;
+    border-radius:2px;
+    margin-right: 10px;
+}
+.selectbtn:hover{
+    background: #cee0ee;
+}
+.ticketAfterselect{
+    padding:15px;
+    background:#b2d5ee;
+    border: 1px solid #0071C2;
+}
+.ticketAfterselect>div:nth-child(1){
+    display: flex;
+    justify-content:space-between;
+}
+.ticketAfterselect>div:nth-child(1)>div:nth-child(2){
+    color: #0071C2;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Qselector{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.Qselector>div:nth-child(2){
+    /* sbackground:red; */
+    display: flex;
+}
+.Qselector>div:nth-child(2)>span{
+    padding:8px;
+    margin: 10px;
+    font-size:20px;
+}
+.Qselector>div:nth-child(2)>span:nth-child(odd){
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #fff;
+    background:black;
+    cursor: pointer;
+    user-select: none;
+
+}
+.NextBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.NextBtn>div{
+    background:#0071C2;
+    color:#fff;
+    font-weight: bold;padding:10px;
+    padding-right:50px;padding-left:50px;
+    border-radius:3px;
+    cursor: pointer;
+}

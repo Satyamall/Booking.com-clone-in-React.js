@@ -1,11 +1,18 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import styles from '../style/style.module.css'
 import Card from '../Card';
 import LoadingScreen from 'react-loading-screen'
 import { Link } from 'react-router-dom';
+import { FetchApi } from '../../api/request';
+
 const SixthSection = () => {
+    const dispach = useDispatch();
     const navState = useSelector( ( state ) => state.attraction );
+    React.useEffect(() => {
+        dispach(FetchApi("Brazil"))
+
+    },[])
     console.log( navState );
     const linkStyle = {
         textDecoration: 'none',
@@ -47,4 +54,4 @@ const SixthSection = () => {
     )
 }
 
-export default SixthSection
+export default SixthSection;

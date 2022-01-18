@@ -5,6 +5,8 @@ import CarRentals from "../CarRentalsPage/CarRentals";
 import CarSearch from "../CarRentalsPage/CarSearch";
 import AttractionIndex from '../components/Attractions/AttractionIndex'
 import ListLanding from "../components/Attractions/pages_and_layouts/attractionPlaceListpage/ListLanding";
+
+import ViewPlaceLanding from "../components/Attractions/pages_and_layouts/viewPlace/ViewPlaceLanding";
 import Flights from "../FlightsPage/Flights";
 import FlightsDetailsPage from "../FlightsPage/FlightsDetailsPage";
 import Login from "../Login/Login";
@@ -40,6 +42,9 @@ export default function AllRoutes(){
           </Route>
           <Route exact path="/attractions/:country">
              <ListLanding/>
+            </Route>
+            <Route exact path="/attractions/:country/:id">
+             <ViewPlaceLanding/>
           </Route>
           <Route exact path="/attractions">
              <AttractionIndex/>

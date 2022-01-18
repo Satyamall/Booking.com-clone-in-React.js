@@ -2,9 +2,9 @@ import React from 'react'
 
 const Svg = (props) => {
     const style = {
-        color: "#008009",
-        fill: "#008009",
-        width:"30px"
+        color: props.color,
+        fill: props.color,
+        width: props.size
     }
     return (
         <div style={style}>

@@ -1,6 +1,9 @@
 import React from 'react'
+import { Link, useRouteMatch } from 'react-router-dom'
 import styles from './style/style.module.css'
 const PlaceListCard = ( props ) => {
+    let {url} = useRouteMatch();
+    // console.log(path)
     const style = {
         width:"100%",
         border: "1px solid rgb(211, 211, 218)",
@@ -18,7 +21,10 @@ const PlaceListCard = ( props ) => {
         // border: "1px solid red",
         display: "flex",
         // alignItems:"center"
-   }
+    }
+    const linkStyle = {
+        textDecoration: "none"
+    }
     return (
         <div style={ style } className={ styles.PlaceListCard }>
             <div style={ childStyle } className={ styles.PlaceList}>
@@ -32,7 +38,7 @@ const PlaceListCard = ( props ) => {
                     <div>from</div>
                     <div>₹ { props.price }</div>
                     <div className={ styles.viewBtn}>
-                       {`view  >`}
+                      <Link to={`${url}/${props.id}`} style={linkStyle}>{`view  >`}</Link>
                     </div>
                 </div>
             </div>

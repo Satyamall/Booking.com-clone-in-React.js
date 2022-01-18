@@ -2,12 +2,18 @@ import React from 'react'
 import PlaceListCard from '../PlaceListCard'
 import SearchBox from '../SearchBox'
 import styles from '../style/style.module.css'
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import Filter from '../Filter';
-// import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { FetchApi } from '../../api/request';
 const ListLanding = () => {
     const countryList = useSelector( state => state.attraction );
-
+    const { country } = useParams();
+    const dispatch = useDispatch();
+   React. useEffect( () => {
+        dispatch(FetchApi(country))
+    },[])
+    // console.log(country)
     // console.log(countryList)
     return (
         <div className={styles.ListLanding}>
@@ -33,6 +39,7 @@ const ListLanding = () => {
                     shortDesc={item.sortDescription}
                     price={item.price}
                     image={item.image}
+                    id={item.id}
                 />
 
                         )
