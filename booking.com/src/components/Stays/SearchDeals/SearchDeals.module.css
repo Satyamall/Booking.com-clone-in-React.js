@@ -82,7 +82,6 @@
     left: 35%;
     z-index: 700;
 
-
 }
 
 .searchDealsContainer .searchDealsBars > .calender .calenderItem > .datePicke {
@@ -97,7 +96,7 @@
     text-align: center;
     font-weight: 500;
     color: rgb(85, 84, 84);
-
+    
 
 }
 
@@ -167,6 +166,7 @@
     border-radius: 4px;
     cursor: pointer;
     background-color: white;
+    margin-top: 20px;
 }
 
 .searchDealsContainer .searchDealsBars > .selector > .selectorDropDown .adult
@@ -192,6 +192,7 @@
 
 .searchDealsContainer .searchDealsBars > .button {
     width: 13%;
+    margin-top: 25px;
 }
 
 .searchDealsContainer .searchDealsBars > .button button {
@@ -235,4 +236,3 @@
     color: black;
 
 }
-

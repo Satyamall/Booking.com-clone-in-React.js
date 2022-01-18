@@ -129,7 +129,7 @@ export const SearchBox = ({filterSearch, data}) => {
                         d="M22.502 13.5v8.25a.75.75 0 0 1-.75.75h-19.5a.75.75 0 0 1-.75-.75V5.25a.75.75 0 0 1 .75-.75h19.5a.75.75 0 0 1 .75.75v8.25zm1.5 0V5.25A2.25 2.25 0 0 0 21.752 3h-19.5a2.25 2.25 0 0 0-2.25 2.25v16.5A2.25 2.25 0 0 0 2.252 24h19.5a2.25 2.25 0 0 0 2.25-2.25V13.5zm-23.25-3h22.5a.75.75 0 0 0 0-1.5H.752a.75.75 0 0 0 0 1.5zM7.502 6V.75a.75.75 0 0 0-1.5 0V6a.75.75 0 0 0 1.5 0zm10.5 0V.75a.75.75 0 0 0-1.5 0V6a.75.75 0 0 0 1.5 0z"></path>
                 </svg>
                 <input type="text" placeholder="Mon 30 Aug" onClick={handleInitDate}
-                       value={`${currentDay} ${currentDayNum} ${currentMonth}`}/>
+                       value={`${startValue}`}/>
                 <svg aria-hidden="true" fill="#838181" focusable="false" height="18" role="presentation" width="18"
                      viewBox="0 0 24 24">
                     <path
@@ -148,7 +148,7 @@ export const SearchBox = ({filterSearch, data}) => {
                         d="M22.502 13.5v8.25a.75.75 0 0 1-.75.75h-19.5a.75.75 0 0 1-.75-.75V5.25a.75.75 0 0 1 .75-.75h19.5a.75.75 0 0 1 .75.75v8.25zm1.5 0V5.25A2.25 2.25 0 0 0 21.752 3h-19.5a2.25 2.25 0 0 0-2.25 2.25v16.5A2.25 2.25 0 0 0 2.252 24h19.5a2.25 2.25 0 0 0 2.25-2.25V13.5zm-23.25-3h22.5a.75.75 0 0 0 0-1.5H.752a.75.75 0 0 0 0 1.5zM7.502 6V.75a.75.75 0 0 0-1.5 0V6a.75.75 0 0 0 1.5 0zm10.5 0V.75a.75.75 0 0 0-1.5 0V6a.75.75 0 0 0 1.5 0z"></path>
                 </svg>
                 <input type="text" placeholder="Mon 30 Aug 2021" onClick={handleEndDate}
-                       value={`${endDay} ${endDayNum} ${endMonth}`}/>
+                       value={`${endValue}`}/>
                 <svg aria-hidden="true" fill="#838181" focusable="false" height="18" role="presentation" width="18"
                      viewBox="0 0 24 24">
                     <path
