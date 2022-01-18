@@ -6,6 +6,7 @@ import carreducer from './carreducer';
 import attractionReducer from './AttractionReducer';
 import singleCountryReducer from './singleCountryReducer';
 import debounceReducer from './debounceReducer';
+import checkOutReducer from './checkOutReducer';
 
 export default combineReducers({
     placesData: placesReducer,
@@ -14,5 +15,6 @@ export default combineReducers({
     car: carreducer,
     attraction: attractionReducer,
     singleCountry: singleCountryReducer,
-    debounce:debounceReducer
+    debounce: debounceReducer,
+    checkout:checkOutReducer
 })

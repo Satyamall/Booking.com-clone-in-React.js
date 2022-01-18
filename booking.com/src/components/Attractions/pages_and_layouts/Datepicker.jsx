@@ -7,6 +7,8 @@ import PickersDay from '@mui/lab/PickersDay';
 import DatePicker from '@mui/lab/DatePicker';
 import CalendarPickerSkeleton from '@mui/lab/CalendarPickerSkeleton';
 import getDaysInMonth from 'date-fns/getDaysInMonth';
+import { addDateForCheckout } from '../../../actions/checkOutdetails';
+import { useDispatch } from 'react-redux';
 
 function getRandomNumber(min, max) {
   return Math.round(Math.random() * (max - min) + min);
@@ -39,7 +41,11 @@ export default function Datepicker() {
   const [isLoading, setIsLoading] = React.useState(false);
   const [highlightedDays, setHighlightedDays] = React.useState([1, 2, 15]);
   const [value, setValue] = React.useState(initialValue);
-console.log(value);
+  console.log( value );
+  const dispach = useDispatch();
+  React.useEffect( () => {
+    dispach(addDateForCheckout({date:value}))
+  },[value])
   const fetchHighlightedDays = (date) => {
     const controller = new AbortController();
     fakeFetch(date, {

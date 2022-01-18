@@ -26,13 +26,13 @@ export default function UserForm() {
     <Box component="form" noValidate autoComplete="off">
           <FormControl sx={ { width: '40ch' } }>
               <MyFormHelperText value={ "Enter Name"}/>
-              <OutlinedInput placeholder="Please enter Name" style={ { width: '100%', height: "40px", margin: "10px" } } />
+              <OutlinedInput placeholder="Please enter Name" style={ { width: '100%', height: "40px", margin: "10px" } } value="pradip Mandal"/>
               <MyFormHelperText value={ "Enter Email"}/>
-              <OutlinedInput placeholder="Please enter Email" style={ { width: '100%', height: "40px", margin: "10px" } } />
+              <OutlinedInput placeholder="Please enter Email" style={ { width: '100%', height: "40px", margin: "10px" } }  value="pradip@gmail.com"/>
               <MyFormHelperText value={ "Confirm email address"}/>
-              <OutlinedInput placeholder="confirm Email" style={ { width: '100%', height: "40px", margin: "10px" } } />
+              <OutlinedInput placeholder="confirm Email" style={ { width: '100%', height: "40px", margin: "10px" } } value="pradip@gmail.com"/>
               <MyFormHelperText value={"Enter Phone Number"}/>
-              <OutlinedInput placeholder="Enter your Phone" style={{ width: '100%',height:"40px",margin:"10px"}}/>
+              <OutlinedInput placeholder="Enter your Phone" style={{ width: '100%',height:"40px",margin:"10px"}} value="9876543210"/>
       </FormControl>
     </Box>
   );
