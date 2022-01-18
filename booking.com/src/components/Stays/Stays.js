@@ -4,6 +4,7 @@ import SecondSection from "./PageSections/SecondSection";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {getSuggestions} from "../../actions/suggestionAction";
+import { HomeGuestsDiv } from "./PageSections/HomeGuests/HomeGuestsDiv";
 
 function Stays() {
     const dispatch = useDispatch();
@@ -19,7 +20,8 @@ function Stays() {
     return (<>
             {/* <Navbar/> */}
             <FirstSection suggestions={suggestions}/>
-            <SecondSection/>
+        <SecondSection />
+        <HomeGuestsDiv/>
         </>);
 }
 
