@@ -1,0 +1,237 @@
+
+:lang(ja) {
+    font-family: 'Latha', "Tamil MN", serif;
+    font-size: 120%;
+}
+
+.searchDealsContainer {
+    margin-left: 10%;
+    margin-top: -70px;
+    width: 76%;
+    background-color: white;
+}
+
+.searchDealsContainer .searchDealsBars {
+    border: 4px solid rgb(254, 187, 2);
+    border-radius: 5px;
+    margin-top: 4%;
+    display: flex;
+}
+
+.searchDealsContainer .searchDealsBars > .search {
+    border-right: 4px solid rgb(254, 187, 2);
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+
+}
+
+.searchDealsContainer .searchDealsBars > .search .svgImg img {
+    margin-top: 5px;
+}
+
+.searchDealsContainer .searchDealsBars > .search .Cross .svgCross {
+    margin-top: 2px;
+    cursor: pointer;
+
+    fill: rgb(82, 80, 80);
+}
+
+.searchDealsContainer .searchDealsBars > .calender {
+    border-right: 4px solid rgb(254, 187, 2);
+    width: 23%;
+    /* position: relative; */
+    padding-top: 1.2%;
+    padding-left: 1%;
+    z-index: 5;
+
+}
+
+.searchDealsContainer .searchDealsBars > .calender .calenderPermnantItems {
+    display: flex;
+    font-weight: 500;
+    color: rgb(85, 84, 84);
+
+}
+
+.searchDealsContainer .searchDealsBars > .calender .calenderPermnantItems > div {
+    margin-right: 4%;
+    display: flex;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.searchDealsContainer .searchDealsBars > .calender .calenderPermnantItems > div p {
+    font-size: 15px;
+    color: rgb(85, 84, 84);
+    margin-right: 7%;
+}
+
+.searchDealsContainer .searchDealsBars > .calender .calenderItem2 {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 700;
+
+}
+
+.searchDealsContainer .searchDealsBars > .calender .calenderItem {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 700;
+
+}
+
+.searchDealsContainer .searchDealsBars > .calender .calenderItem > .datePicke {
+    text-align: center;
+    font-weight: 500;
+    color: rgb(85, 84, 84);
+
+
+}
+
+.searchDealsContainer .searchDealsBars > .calender .calenderItem2 > .datePicke {
+    text-align: center;
+    font-weight: 500;
+    color: rgb(85, 84, 84);
+    
+
+}
+
+.searchDealsContainer .searchDealsBars > .selector {
+    border-right: 4px solid rgb(254, 187, 2);
+    width: 32%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.searchDealsContainer .searchDealsBars > .selector .manIcon img {
+    width: 18px;
+    margin-top: 1px;
+
+}
+
+.searchDealsContainer .searchDealsBars > .selector > div {
+    padding-top: 3.5%;
+
+
+}
+
+.searchDealsContainer .searchDealsBars .selectorItems {
+
+
+    cursor: pointer;
+}
+
+.searchDealsContainer .searchDealsBars > .selector > .selectorDropDown {
+    position: absolute;
+    width: 27%;
+    padding: 1%;
+    background-color: white;
+    z-index: 4;
+    top: 52%;
+    left: 57.5%;
+    z-index: 700;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(116, 115, 115, 0.445);
+
+}
+
+.searchDealsContainer .searchDealsBars > .selector > .selectorDropDown .adult {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.searchDealsContainer .searchDealsBars > .selector > .selectorDropDown .adult
+> div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchDealsContainer .searchDealsBars > .selector > .selectorDropDown .adult
+> div button {
+    border: 1px solid rgb(0, 113, 194);
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: rgb(0, 113, 194);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.searchDealsContainer .searchDealsBars > .selector > .selectorDropDown .adult
+> div h4 {
+    font-size: 15px;
+    margin-top: 7px;
+    font-weight: 500;
+    color: rgb(85, 84, 84);
+
+}
+
+.searchDealsContainer .searchDealsBars > .selector .selectorItems {
+    display: flex;
+
+}
+
+.searchDealsContainer .searchDealsBars > .selector .selectorItems p {
+    font-weight: 500;
+    margin-left: 10px;
+    color: rgb(85, 84, 84);
+
+}
+
+.searchDealsContainer .searchDealsBars > .button {
+    width: 13%;
+}
+
+.searchDealsContainer .searchDealsBars > .button button {
+    border: none;
+    background-color: rgb(0, 113, 194);
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    padding: 8%;
+    cursor: pointer;
+}
+
+
+.searchDealsContainer > .lowerText {
+    display: flex;
+    margin-top: 2%;
+}
+
+.searchDealsContainer > .lowerText input {
+    padding: 100px;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    min-height: 20px;
+    cursor: pointer;
+    padding-left: 8px;
+    margin-right: 10px;
+}
+
+.input {
+    margin-left: 2%;
+    width: 100%;
+}
+
+.searchDealsContainer > .lowerText p {
+    font-size: 14px;
+    color: black;
+
+}

@@ -3,7 +3,7 @@ import { Link, useRouteMatch } from 'react-router-dom'
 import styles from './style/style.module.css'
 const PlaceListCard = ( props ) => {
     let {url} = useRouteMatch();
-    // console.log(path)
+    // console.log(url)
     const style = {
         width:"100%",
         border: "1px solid rgb(211, 211, 218)",

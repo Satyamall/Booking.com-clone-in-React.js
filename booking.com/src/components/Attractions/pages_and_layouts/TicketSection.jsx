@@ -2,10 +2,19 @@ import React, { useState } from 'react'
 import Svg from './Svg'
 import Paths from './SvgPaths'
 import styles from './style/style.module.css'
+import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { checkOutdetails } from '../../../actions/checkOutdetails'
 const TicketSection = (props) => {
     const [ isTicketselect, setTicketSelect ] = useState( false );
     const [ adultTicket, setadultTicket ] = useState( 0 );
-    const [childTicket, setChildTicket ] = useState( 0 );
+    const [ childTicket, setChildTicket ] = useState( 0 );
+    const dispach=useDispatch()
+    function setTicketquentity() {
+
+        dispach(checkOutdetails({adultTicket:adultTicket,childTicket:childTicket}))
+    }
+
     if ( !isTicketselect ) {
         return (
 <div className={styles.ticketFirstView}>
@@ -89,9 +98,13 @@ const TicketSection = (props) => {
                     }}>+</span>
                     </div>
                 </div>
+                <Link
+                    to={ `/varifyPurchase/${props.id}` } style={ { textDecoration: "none" } }
+                onClick={ () =>setTicketquentity()}>
                 <div className={styles.NextBtn}>
                     <div>Next</div>
-                </div>
+                    </div>
+             </Link>
         </div>
 
 

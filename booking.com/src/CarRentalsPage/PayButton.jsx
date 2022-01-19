@@ -33,12 +33,12 @@ export default function PayButton({token}) {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Your Car Booking is Confirmed 
+            Your Booking is Confirmed 
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Your Order Id is <p style={{color: "gray"}}>{token}</p>
           </Typography>
-          <Link to="/carrentals">Back To Home</Link>
+          <Link to="/">Back To Home</Link>
         </Box>
       </Modal>
     </div>

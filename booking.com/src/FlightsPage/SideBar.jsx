@@ -113,7 +113,7 @@ export default function SideBar({handleArrival,handleDeparture,handleName}) {
           </button>
         </div>
         <div>
-          <button className={style.sideBarBtn} onClick={()=>handleName("All India")}>
+          <button className={style.sideBarBtn} onClick={()=>handleName("Air India")}>
             <input type="checkbox" defaultChecked />
             <label>Air India</label>
           </button>

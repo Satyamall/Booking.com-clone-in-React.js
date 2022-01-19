@@ -91,7 +91,7 @@ function SearchForm() {
                                 readOnly=""
                                 type="text"
                                 placeholder="Where from?"
-                                value=""
+                                value="LKO"
                               />
                             </div>
                           </div>
@@ -124,7 +124,7 @@ function SearchForm() {
                                 readOnly=""
                                 type="text"
                                 placeholder="Where to?"
-                                value=""
+                                value="JAI"
                               />
                             </div>
                           </div>

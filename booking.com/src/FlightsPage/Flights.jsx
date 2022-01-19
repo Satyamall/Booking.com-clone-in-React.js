@@ -17,11 +17,11 @@ export default function Flights() {
   const [worldWideFlight,setWorldWideFlight]=useState([])
 
   const getPopularFlights=()=>{
-    return fetch(`http://localhost:3000/popular-flight`)
+    return fetch(`https://booking-flights-api.herokuapp.com/popular-flight`)
   }
 
   const getTrendingCity=()=>{
-    return fetch(`http://localhost:3000/trending-cities`)
+    return fetch(`https://booking-flights-api.herokuapp.com/trending-cities`)
     .then((res)=>res.json())
     .then((res)=>{
         setTrendingCity(res);
@@ -32,7 +32,7 @@ export default function Flights() {
   }
 
   const getWorldWideFlight=(text)=>{
-    return fetch(`http://localhost:3000/${text}`)
+    return fetch(`https://booking-flights-api.herokuapp.com/${text}`)
     .then((res)=>res.json())
     .then((res)=>{
         setWorldWideFlight(res)

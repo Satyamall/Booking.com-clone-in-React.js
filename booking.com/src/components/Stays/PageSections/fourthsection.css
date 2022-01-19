@@ -1,0 +1,141 @@
+
+* {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+.things {
+    margin-top: 2vw;
+    /* margin-left:8vw; */
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-auto-rows: 6vw;
+    grid-gap: 2vw;
+    text-align: left;
+}
+
+.things span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333333;
+}
+
+.things p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.imglog {
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 20px;
+    /* margin-left: 5px; */
+    height: 100%;
+    width: 100%;
+}
+
+
+.rentCar {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #e6e6e6;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    /* padding-top: .5vw; */
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 5vw 20vw;
+    grid-auto-rows: 7vw;
+    /* grid-gap: 15px; */
+}
+
+.margin {
+    margin-top: 10px;
+}
+
+.margin p {
+    margin: 0px;
+
+}
+
+.Cities {
+    margin-top: 2vw;
+    /* margin-left: 8vw; */
+    display: grid;
+    grid-template-columns: 38vw 38vw;
+    grid-auto-rows: 18vw;
+    grid-gap: 1vw;
+    cursor: pointer;
+    border: 1px solid #fafcff;
+}
+
+.Cities img {
+    width: 100%;
+}
+
+.manchester {
+    position: relative;
+    color: #fff !important;
+}
+
+.headmanchester {
+    top: 2vw;
+    left: 2.5vw;
+    position: absolute;
+
+    font-weight: bold;
+    font-size: 1.78em;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+
+}
+
+.childmanchester {
+    top: 4vw;
+    left: 2.5vw;
+    position: absolute;
+
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+
+.citythree {
+    margin-top: 2vw;
+    /* margin-left: 8vw; */
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-auto-rows: 12vw;
+    grid-gap: 1vw;
+    cursor: pointer;
+    /* height: 270px; */
+    margin-bottom: 20px;
+}
+
+.citythree img {
+    width: 100%;
+    height: 250px;
+}
+
+.FourthSection-div {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+

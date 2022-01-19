@@ -12,7 +12,6 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { idFetch } from '../../api/request';
 import CloseIcon from '@mui/icons-material/Close';
-import PaymentCard from '../../../../CarRentalsPage/PaymentCard';
 
 // "id": 3,
 // "country": "Bangladesh",
@@ -121,12 +120,9 @@ const ViewPlaceLanding = () => {
                     <Datepicker/>
                     </div>
                     <div style={{marginTop:"20px"}}>
-                        <TicketSection price={place.item.price }/>
+                        <TicketSection price={place.item.price} id={place.item.id}/>
                     </div>
                 </div>
-
-
-                {/* <PaymentCard/> */}
 
             </div>
         </div>
