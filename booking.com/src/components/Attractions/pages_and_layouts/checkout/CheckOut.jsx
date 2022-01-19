@@ -1,6 +1,5 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import UserForm from '../UserForm'
 import Button from '@mui/material/Button';
 import PreviewPayment from '../varifyUserDeatils/PreviewPayment';
 import PaymentCard from '../../../../CarRentalsPage/PaymentCard';
@@ -13,7 +12,7 @@ const Checkout = () => {
         <div style={ { display: 'flex',justifyContent:"space-between"} }>
 
             <div style={{flexBasis:"50%"}}>
-                <PaymentCard fair="5322"/>
+                <PaymentCard fair={localStorage.getItem("TotalPrice")}/>
                 <h1>Cancellation policy</h1>
                 <div style={{marginTop:"10px"}}>
                     The free cancellation period for this booking has already passed, so it's no longer possible to get a refund if you cancel.
