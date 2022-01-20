@@ -1,2 +1,0 @@
-export const GET_PLACES = 'GET_PLACES'
-export const GET_PLACES_ERROR = 'GET_PLACES_ERROR'
