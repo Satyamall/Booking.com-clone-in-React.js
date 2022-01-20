@@ -14,7 +14,7 @@ export default function CarPayment() {
     const [carData, setCarData] = useState([]);
 
     const getCarData = () => {
-        return fetch(`https://booking-com-cardata-api.herokuapp.com/car-availables/${id}`)
+        return fetch(`https://booking-com-stay-cardata-api.herokuapp.com/car-availables/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 setCarData(res);

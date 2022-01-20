@@ -37,7 +37,7 @@ export default function CarAvailable() {
     });
 
     const getCarData=()=>{
-        return fetch(`https://booking-com-cardata-api.herokuapp.com/car-availables`)
+        return fetch(`https://booking-com-stay-cardata-api.herokuapp.com/car-availables`)
         .then((res)=>res.json())
         .then((res)=>{
             setCarData(res);

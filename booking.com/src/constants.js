@@ -1,1 +1,1 @@
-export const baseUrl = "http://localhost:3003"
+export const baseUrl = "https://booking-com-stay-cardata-api.herokuapp.com"
