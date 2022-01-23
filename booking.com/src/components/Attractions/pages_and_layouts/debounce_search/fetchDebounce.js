@@ -6,7 +6,7 @@ export  const  fetchDebounce=(query)=>{
           dispach(debounceFetching()); //loading..
           try{
 
-               const responce= await axios.get(`http://localhost:8000/attractionsData?q=${query}`);
+               const responce= await axios.get(`https://bathandbodyworksserver.herokuapp.com/booking.com?q=${query}`);
                console.log(responce.data);
 
           dispach(debounceFetchSuccess(responce.data))//success
