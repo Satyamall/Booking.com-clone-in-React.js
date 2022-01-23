@@ -1,0 +1,416 @@
+{
+    "popular-flight":[
+        {
+          "id": 1,
+          "origin": "Lucknow",
+          "destination": "Jaipur",
+          "startTime": "10:00 AM",
+          "endTime": "3:00 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684655.jpg?k=2afb45c7a46dedbc5b5b360599dbbb7a7165ac823b22dd66d7602ea4c49de1c4&o="
+        },
+        {
+          "id": 2,
+          "origin": "Lucknow",
+          "destination": "Kolkata",
+          "startTime": "10:30 AM",
+          "endTime": "2:00 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684568.jpg?k=2e0d30ebcaf31e7469617ea53a01cdaf68d14c506d1167af9b9b38e53832f156&o="
+        },
+        {
+          "id": 3,
+          "origin": "Lucknow",
+          "destination": "Srinagar",
+          "startTime": "11:00 AM",
+          "endTime": "4:00 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684877.jpg?k=4695a1cdaa3a3a11381d172f284215174d6e057ed4722aaa902e859cd5c7dc4d&o="
+        },
+        {
+          "id": 4,
+          "origin": "Lucknow",
+          "destination": "Hyderabad",
+          "startTime": "11:30 AM",
+          "endTime": "2:30 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684652.jpg?k=5055a718205497d78d7d80b05c6cfbd59b79af5998231e50c23832e103087691&o="
+        },
+        {
+          "id": 5,
+          "origin": "Lucknow",
+          "destination": "Pune",
+          "startTime": "12:00 AM",
+          "endTime": "3:30 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684820.jpg?k=29ee5cee377c4e6cfba7a474d02914660d3311f0b75d1b9cf3bdefef0eabffdd&o="
+        },
+        {
+          "id": 6,
+          "origin": "Lucknow",
+          "destination": "Chennai",
+          "startTime": "12:30 AM",
+          "endTime": "5:30 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684727.jpg?k=a6fd59b0c31df52ae2a907dcf2441c7842bb56e2e68d89bffd2398024c0812d3&o="
+        },
+        {
+          "id": 7,
+          "origin": "Lucknow",
+          "destination": "Bangalore",
+          "startTime": "1:00 AM",
+          "endTime": "6:30 PM",
+          "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684533.jpg?k=efaef4796fa555481ddabf686c3fc66433b50ba69c936d6f702b1125b1d06748&o="
+        }
+    ],
+    "trending-cities": [
+      {
+        "id": 1,
+        "city": "New Delhi, India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684764.jpg?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&o="
+      },
+      {
+        "id": 2,
+        "city": "Dubai, United Arab Emirates",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/619923.jpg?k=4fb13225390240a51ee5aa1d76318d03dc0de8a046ddc06e4598f17b287bdcc9&o="
+      },
+      {
+        "id": 3,
+        "city": "Panaji,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684757.jpg?k=5cd52ccbba6806c371689dab0da9678a5c1f4dcef697ea976a000f5e53ac4f18&o="
+      },
+      {
+        "id": 4,
+        "city": "Mumbai,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/971345.jpg?k=9bf85dfa10a224e2855ca2f8ca3fcd96916a962d87cdfcc48d6d57c09bef3c65&o="
+      },
+      {
+        "id": 5,
+        "city": "Bangalore,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684533.jpg?k=efaef4796fa555481ddabf686c3fc66433b50ba69c936d6f702b1125b1d06748&o="
+      },
+      {
+        "id": 6,
+        "city": "Riyadh,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/691303.jpg?k=0d2a322e851307411abf8c501d3248e6304dbf0e698043394fdad4db6397bd77&o="
+      },
+      {
+        "id": 7,
+        "city": "Jammu,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/957457.jpg?k=e9468332b4da020c518ed3dc36a8c3ebea6c2ca25cae6b71cfc9e71dab2b8a23&o="
+      },
+      {
+        "id": 8,
+        "city": "Pune,India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684820.jpg?k=29ee5cee377c4e6cfba7a474d02914660d3311f0b75d1b9cf3bdefef0eabffdd&o="
+      },
+      {
+        "id": 9,
+        "city": "Jeddah,Saudi Arabia",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/688579.jpg?k=b84787741347c10b81e0899afdf406ab8025d8008a74af4f15460545eea5bd13&o="
+      },
+      {
+        "id": 10,
+        "city": "Kolkata, India",
+        "about": "Flights from Chaudhary Charan Singh International Airport",
+        "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684568.jpg?k=2e0d30ebcaf31e7469617ea53a01cdaf68d14c506d1167af9b9b38e53832f156&o="
+      }
+    ],
+        "Asia": [
+          {
+            "id": 1,
+            "origin": "Lucknow",
+            "destination": "New Delhi",
+            "description": "Shortest flight time: 1h 01m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684764.jpg?k=6c3c9e920a39ca4f9eddcdfaa916999ea5d2765844610dd59349f4271f7596b3&o="
+          },
+          {
+            "id": 2,
+            "origin": "Lucknow",
+            "destination": "Dubai",
+            "description": "Shortest flight time: 3h 42m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/619923.jpg?k=4fb13225390240a51ee5aa1d76318d03dc0de8a046ddc06e4598f17b287bdcc9&o="
+          },
+          {
+            "id": 3,
+            "origin": "Lucknow",
+            "destination": "Panaji",
+            "description": "Shortest flight time: 2h 19m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684757.jpg?k=5cd52ccbba6806c371689dab0da9678a5c1f4dcef697ea976a000f5e53ac4f18&o="
+          },
+          {
+            "id": 4,
+            "origin": "Lucknow",
+            "destination": "Mumbai",
+            "description": "Shortest flight time: 2h 00m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/971345.jpg?k=9bf85dfa10a224e2855ca2f8ca3fcd96916a962d87cdfcc48d6d57c09bef3c65&o="
+          },
+          {
+            "id": 5,
+            "origin": "Lucknow",
+            "destination": "Bangalore",
+            "description": "Shortest flight time: 2h 29m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684533.jpg?k=efaef4796fa555481ddabf686c3fc66433b50ba69c936d6f702b1125b1d06748&o="
+          },
+          {
+            "id": 6,
+            "origin": "Lucknow",
+            "destination": "Riyadh",
+            "description": "Shortest flight time: 4h 47m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/691303.jpg?k=0d2a322e851307411abf8c501d3248e6304dbf0e698043394fdad4db6397bd77&o="
+          },
+          {
+            "id": 7,
+            "origin": "Lucknow",
+            "destination": "Jammu",
+            "description": "Shortest flight time: 1h 36m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/957457.jpg?k=e9468332b4da020c518ed3dc36a8c3ebea6c2ca25cae6b71cfc9e71dab2b8a23&o="
+          },
+          {
+            "id": 8,
+            "origin": "Lucknow",
+            "destination": "Pune",
+            "description": "Shortest flight time: 1h 58m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/684820.jpg?k=29ee5cee377c4e6cfba7a474d02914660d3311f0b75d1b9cf3bdefef0eabffdd&o="
+          },
+          {
+            "id": 9,
+            "origin": "Lucknow",
+            "destination": "Jeddah",
+            "description": "Shortest flight time: 5h 49m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/688579.jpg?k=b84787741347c10b81e0899afdf406ab8025d8008a74af4f15460545eea5bd13&o="
+          }
+        ],
+        "Europe":[
+          {
+            "id": 1,
+            "origin": "Lucknow",
+            "destination": "Genoa",
+            "description": "Shortest flight time: 8h 43m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/640111.jpg?k=e0f82b6057243cbcf8f5cdce95e3685852a2ca80178735cee9bb00b66a941798&o="
+          },
+          {
+            "id": 2,
+            "origin": "Lucknow",
+            "destination": "London",
+            "description": "Shortest flight time: 9h 23m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/613094.jpg?k=f751e035ae2c0ac97263ed7d150bae607ffa17a88c55e81cec907941d6bb078b&o="
+          },
+          {
+            "id": 3,
+            "origin": "Lucknow",
+            "destination": "Paris",
+            "description": "Shortest flight time: 9h 14m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/613087.jpg?k=68ce65e52a527819c35c13c3d0e8a925263a71aab15a89577b4083c021855481&o="
+          },
+          {
+            "id": 4,
+            "origin": "Lucknow",
+            "destination": "Kyiv",
+            "description": "Shortest flight time: 6h 43m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/664711.jpg?k=dd70c5e1a242c4a3d4ab4e9544071e39d9f979adcdf9681d9f3cd43344d93485&o="
+          },
+          {
+            "id": 5,
+            "origin": "Lucknow",
+            "destination": "Frankfurt/Main",
+            "description": "Shortest flight time: 8h 39m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/972591.jpg?k=0730f8d7129afb9ba91bd055c801b061fc778dd1f5f82cfcc911e45e09703c64&o="
+          },
+          {
+            "id": 6,
+            "origin": "Lucknow",
+            "destination": "Warsaw",
+            "description": "Shortest flight time: 7h 34m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/653080.jpg?k=389326fef4805a4bdb9aa6ea47fbd93de32f2eb0a54a1c31044e237284f52492&o="
+          },
+          {
+            "id": 7,
+            "origin": "Lucknow",
+            "destination": "Moscow",
+            "description": "Shortest flight time: 6h 24m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/619983.jpg?k=9cee18959a5d7ed39c4bfdf5196502e26eb11f75fb02ef910ca57afd6afd1f10&o="
+          },
+          {
+            "id": 8,
+            "origin": "Lucknow",
+            "destination": "Berlin",
+            "description": "Shortest flight time: 8h 13m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/972611.jpg?k=ad717a318610993a0d25cc1938fc17106d7a07b3489b89e239489f5e943756dd&o="
+          },
+          {
+            "id": 9,
+            "origin": "Lucknow",
+            "destination": "Stockholm",
+            "description": "Shortest flight time: 7h 56m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/685779.jpg?k=8774db3e8159799b859ca794fcb96ad2e35105627c017436efb68fc7a7afa319&o="
+          }
+        ],
+        "North-America": [
+          {
+            "id": 1,
+            "origin": "Lucknow",
+            "destination": "New York",
+            "description": "Shortest flight time: 15h 35m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/856674.jpg?k=70a9589c2f7d2fc175c3ac02c55702c2e433f588866756a394cddfe215170f38&o="
+          },
+          {
+            "id": 2,
+            "origin": "Lucknow",
+            "destination": "Los Angeles",
+            "description": "Shortest flight time: 16h 41m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/620034.jpg?k=57be46c03c63ddade3e509013855574fe00e8b23e30dc19cd6cc232b4da7eb7e&o="
+          },
+          {
+            "id": 3,
+            "origin": "Lucknow",
+            "destination": "Toronto",
+            "description": "Shortest flight time: 15h 24m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/971989.jpg?k=1e02f419fe4a28344bb98db67c4153ba6c9fb5b4837e2e038612cff9ea419c65&o="
+          },
+          {
+            "id": 4,
+            "origin": "Lucknow",
+            "destination": "Seattle",
+            "description": "Shortest flight time: 14h 46m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/690566.jpg?k=ce21853027cc5aa928c0e261e5c567a935d613995c2c365958cbf5ccbaeff9bb&o="
+          },
+          {
+            "id": 5,
+            "origin": "Lucknow",
+            "destination": "Atlanta",
+            "description": "Shortest flight time: 16h 53m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/689725.jpg?k=69b7a8d8206460d904d5df2b02e3be68c6808379d536f9ffa992876cff9b092f&o="
+          },
+          {
+            "id": 6,
+            "origin": "Lucknow",
+            "destination": "Washington",
+            "description": "Shortest flight time: 15h 57m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/689490.jpg?k=1d5bd50555dd3c8fbd622bad7493375d6ee52e4c258e3cff5c64ded847efdf76&o="
+          },
+          {
+            "id": 7,
+            "origin": "Lucknow",
+            "destination": "Miami",
+            "description": "Shortest flight time: 17h 47m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/689586.jpg?k=970c12bc9abce21e6043c5ad0ba8bedaf27b105be29277b0215359a07f8192e3&o="
+          },
+          {
+            "id": 8,
+            "origin": "Lucknow",
+            "destination": "Las Vegas",
+            "description": "Shortest flight time: 16h 31m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/349717.jpg?k=15138e712e1083b40d0c1164fad96f5adce36dbe3707fe483f516a555765e561&o="
+          },
+          {
+            "id": 9,
+            "origin": "Lucknow",
+            "destination": "Houston",
+            "description": "Shortest flight time: 17h 38m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/690408.jpg?k=f59731e733077b90bc716596e05cfd0f85a2582341cc25c17b26ee2a755d7b55&o="
+          }
+        ],
+        "Oceania": [
+          {
+            "id": 1,
+            "origin": "Lucknow",
+            "destination": "Adelaide",
+            "description": "Shortest flight time: 11h 57m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/682173.jpg?k=278eea9a639dba0d20fe79628c84b421fefea2962069189d8b3e864774451183&o="
+          },
+          {
+            "id": 2,
+            "origin": "Lucknow",
+            "destination": "Melbourne",
+            "description": "Shortest flight time: 12h 45m",
+            "image": "https://q-xx.bstatic.com/xdata/images/city/square210/967877.jpg?k=18d14b862ca13e1e099d98c281202acdf8e80bacbf831bd66222ea03392d5d57&o="
+          }
+        ],
+    "flights" : [
+    {
+      "id":1,
+      "arrivalTime": "5:35 PM",
+      "departureTime": "10:50 PM",
+      "origin": "LKO",
+      "destination": "JAI",
+      "name": "IndiGo",
+      "price": 4489.00
+    },
+    {
+      "id":2,
+      "arrivalTime": "6:40 AM",
+      "departureTime": "1:50 PM",
+      "origin": "LKO",
+      "destination": "JAI",
+      "name": "IndiGo",
+      "price": 4489.00
+    },
+    {
+      "id":3,
+      "arrivalTime": "1:00 PM",
+      "departureTime": "10:50 PM",
+      "origin": "LKO",
+      "destination": "JAI",
+      "name": "IndiGo",
+      "price": 4864.89
+    },
+    {
+      "id":4,
+      "arrivalTime": "3:25 PM",
+      "departureTime": "10:50 PM",
+      "origin": "LKO",
+      "destination": "JAI",
+      "name": "Vistara, IndiGo",
+      "price": 9088.57
+    },
+    {
+      "id":5,
+      "arrivalTime": "8:55 AM",
+      "departureTime": "7:10 PM",
+      "origin": "LKO",
+      "destination": "JAI",
+      "name": "Air India",
+      "price": 9837.71
+    },
+    {
+      "id":6,
+      "arrivalTime": "8:35 PM",
+      "departureTime": "8:25 AM",
+      "origin": "LKO",
+      "destination": "JAI",
+      "name": "Vistara",
+      "price": 9864.89
+    },
+    {
+      "id":7,
+      "arrivalTime": "8:05 AM",
+      "departureTime": "5:05 PM",
+      "origin": "LKO",
+      "destination": "JAI",
+      "name": "Vistara",
+      "price": 9864.89
+    },
+    {
+      "id":8,
+      "arrivalTime": "1:05 PM",
+      "departureTime": "11:40 PM",
+      "origin": "LKO",
+      "destination": "JAI",
+      "name": "Air India",
+      "price": 14264.89
+    },
+    {
+      "id":9,
+      "arrivalTime": "2:10 PM",
+      "departureTime": "11:30 PM",
+      "origin": "LKO",
+      "destination": "JAI",
+      "name": "Air India",
+      "price": 15264.89
+    }
+  ]
+  }  

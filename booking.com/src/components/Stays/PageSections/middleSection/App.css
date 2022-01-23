@@ -1,0 +1,56 @@
+.corosel{
+  margin-top: 6vw;
+  width: 91%;
+  margin-left: 4vw;
+}
+
+.browsH2{
+  margin-left: 5.5vw;
+  font-size: 24px;
+  margin-bottom: -30px;
+  margin-top: 120px;
+  font-weight: 700;
+  line-height: 32px;
+  color:#4d4949;
+}
+
+.browsimg{
+  height: 180px;
+  width:17vw;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.rec.rec-arrow:hover {
+  /* background-color: red; */
+  background-color: rgba(241, 241, 243, 0.877);
+  transition: all 0.3s ease 0s;
+}
+
+.divimg{
+  position: relative;
+}
+
+.diver{
+  position: absolute;
+  padding: 16px 0 0;
+  text-align: left;
+}
+
+.subhead{
+  color:#333333;
+  margin-top: 18vw;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.bbrowssub{
+  margin-left: -1vw;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6b6b6b;
+  padding: 5px;
+}

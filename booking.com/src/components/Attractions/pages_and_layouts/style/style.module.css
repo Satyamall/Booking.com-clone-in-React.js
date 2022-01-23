@@ -1,0 +1,467 @@
+.searchInputBox{
+    width: 100% !important;
+}
+.searchButton{
+    height: 50px !important;
+    border-left:4px solid #F9B82E !important;
+}
+.firstSection{
+    background:#f2f2f2;
+  padding:5% 0% 5% 20%;
+
+}
+.topHeading{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    padding-bottom: 8px;
+}
+.topSubHeading,.fifthSubheading{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color: #8a9197;
+    padding-bottom: 30px;
+}
+.secondSection{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #cfcbc1;
+    display:flex;
+    padding:20px;
+    margin-top: 20px;
+}
+.secondSection_infoicon{
+    padding:4px;
+    background:#e9c6a9;
+    color: rgb(223, 124, 67);
+}
+.secondSection_infoText{
+    padding:4px;
+    font-size:15px;
+    color: #4e575f;
+}
+.secondSection_infoText>span{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.thirdSection,.sectionTheeHeading,.SixthSection{
+    width: 80%;
+    margin:auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between
+}
+.card_background_fog_layout{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(9, 49, 87, 0.336);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.card_background_fog_layout:hover{
+    background-color: rgba(253, 253, 253, 0);
+    transition: 0.5s;
+}
+.card_background_fog_layout>div{
+    color: #fff;
+    padding-left: 10px;
+}
+.card_background_fog_layout>div:nth-child(2){
+    font-size:12px;
+    padding-bottom: 10px;
+}
+
+.FourthSection,.FifthSection{
+    width: 80%;
+    margin:auto;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgb(184, 174, 174);
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(194, 183, 183);
+
+}
+.FourthSection h5{
+    padding: 0;
+    margin: 0;
+}
+.FourthSection h5+div{
+  font-size:13px;
+  /* font-weight: lighter; */
+}
+.FourthSection >.outterFlex{
+    display: flex;
+    justify-content:space-between;
+
+}
+.FourthSection >.outterFlex>div{
+    margin: 0.7%;
+}
+.FourthSection >.outterFlex>.innerFlex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.FourthSection >.outterFlex>.innerFlex>div{
+    margin: 1.5%;
+}
+.fifthSubheading{
+    padding:0;
+}
+.fifthHeading{
+    margin:0;
+}
+.FifthSection,.SixthSection{
+    border:none;
+}
+.ContinentNav{
+    display: flex;
+    border-bottom: 1px solid rgb(190, 179, 179);
+}
+.ContinentNav>div{
+    padding:10px;
+    margin-right:10px;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+.ContinentNav>div:hover{
+    background:rgb(231, 226, 226);
+}
+.continentNavActive{
+    color:blue;
+    border-bottom: 2px solid blue;
+}
+/* attraction place list page design */
+.ListLanding{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+}
+.ListLanding>div:nth-child(1){
+    flex-basis: 40%;
+
+}
+.FilterHolder{
+    position: sticky;
+    top:0;
+}
+.ListLanding>div:nth-child(2){
+    flex-basis: 60%;
+}
+/* temp */
+.mostpopular{
+    font-size:14px;
+    padding:6px;
+border: 1px solid blue;
+width:100px;
+margin-left: auto;
+
+
+}
+.popularHolder{
+    /* border: 1px solid  red; */
+    /* padding-top: 20px; */
+   margin-top: 10px;
+   color:blue;
+}
+.listPlaceSide{
+    margin-top:20px;
+}
+.PlaceList>div:nth-child(1){
+    flex-basis:30%;
+
+}
+.PlaceList>div:nth-child(1) img{
+    width:95%;
+    height: 100%;
+    background-size: cover;
+}
+.PlaceList>div:nth-child(2){
+    flex-basis:68%;
+    margin-left: 1%;
+    /* border: 1px solid #0071C2; */
+}
+.viewBtn{
+    border:1px solid #0071C2;
+    padding:5px;
+    color:#0071C2;
+    width:70px;
+    text-align:center;
+    margin-left:auto;
+    cursor: pointer;
+    font-weight:bold;
+    margin-top:15px
+}
+.viewBtn:hover{
+    background: rgb(215, 241, 245);
+}
+.PlaceList>div:nth-child(2)>div:nth-child(1){
+    font-size:15px;
+    color:rgb(97, 97, 102);
+    padding: 1px;
+}
+.PlaceList>div:nth-child(2)>div:nth-child(2){
+    font-weight: bold;
+    padding: 1px;
+}
+.PlaceList>div:nth-child(2)>div:nth-child(3){
+    padding-top:0px;
+    font-size: 15px;
+}
+.PlaceList>div:nth-child(2)>div:nth-child(4){
+   text-align: right;
+   font-size: 13px;
+   color: #56585a;
+   /* padding-top: 10px; */
+   padding-right: 4px;
+}
+.PlaceList>div:nth-child(2)>div:nth-child(5){
+ text-align:right;
+ font-weight: bold;
+ padding-top: 1px
+}
+.Filter>div{
+ display: flex;
+ align-items: center;
+
+}
+.Filter{
+    margin-top: 20px;
+    /* position:sticky;
+    top:0 */
+}
+.Filter>div:nth-child(1){
+    font-size:15px;
+    padding-bottom: 10px;
+    color: rgb(85, 81, 81);
+    /* font-weight: bold; */
+}
+.Filter>div>*{
+    margin: 1%;
+    font-size: 13px;
+    color: rgb(65, 62, 62);
+}
+.Filter>div input[type="checkbox"],.Filter>div input[type="radio"]{
+    /* width: 100px; */
+        width: 20px; /*Desired width*/
+        height: 20px; /*Desired height*/
+        cursor: pointer;
+}
+.Filter img{
+    margin-top: 20px;
+width: 80%;
+height: 180px;
+}
+/* design start of attraction view landing page */
+.attractionsViewDiverder{
+    width:98%;
+    margin:auto;
+    display: flex;
+}
+.infoIco{
+    display: flex;
+    align-items: center;
+}
+.infoIco>div{
+    margin: 5px;
+}
+.description{
+    margin-top: 20px;
+}
+.attractionsViewLeft{
+    flex-basis: 57%;
+    /* border: 1px solid #0071C2; */
+}
+.attractionsViewRight{
+    flex-basis: 39%;
+  margin-left: 1%;
+  /* border: 1px solid #0071C2; */
+
+}
+.meetingPointholder{
+    display: flex;
+    margin-top: 20px;
+}
+.meetingPointholder>div{
+    margin: 4px;
+}
+.meetingPointholder>div>div:nth-child(1){
+    font-weight: bold;
+}
+.meetingPointholder>div>div:nth-child(3){
+    font-weight: bold;
+    color:#0071C2;
+    margin-top: 10px;
+    width:150px;
+    padding:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
+    cursor: pointer;
+}
+.meetingPointholder>div>div:nth-child(3):hover{
+    background: #c7e0f1;
+}
+.AttractionPlaceSpac{
+    margin-top: 10px;
+}
+.AttractionPlaceSpac>div{
+    display: flex;
+    font-size:18px;
+    margin: 1.5%;
+}
+.AttractionPlaceSpac>div>div{
+    margin: 3px;
+}
+.attractionsViewName{
+    font-size:30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.attractionsViewName+div{
+font-size: 17px;
+color:#2f3031
+}
+/* Ticket section design */
+.ticketFirstView{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.ticketFirstView>div:nth-child(2),.ticketAfterselect>div:nth-child(2){
+    display: flex;
+}
+.ticketFirstView>div:nth-child(2) span,.ticketAfterselect>div:nth-child(2) span{
+  font-weight:bold;
+  color:#0071C2;
+  cursor: pointer;
+}
+.ticketFirstView>div:nth-child(2)>div,.ticketAfterselect>div:nth-child(2)>div{
+    margin: 4px;
+}
+.ticketSelect{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.ticketSelect>div>div:nth-child(1){
+    font-size: 13px;
+    color: rgb(63, 62, 62);
+}
+.ticketSelect>div>div:nth-child(2){
+    font-weight: bold;
+}
+.selectbtn{
+    border: 1px solid  #0071C2;
+    font-weight: bold;
+    padding:5px;
+    color:#0071C2;
+    cursor: pointer;
+    border-radius:2px;
+    margin-right: 10px;
+}
+.selectbtn:hover{
+    background: #cee0ee;
+}
+.ticketAfterselect{
+    padding:15px;
+    background:#b2d5ee;
+    border: 1px solid #0071C2;
+}
+.ticketAfterselect>div:nth-child(1){
+    display: flex;
+    justify-content:space-between;
+}
+.ticketAfterselect>div:nth-child(1)>div:nth-child(2){
+    color: #0071C2;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Qselector{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.Qselector>div:nth-child(2){
+    /* sbackground:red; */
+    display: flex;
+}
+.Qselector>div:nth-child(2)>span{
+    padding:8px;
+    margin: 10px;
+    font-size:20px;
+}
+.Qselector>div:nth-child(2)>span:nth-child(odd){
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #fff;
+    background:black;
+    cursor: pointer;
+    user-select: none;
+
+}
+.NextBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.NextBtn>div{
+    background:#0071C2;
+    color:#fff;
+    font-weight: bold;padding:10px;
+    padding-right:50px;padding-left:50px;
+    border-radius:3px;
+    cursor: pointer;
+}
+.removeScrol::-webkit-scrollbar {
+        display: none;
+
+    }
+.removeScrol{
+    margin-top:5px;
+    z-index: 20;
+    position:absolute;
+    max-height:350px !important;
+    padding-bottom:5px ;
+    box-shadow: 5px 5px 5px 5px #c7e0f1;
+}
+.debounceList{
+    /* padding:10px !important; */
+    margin: 5px;
+    /* border: 1px solid #0071C2; */
+    display: flex;
+    height:45px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.debounceList:hover{
+    background: #d6dfe6;
+}
+.debounceList img{
+    width:100%;
+    height: 100%;
+}
+.info>*{
+font-size: 13px;
+margin:0;
+padding:0;
+}
+.info>span:nth-child(1){
+    font-weight: bold;
+}
+.info>div{
+    color:#858b8f
+}

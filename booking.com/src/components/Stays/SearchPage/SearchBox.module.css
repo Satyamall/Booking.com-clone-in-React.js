@@ -1,0 +1,369 @@
+
+.SearchRequestContainer * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'BlinkMacSystemFont', '-apple-system', 'Segoe', 'UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.SearchRequestContainer {
+    width: 70%;
+    padding: 5%;
+    background-color: rgb(254, 187, 2);
+    border-radius: 10px;
+}
+
+.SearchRequestContainer > p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(83, 83, 83);
+
+
+}
+
+
+.SearchRequestContainer .destination {
+    margin-top: 2%;
+}
+
+.SearchRequestContainer .destination > div {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 1%;
+    border-radius: 2px;
+    margin-top: 2%;
+}
+
+.SearchRequestContainer .destination > p {
+    font-size: 0.85rem;
+
+    color: rgb(48, 47, 47);
+}
+
+.SearchRequestContainer .destination > div svg {
+    margin-top: 4.5%;
+
+    margin-left: 1%;
+
+}
+
+.SearchRequestContainer .destination > div input {
+    background-color: none;
+    outline: none;
+    border: none;
+    padding: 5%;
+    font-size: 0.955rem;
+    margin-right: 7%;
+}
+
+.SearchRequestContainer .startDate {
+    margin-top: 2%;
+
+}
+
+.SearchRequestContainer .startDate > div {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 1%;
+    border-radius: 2px;
+    margin-top: 2%;
+
+}
+
+.SearchRequestContainer .startDate > p {
+
+    font-size: 0.85rem;
+
+    color: rgb(48, 47, 47);
+}
+
+.SearchRequestContainer .startDate > div input {
+    background-color: none;
+    outline: none;
+    border: none;
+    padding: 5%;
+    font-size: 1rem;
+    cursor: pointer;
+
+
+}
+
+.SearchRequestContainer .startDate > div svg {
+    margin-top: 4%;
+}
+
+.SearchRequestContainer .endDate {
+    margin-top: 2%;
+
+}
+
+.SearchRequestContainer .endDate > div {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 1%;
+    border-radius: 2px;
+    margin-top: 2%;
+}
+
+.SearchRequestContainer .endDate > p {
+    font-size: 0.85rem;
+
+    color: rgb(48, 47, 47);
+}
+
+.SearchRequestContainer .endDate > div input {
+    background-color: none;
+    outline: none;
+    border: none;
+    padding: 5%;
+    font-size: 1rem;
+    cursor: pointer;
+
+
+}
+
+.SearchRequestContainer .endDate > div svg {
+    margin-top: 4%;
+}
+
+.SearchRequestContainer .stay {
+    margin-top: 5%;
+}
+
+.SearchRequestContainer .stay > p {
+    font-size: 0.85rem;
+    margin: 1%;
+    margin-bottom: 3%;
+    color: rgb(58, 56, 56);
+
+}
+
+.SearchRequestContainer .stay > div {
+    display: flex;
+    background-color: white;
+    border-radius: 2px;
+    justify-content: space-between;
+
+}
+
+.SearchRequestContainer .stay > div input {
+    background-color: none;
+    outline: none;
+    border: none;
+    padding: 5%;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.SearchRequestContainer .stay > div svg {
+    margin-top: 5%;
+    margin-right: 2%;
+    cursor: pointer;
+
+}
+
+.SearchRequestContainer .children {
+    display: flex;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.SearchRequestContainer .children > div {
+    display: flex;
+    background-color: white;
+    border-radius: 2px;
+    /* cursor: pointer; */
+}
+
+.SearchRequestContainer .children :nth-child(1) {
+
+    margin-right: 2%;
+
+}
+
+.SearchRequestContainer .children > div .svg {
+    fill: #838181;
+    margin-top: 8%;
+    margin-right: 5%;
+    height: 20px;
+    width: 20px;
+}
+
+.SearchRequestContainer .children > div input {
+    background-color: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 8%;
+    cursor: pointer;
+}
+
+.SearchRequestContainer .lower {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+
+}
+
+.SearchRequestContainer .lower > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SearchRequestContainer .lower > div p {
+    font-size: 0.85rem;
+    margin-left: 0.3rem;
+    color: rgb(48, 47, 47);
+
+}
+
+.SearchRequestContainer .lower > div input {
+    font-size: 1rem;
+    margin-top: 0px;
+}
+
+.SearchRequestContainer .button {
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.SearchRequestContainer .button button {
+    border: none;
+    background-color: rgb(0, 113, 194);
+    width: 100%;
+    color: white;
+    padding: 4%;
+    font-size: 1.01rem;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.SearchRequestContainer .button button:hover {
+    background-color: rgb(1, 67, 160);
+}
+
+.hotelListContainer {
+
+    list-style: none;
+    width: 70%;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+
+.hotelListContainer > .listOfHotels {
+    list-style: none;
+    /* border: 1px solid black; */
+    list-style: none;
+
+}
+
+.hotelListContainer > .listOfHotels > li {
+    margin-bottom: 12px;
+
+    list-style: none;
+}
+
+.searchPageContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    margin-left: 7%;
+    margin-right: 9%;
+}
+
+.cal1 {
+    border: none;
+    z-index: 5;
+    box-shadow: 2px 2px 2px 2px rgba(184, 180, 180, 0.616);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.cal .calenderItem {
+    top: 370px;
+    position: absolute;
+    font-size: 1rem;
+    left: 115px;
+
+}
+
+.cal .calenderItem2 {
+    top: 440px;
+    position: absolute;
+    border: none;
+    left: 115px;
+
+
+}
+
+.adultSelect {
+    position: absolute;
+    width: 20.2%;
+    padding: 1%;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(199, 194, 194, 0.589);
+    border-radius: 3px;
+    top: 520px;
+    margin-top: 20px;
+}
+
+.adultSelect > div {
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    /* top: 200px; */
+
+}
+
+.adultSelect > div > button {
+    border: none;
+    width: 40%;
+    color: white;
+    background-color: rgb(0, 113, 194);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.roomSelect, .childSelect {
+    position: absolute;
+    width: 20.2%;
+    padding: 1%;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(199, 194, 194, 0.589);
+    border-radius: 3px;
+    top: 568px;
+
+}
+
+.roomSelect > div, .childSelect > div {
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    /* top: 200px; */
+
+
+}
+
+.roomSelect > div > button, .childSelect > div > button {
+    border: none;
+    width: 40%;
+    color: white;
+    background-color: rgb(0, 113, 194);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}

@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .box1{
+      width: 100%;
+      padding-left: 8%;
+      height: 380px;
+      background: whitesmoke;
+  }
+
+  .head {
+    display: flex;
+    align-items: start;
+    margin: 0px auto 64px;
+    width: 100%;
+    padding: 0px 16px;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+  }
+  .covid {
+    width: 90%;
+    margin: 24px 0px;
+    box-sizing: border-box;
+    background-color: #fff0e0;
+    border: 1px solid #ff8000;
+    padding: 16px;
+    color: #262626;
+    border-radius: 2px;
+  }
+  .flightformcont {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  .flightheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-left: unset;
+    margin-bottom: 24px !important;
+    width: 100%;
+  }
+  .headerbold {
+    margin-right: 0;
+    margin-left: unset;
+    margin-bottom: 8px !important;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .headerbottom {
+    margin-right: 0;
+    margin-left: unset;
+    margin-bottom: 0 !important;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .flightformoutmost {
+    margin-right: 0;
+    margin-left: unset;
+    margin-bottom: 0 !important;
+    width: 100%;
+  }
+  .flightformbox {
+    display: block;
+  }
+  .flightform {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .flightformfilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 16px !important;
+    width: 100%;
+  }
+  .flightformradio {
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+  }
+  .radiogroup {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+  }
+  .radioitem {
+    position: relative;
+    flex-grow: 0;
+    border-bottom: 0;
+    list-style: none;
+  }
+  .radioitem > label {
+    display: block;
+    margin-right: 16px;
+    margin-left: unset;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .radioitem > label > div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+  }
+  .radioinput {
+    flex-grow: 0;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    bottom: 2px;
+    padding-left: 12px;
+  }
+  .yellowBox {
+    position: relative;
+    background-color: #febb02;
+    padding: 4px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 16%);
+    margin-right: 0;
+    margin-left: unset;
+    margin-bottom: 16px !important;
+    width: 100%;
+  }
+  .yellowBox > div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .inputGroup {
+    display: flex;
+    flex: 2 1 0%;
+    background: #ffffff;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0;
+    height: 56px;
+    border: solid 1px #ffffff !important;
+    margin-right: 4px !important;
+    margin-left: unset;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .inputGroup > .svg {
+    margin-left: 16px;
+    margin-right: unset;
+    position: relative;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+  }
+  .inputGroup > .inputDiv {
+    width: 100%;
+    animation: animation-g7abp6 0.15s ease-in-out !important;
+  }
+  .inputDiv > .span {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .inputContainer {
+    background-color: #ffffff;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+  }
+  .SearchboxInput {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 0;
+    border-radius: 2px;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 56px;
+    color: #262626;
+    padding-left: 16px;
+    padding-right: unset;
+    margin: 0;
+  }
+  .arrow {
+    margin: -4px;
+    left: 0px;
+    right: unset;
+    width: 0px;
+    position: relative;
+    margin-right: 4px !important;
+  }
+  .arrow > div {
+    width: 32px;
+    position: absolute;
+    left: -16px;
+    right: unset;
+    cursor: pointer;
+    background: #ffffff;
+    height: 32px;
+    padding: 4px;
+    top: 16px;
+  }
+  .arrow > div > svg {
+    width: 100%;
+    height: 100%;
+    fill: rgb(0, 113, 194);
+    overflow: hidden;
+  }
+  .DateInputGroup {
+    display: flex;
+    flex: 2 1 0%;
+    background: #ffffff;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0;
+    margin-right: 4px !important;
+    margin-left: unset;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .DateInputGroup > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0px;
+    padding: 0px;
+  }
+  .DateInputGroup > div > div > .span {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .dateInputGroup {
+    display: flex;
+    width: 100%;
+    background-color: #febb02;
+    justify-content: space-between;
+  }
+  .DateInput {
+    width: 100%;
+    border: solid 1px #ffffff;
+  }
+  .dateInputContainer {
+    display: inline-flex;
+    background-color: #ffffff;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .dateSvg {
+    display: flex;
+    flex: 1;
+    margin-left: 16px;
+    margin-right: unset;
+    width: 20px;
+    height: 20px;
+  }
+  .datepicker {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 0;
+    border-radius: 2px;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 54px;
+    color: #262626;
+    padding-right: unset;
+    margin: 0;
+  }
+
+  .date{
+      border: none;
+      margin-left: 5px;
+      padding: 20px;
+  }
+  .search {
+    background-color: rgb(0, 113, 194);
+    padding: 16px;
+  }
+
+  .btnLink{
+      text-decoration: none;
+      color: white;
+  }
+  .directFlightsDiv {
+    margin-right: 0;
+    margin-left: unset;
+    margin-bottom: 0 !important;
+  }
+  .directFlightsDiv > label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 calc(var(--bui_spacing_1x) * 5);
+    box-sizing: border-box;
+  }
+
+
+  /* Popular Flight code CSS ------------------ */
+  
+  .popularFlight{
+      margin-left: 8%;
+      margin-top: 50px;
+  }
+
+  .popularCard{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+  }
+
+  .card{
+      width: 300px;
+  }
+
+  .cardlink{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+  }
+
+  .img{
+      width: 100%;
+  }
+
+  .text{
+      text-decoration: none;
+      color: black;
+  }
+
+  .box2{
+      width: 100%;
+      padding-left: 8%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      background-color: rgb(242,242,242);
+      padding-top: 70px;
+      padding-bottom: 50px;
+  }
+
+  .box2Text{
+      display: flex;
+      width: 350px;
+  }
+
+  .questionCard{
+      width: 350px;
+      border: 1px solid whitesmoke;
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 14px;
+  }
+
+  .questionBox{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+  }
+
+  .btnBox{
+      display: flex;
+      gap: 2rem;
+  }
+
+  .btn{
+      border: none;
+  }
+
+  .btn:hover{
+      color: blue;
+      border-bottom: 2px solid blue;
+  }
+
+  .continentCard{
+    width: 300px;
+}
+
+.continentCardlink{
+    text-decoration: none;
+    width: 400px;
+    display: flex;
+    gap: 2rem;
+    height: 100px;
+}
+
+.box3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.img1{
+    width: 60px;
+}
+
+
+/* FlightDetails Page CSS--------------- */
+
+.searchBox{
+    width: 100%;
+    padding-left: 8%;
+    height: 230px;
+    background-color: whitesmoke;
+    padding-top: 20px;
+}
+
+.sideBarBtn{
+    border: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.SideBar{
+    display: flex;
+    gap: 3rem;
+}
+
+.flightCard{
+    width: 800px;
+    border: 1px solid gray;
+    display: flex;
+    padding: 20px;
+    gap: 2rem;
+}
+
+.flight{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dataflight{
+    margin-top: 30px;
+    display: flex;
+    gap: 1rem;
+}
+
+.bagBox{
+    margin-left: 50px;
+    width: 300px;
+    text-align: end;
+    border-left: 1px solid gray;
+}
+
+.seeflight{
+    border: 1px solid blue;
+    width: 90%;
+}
+
+.pay{
+  width: 400px;
+  display: flex;
+  font-size: 10px;
+}

@@ -1,0 +1,555 @@
+{
+    "popular_city_car_hire":[
+        {
+            "id": 1,
+            "city": "London",
+            "carDetail": "Car hire in 75 pick-up locations",
+            "fair": 3456.44,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/613095.webp?k=8caf960d96a59e284ac1518ac8777e89d17fda6572acd84dbec151f627c7bf07&o="
+        },
+        {
+            "id": 2,
+            "city": "Paris",
+            "carDetail": "Car hire in 90 pick-up locations",
+            "fair": 3712.55,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/613088.webp?k=a370ac3fb385fb211b35a79a42b0e968ddb458be37108af476c558bf4cedc1f3&o="
+        },
+        {
+            "id": 3,
+            "city": "Madrid",
+            "carDetail": "Car hire in 40 pick-up locations",
+            "fair": 1291.33,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&o="
+        },
+        {
+            "id": 4,
+            "city": "Dubai",
+            "carDetail": "Car hire in 91 pick-up locations",
+            "fair": 3038.58,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&o="
+        },
+        {
+            "id": 5,
+            "city": "Malaga",
+            "carDetail": "Car hire in 6 pick-up locations",
+            "fair": 1285.90,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/645577.webp?k=81d61cb4e120af4d4218386546a117b77ef18dfcf3727d186ec3a1aad60f38fe&o="
+        },
+        {
+            "id": 6,
+            "city": "Lisbon",
+            "carDetail": "Car hire in 18 pick-up locations",
+            "fair": 1490.27,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/619965.webp?k=8b2bc851e921e03c4565fe28e4f608c30223227743b3b2cc56c476a5ef04d3da&o="
+        }
+    ],
+    "top_worldwide_car_rental":[
+        {
+            "id": 1,
+            "city": "Milan",
+            "fair": 1313.59,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/619644.webp?k=5b21ac6d3d913a54274d6546e60adb2c3c138d661dd1a2bd7b3aed53e9df0b65&o="
+        },
+        {
+            "id": 2,
+            "city": "Rome",
+            "fair": 1251.28,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/613105.webp?k=1e85cf4dec7b0d5a6327be91c38cf9c1711f9da1a31c4cba736f9cb751443ff1&o="
+        },
+        {
+            "id": 3,
+            "city": "Barcelona",
+            "fair": 1452.29,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968315.webp?k=14d0bad185930ec2663562b999ecf498fb6fcf492c16a4c33228504a15e2d119&o="
+        },
+        {
+            "id": 4,
+            "city": "Madrid",
+            "fair": 1291.33,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&o="
+        }
+    ],
+    "london":[
+        {
+           "id": 1,
+           "city": "Southampton",
+           "fair": 2962.67,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967986.webp?k=41f5c2e33f7a64f821924ef9812a4be1e2edf4e7ac507c5190ff4709c9f6c081&o="
+        },
+        {
+           "id": 2,
+           "city": "Norwich",
+           "fair": 6377.63,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968056.webp?k=512962d90b277c9a01b75af9926ba217028d2dbd34a0d4f179848a7c9c7e4642&o="
+        },
+        {
+           "id": 3,
+           "city": "Southend on-Sea",
+           "fair": 8836.64,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/687448.webp?k=9826683a5c22a9ec9c401b9b606203df4ad55095b83ca0bb0d674f6d090716c9&o="
+        },
+        {
+           "id": 4,
+           "city": "Nottingham",
+           "fair": 3612.48,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967906.webp?k=12cf9003dbf4787849f1801c5310ea3baa7a775545de84dfa373a921c199344d&o="
+        },
+        {
+           "id": 5,
+           "city": "Oxford",
+           "fair": 2957.73,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967587.webp?k=e8628bb7bbb696b86fd9ed0dd6be4ac24d6647503220113ba60dbd0027ad788c&o="
+        },
+        {
+           "id": 6,
+           "city": "Portsmouth",
+           "fair": 2468.89,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968070.webp?k=b3fc4ffe692de2cc669d1f68dc0defb29dbc6958a38c2aee025b5d3f8e4b05f0&o="
+        },
+        {
+           "id": 7,
+           "city": "Penzance",
+           "fair": 9019.34,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968644.webp?k=6a48a64161c92e602c1ab63e2a945361556a54e7cca2d7afa83e2a63aa91d129&o="
+        },
+        {
+           "id": 8,
+           "city": "Romford",
+           "fair": 6159.38,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/810129.webp?k=fb0639ae40b5e4622b3edd5cc432d2e25975fcc3e06b17ed5afb21059a51126d&o="
+        },
+        {
+           "id": 9,
+           "city": "Sheffield",
+           "fair": 4444,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968084.webp?k=0acc0fcb575701b6ee1f352131e553c6d8702060c1484f1fd80a8c6098f795a9&o="
+        },
+        {
+           "id": 10,
+           "city": "Portadown",
+           "fair": 10470.06,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/734157.webp?k=0badc1af3b9f95874114e0ecabb55fa06c6177a46619dc914debe7053fb7c3c3&o="
+        }
+    ],
+    "paris": [
+        {
+            "id": 1,
+            "city": "Strasbourg",
+            "fair": 5243.41,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681966.webp?k=4c023f1c1ccc242171ac39e67a0c9c56913c113dc11e380b3aa80b642a29e141&o="
+         },
+         {
+            "id": 2,
+            "city": "Rennes",
+            "fair": 3016.91,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681864.webp?k=2b6fef095c0c3e35c3701778c05924c6da49c87dff1ce13121eaeb9fafa1e359&o="
+         },
+         {
+            "id": 3,
+            "city": "Perpignan",
+            "fair": 4602.84,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681854.webp?k=eab883a5609db398d721d60766d7c1b40dfc11b11bd5b277b00f0ff3f7ece8dd&o="
+         },
+         {
+            "id": 4,
+            "city": "Toulon",
+            "fair": 4090.16,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681961.webp?k=1c0a24b72d44b6409cdcaf623d46545f6863cb1c67f1dc901741488b9bdd21a5&o="
+         },
+         {
+            "id": 5,
+            "city": "Poitiers",
+            "fair": 5077.12,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/610180.webp?k=13762959bec0eef64a36ee45dcf62c9173e5dd4b8042690eaeb7fe0e19ca5a0c&o="
+         },
+         {
+            "id": 6,
+            "city": "Saint Malo",
+            "fair": 10216.93,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681918.webp?k=eb0d81bbed0788c958d0f0b7cf42f8cddc2da77da77e54439442ff416fb248a8&o="
+         },
+         {
+            "id": 7,
+            "city": "Rouen",
+            "fair": 7717.62,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681890.webp?k=9a99980c429255d9867d5c4367a7ad72ab97bf7de90048d769c270d135aacc70&o="
+         },
+         {
+            "id": 8,
+            "city": "Tarbes",
+            "fair": 8369.63,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/889766.webp?k=ee13f10b7a92c8822fde99ac1fbc5647bbb8341baa7d72ee20593f68b702e2f8&o="
+         },
+         {
+            "id": 9,
+            "city": "Reims",
+            "fair": 5708.67,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681878.webp?k=1b5af0eb4eb792232ec6d7b17ec13f08a828281664c3621c9f34c0fc2e21b200&o="
+         },
+         {
+            "id": 10,
+            "city": "Rodez",
+            "fair": 5083.09,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/915778.webp?k=af76d8fb93bec66c88c19c48cc9685e83ad51ac68fc7d9d8384e3bd876a3190f&o="
+         }
+    ], 
+    "madrid":[
+        {
+           "id": 1,
+           "city": "Valencia",
+           "fair": 2962.67,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967986.webp?k=41f5c2e33f7a64f821924ef9812a4be1e2edf4e7ac507c5190ff4709c9f6c081&o="
+        },
+        {
+           "id": 2,
+           "city": "Seville",
+           "fair": 6377.63,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968056.webp?k=512962d90b277c9a01b75af9926ba217028d2dbd34a0d4f179848a7c9c7e4642&o="
+        },
+        {
+           "id": 3,
+           "city": "Santiago de Compostela",
+           "fair": 4336.64,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/687448.webp?k=9826683a5c22a9ec9c401b9b606203df4ad55095b83ca0bb0d674f6d090716c9&o="
+        },
+        {
+           "id": 4,
+           "city": "Santander",
+           "fair": 3612.48,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967906.webp?k=12cf9003dbf4787849f1801c5310ea3baa7a775545de84dfa373a921c199344d&o="
+        },
+        {
+           "id": 5,
+           "city": "Vigo",
+           "fair": 5957.73,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967587.webp?k=e8628bb7bbb696b86fd9ed0dd6be4ac24d6647503220113ba60dbd0027ad788c&o="
+        },
+        {
+           "id": 6,
+           "city": "San Sebastian",
+           "fair": 6468.89,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968070.webp?k=b3fc4ffe692de2cc669d1f68dc0defb29dbc6958a38c2aee025b5d3f8e4b05f0&o="
+        },
+        {
+           "id": 7,
+           "city": "Valladolid",
+           "fair": 7319.34,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968644.webp?k=6a48a64161c92e602c1ab63e2a945361556a54e7cca2d7afa83e2a63aa91d129&o="
+        },
+        {
+           "id": 8,
+           "city": "Torremolinos",
+           "fair": 5959.38,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/810129.webp?k=fb0639ae40b5e4622b3edd5cc432d2e25975fcc3e06b17ed5afb21059a51126d&o="
+        },
+        {
+           "id": 9,
+           "city": "Torrevieja",
+           "fair": 3444,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968084.webp?k=0acc0fcb575701b6ee1f352131e553c6d8702060c1484f1fd80a8c6098f795a9&o="
+        },
+        {
+           "id": 10,
+           "city": "Tarragona",
+           "fair": 10470.06,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/734157.webp?k=0badc1af3b9f95874114e0ecabb55fa06c6177a46619dc914debe7053fb7c3c3&o="
+        }
+    ],
+    "dubai": [
+        {
+            "id": 1,
+            "city": "Abu Dhabi",
+            "fair": 2470.06,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/349030.webp?k=b8fb20f0b84e55054decb03a84d9ef96f9488397366d6ce2164ad8b7ff278e19&o="
+         },
+        {
+            "id": 2,
+            "city": "Al'Ayn",
+            "fair": 2748.06,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968084.webp?k=0acc0fcb575701b6ee1f352131e553c6d8702060c1484f1fd80a8c6098f795a9&o="
+         },
+        {
+            "id": 3,
+            "city": "Abu Dhabi",
+            "fair": 2448.06,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/349030.webp?k=b8fb20f0b84e55054decb03a84d9ef96f9488397366d6ce2164ad8b7ff278e19&o="
+         },
+        {
+            "id": 4,
+            "city": "Sharjah",
+            "fair": 2948.06,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/654879.webp?k=c9442fbe99d085bbb43087b06d4710d1e6a8fc6caf692ae46718ade5090d9775&o="
+         },
+        {
+            "id": 5,
+            "city": "Ras al Khaimah",
+            "fair": 2919.14,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/654887.webp?k=a244f97e819bdb5481505a0f37cd1d4b311143cab63acb7f59a8bc78a0809ba6&o="
+         }
+    ],
+    "malaga":[
+        {
+           "id": 1,
+           "city": "Valencia",
+           "fair": 2962.67,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967986.webp?k=41f5c2e33f7a64f821924ef9812a4be1e2edf4e7ac507c5190ff4709c9f6c081&o="
+        },
+        {
+           "id": 2,
+           "city": "Seville",
+           "fair": 6377.63,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968056.webp?k=512962d90b277c9a01b75af9926ba217028d2dbd34a0d4f179848a7c9c7e4642&o="
+        },
+        {
+           "id": 3,
+           "city": "Santiago de Compostela",
+           "fair": 4336.64,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/687448.webp?k=9826683a5c22a9ec9c401b9b606203df4ad55095b83ca0bb0d674f6d090716c9&o="
+        },
+        {
+           "id": 4,
+           "city": "Santander",
+           "fair": 3612.48,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967906.webp?k=12cf9003dbf4787849f1801c5310ea3baa7a775545de84dfa373a921c199344d&o="
+        },
+        {
+           "id": 5,
+           "city": "Vigo",
+           "fair": 5957.73,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/967587.webp?k=e8628bb7bbb696b86fd9ed0dd6be4ac24d6647503220113ba60dbd0027ad788c&o="
+        },
+        {
+           "id": 6,
+           "city": "San Sebastian",
+           "fair": 6468.89,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968070.webp?k=b3fc4ffe692de2cc669d1f68dc0defb29dbc6958a38c2aee025b5d3f8e4b05f0&o="
+        },
+        {
+           "id": 7,
+           "city": "Valladolid",
+           "fair": 7319.34,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968644.webp?k=6a48a64161c92e602c1ab63e2a945361556a54e7cca2d7afa83e2a63aa91d129&o="
+        },
+        {
+           "id": 8,
+           "city": "Torremolinos",
+           "fair": 5959.38,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/810129.webp?k=fb0639ae40b5e4622b3edd5cc432d2e25975fcc3e06b17ed5afb21059a51126d&o="
+        },
+        {
+           "id": 9,
+           "city": "Torrevieja",
+           "fair": 3444,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/968084.webp?k=0acc0fcb575701b6ee1f352131e553c6d8702060c1484f1fd80a8c6098f795a9&o="
+        },
+        {
+           "id": 10,
+           "city": "Tarragona",
+           "fair": 10470.06,
+           "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/734157.webp?k=0badc1af3b9f95874114e0ecabb55fa06c6177a46619dc914debe7053fb7c3c3&o="
+        }
+    ],
+    "lisbon": [
+        {
+            "id": 1,
+            "city": "Porto",
+            "fair": 1443.41,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681966.webp?k=4c023f1c1ccc242171ac39e67a0c9c56913c113dc11e380b3aa80b642a29e141&o="
+         },
+         {
+            "id": 2,
+            "city": "Portimao",
+            "fair": 3333.55,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681864.webp?k=2b6fef095c0c3e35c3701778c05924c6da49c87dff1ce13121eaeb9fafa1e359&o="
+         },
+         {
+            "id": 3,
+            "city": "Viana do Castelo",
+            "fair": 7302.84,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681854.webp?k=eab883a5609db398d721d60766d7c1b40dfc11b11bd5b277b00f0ff3f7ece8dd&o="
+         },
+         {
+            "id": 4,
+            "city": "Vila do Conde",
+            "fair": 4990.16,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681961.webp?k=1c0a24b72d44b6409cdcaf623d46545f6863cb1c67f1dc901741488b9bdd21a5&o="
+         },
+         {
+            "id": 5,
+            "city": "Setubal",
+            "fair": 3126.91,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/610180.webp?k=13762959bec0eef64a36ee45dcf62c9173e5dd4b8042690eaeb7fe0e19ca5a0c&o="
+         },
+         {
+            "id": 6,
+            "city": "Santarem",
+            "fair": 2165.93,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681918.webp?k=eb0d81bbed0788c958d0f0b7cf42f8cddc2da77da77e54439442ff416fb248a8&o="
+         },
+         {
+            "id": 7,
+            "city": "Torres Vedras",
+            "fair": 5452.62,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681890.webp?k=9a99980c429255d9867d5c4367a7ad72ab97bf7de90048d769c270d135aacc70&o="
+         },
+         {
+            "id": 8,
+            "city": "Tomar",
+            "fair": 3169.63,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/889766.webp?k=ee13f10b7a92c8822fde99ac1fbc5647bbb8341baa7d72ee20593f68b702e2f8&o="
+         },
+         {
+            "id": 9,
+            "city": "Serta",
+            "fair": 3708.67,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/681878.webp?k=1b5af0eb4eb792232ec6d7b17ec13f08a828281664c3621c9f34c0fc2e21b200&o="
+         },
+         {
+            "id": 10,
+            "city": "Seia",
+            "fair": 5083.09,
+            "image": "https://t-cf.bstatic.com/xdata/images/city/360x240/915778.webp?k=af76d8fb93bec66c88c19c48cc9685e83ad51ac68fc7d9d8384e3bd876a3190f&o="
+         }
+    ], 
+    "car-availables":[
+                {   
+                    "id":1,
+                    "supply":"Alamo",
+                    "fair":5000.56,
+                    "Milage": 300,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 2,
+                    "supply":"Alamo",
+                    "fair":4500,
+                    "Milage": 250,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 3,
+                    "supply":"Alamo",
+                    "fair":8000.76,
+                    "Milage": 350,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 4,
+                    "supply":"Avis",
+                    "fair":7500.56,
+                    "Milage": 370,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id":5,
+                    "supply":"Avis",
+                    "fair":800.96,
+                    "Milage": 200,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 6,
+                    "supply":"Avis",
+                    "fair":2000,
+                    "Milage": 250,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 7,
+                    "supply":"Budget",
+                    "fair":4900,
+                    "Milage": 300,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id":8,
+                    "supply":"Budget",
+                    "fair":6005.78,
+                    "Milage": 370,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id":9,
+                    "supply":"Budget",
+                    "fair":3600,
+                    "Milage": 250,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id":10,
+                    "supply":"Citi Rental",
+                    "fair":8104.98,
+                    "Milage": 390,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },{   
+                    "id":11,
+                    "supply":"Citi Rental",
+                    "fair":6203.46,
+                    "Milage": 300,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 12,
+                    "supply":"Citi Rental",
+                    "fair":5230,
+                    "Milage": 350,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 13,
+                    "supply":"Currie Motors Car & Van Rental",
+                    "fair":3200,
+                    "Milage": 300,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 14,
+                    "supply":"Currie Motors Car & Van Rental",
+                    "fair":6000,
+                    "Milage": 300,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id":15,
+                    "supply":"Currie Motors Car & Van Rental",
+                    "fair":6877,
+                    "Milage": 350,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 16,
+                    "supply":"Easirent",
+                    "fair":900,
+                    "Milage": 240,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id": 17,
+                    "supply":"Easirent",
+                    "fair":4800,
+                    "Milage": 350,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id":18,
+                    "supply":"Easirent",
+                    "fair":2800.56,
+                    "Milage": 300,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id":19,
+                    "supply":"Enterprise",
+                    "fair":9100,
+                    "Milage": 400,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                },
+                {
+                    "id":20,
+                    "supply":"Enterprise",
+                    "fair":7600,
+                    "Milage": 350,
+                    "image": "https://res.cloudinary.com/fareoffice/image/upload/s--VZD5PZ6t--/f_auto,q_auto/v1/carpics/al/us/ccar"
+                }
+    ]
+}

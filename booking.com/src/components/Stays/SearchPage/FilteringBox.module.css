@@ -1,0 +1,149 @@
+.filterFeatureContainer * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'BlinkMacSystemFont', '-apple-system', 'Segoe', 'UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+
+.filterFeatureContainer {
+    border: 1px solid rgba(82, 80, 80, 0.39);
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(212, 209, 209, 0.226);
+    width: 400px;
+    padding: 10px;
+}
+
+.filterFeatureContainer .header {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    padding: 5%;
+}
+
+.filterFeatureContainer .budget {
+    border-top: 1px solid rgba(82, 80, 80, 0.39);
+    padding: 7%;
+
+}
+
+.filterFeatureContainer .budget > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.filterFeatureContainer .budget > h3 {
+    font-size: 0.94rem;
+    color: rgb(38, 38, 38);
+    margin-bottom: 5%;
+
+}
+
+.filterFeatureContainer .budget > div > div {
+    display: flex;
+
+}
+
+.filterFeatureContainer .budget > div p {
+
+    font-size: 0.90rem;
+    margin-top: 1px;
+
+}
+
+.filterFeatureContainer .budget > div input {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+
+}
+
+.filterFeatureContainer .rating {
+    border-top: 1px solid rgba(82, 80, 80, 0.39);
+    padding: 7%;
+    border-bottom: none;
+}
+
+.filterFeatureContainer .rating > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.filterFeatureContainer .rating > h3 {
+    font-size: 0.94rem;
+    color: rgb(38, 38, 38);
+    margin-bottom: 5%;
+
+}
+
+.filterFeatureContainer .rating > div p {
+
+    font-size: 0.90rem;
+    margin-top: 1px;
+
+}
+
+.filterFeatureContainer .rating > div input {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+
+}
+
+.filterFeatureContainer .rating > div > div {
+    display: flex;
+}
+
+.filterFeatureContainer .reservationPolicy {
+    border-top: 1px solid rgba(82, 80, 80, 0.39);
+    padding: 7%;
+
+}
+
+.filterFeatureContainer .reservationPolicy > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.filterFeatureContainer .reservationPolicy > h3 {
+    font-size: 0.94rem;
+    color: rgb(38, 38, 38);
+    margin-bottom: 5%;
+
+}
+
+.filterFeatureContainer .reservationPolicy > div p {
+
+    font-size: 0.90rem;
+    margin-top: 1px;
+
+}
+
+.filterFeatureContainer .reservationPolicy > div > div {
+    display: flex;
+}
+
+.filterFeatureContainer .reservationPolicy > div input {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+
+}
+
+.own {
+    display: inline-block;
+    font-size: 0.95rem;
+    margin-bottom: 0px;
+}
+
+.budget > :nth-child(2) {
+    margin-left: -10px;
+    margin-bottom: 1px;
+
+}

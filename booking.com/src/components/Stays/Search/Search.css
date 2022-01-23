@@ -1,0 +1,33 @@
+.searchInputBox {
+    border: 3px solid #F9B82E;
+    position: absolute;
+    width: 70%;
+}
+
+.searchButton {
+    height: 50px;
+    border-left: 4px solid #F9B82E;
+}
+
+.firstSection {
+    background: #f2f2f2;
+    padding: 5% 0% 5% 20%;
+
+}
+
+.topHeading {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    padding-bottom: 8px;
+}
+
+.topSubHeading {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color: #8a9197;
+    padding-bottom: 30px;
+}
