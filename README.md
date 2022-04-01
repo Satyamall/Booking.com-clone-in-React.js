@@ -32,6 +32,6 @@ Time line for this project: 10th Jan 2022 - 14th Jan 2022
 ![Screenshot (341)](https://user-images.githubusercontent.com/80479635/161203718-1e3abc6d-ebc0-45dc-b957-8e225ebb5cdd.png)
 ![Screenshot (342)](https://user-images.githubusercontent.com/80479635/161203730-66de1e0a-5fee-4aca-9982-328a38e48962.png)
 ![Screenshot (343)](https://user-images.githubusercontent.com/80479635/161203747-2310f03b-ccc0-4a82-b3f1-f104dae605c9.png)
-![Uploading Screenshot (344).png…]()
+![Screenshot (344)](https://user-images.githubusercontent.com/80479635/161203903-e3e96960-968e-41b5-9630-b3209e28de7c.png)
 ![Screenshot (345)](https://user-images.githubusercontent.com/80479635/161203789-b2ee6697-04da-4946-82ed-5a0a573d31bd.png)
 
